@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World/Tilesets/TerrainMaster.png" type="Texture" id=1]
+
+[node name="Node" type="Node"]
+
+[node name="Tileset" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+region_rect = Rect2( 0, 0, 112, 224 )
