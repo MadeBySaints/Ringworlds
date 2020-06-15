@@ -1,13 +1,15 @@
-[gd_resource type="TileSet" load_steps=5 format=2]
+[gd_resource type="TileSet" load_steps=7 format=2]
 
-[ext_resource path="res://World/Tilesets/DirtCliffParts.png" type="Texture" id=1]
-[ext_resource path="res://World/Tilesets/JungleCliffParts.png" type="Texture" id=2]
-[ext_resource path="res://World/Tilesets/SandstoneCliffParts.png" type="Texture" id=3]
-[ext_resource path="res://World/Tilesets/StoneCliffParts.png" type="Texture" id=4]
+[ext_resource path="res://World/Tilesets/SandstoneCliffParts.png" type="Texture" id=1]
+[ext_resource path="res://World/Tilesets/TerrainAutotile.png" type="Texture" id=2]
+[ext_resource path="res://World/Tilesets/DirtCliffParts.png" type="Texture" id=3]
+[ext_resource path="res://World/Tilesets/JungleCliffParts.png" type="Texture" id=4]
+[ext_resource path="res://World/Tilesets/StoneCliffParts.png" type="Texture" id=5]
+[ext_resource path="res://World/Tilesets/Animated Tiles/WaterAnim.tres" type="Texture" id=6]
 
 [resource]
 0/name = "Dirt Grass"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 144, 96 )
@@ -19,7 +21,7 @@
 0/autotile/spacing = 0
 0/autotile/occluder_map = [  ]
 0/autotile/navpoly_map = [  ]
-0/autotile/priority_map = [  ]
+0/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 3, 0, 255 ), Vector3( 4, 0, 255 ) ]
 0/autotile/z_index_map = [  ]
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -30,7 +32,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "Dirt Sand"
-1/texture = ExtResource( 1 )
+1/texture = ExtResource( 3 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 160, 0, 144, 80 )
@@ -42,7 +44,7 @@
 1/autotile/spacing = 0
 1/autotile/occluder_map = [  ]
 1/autotile/navpoly_map = [  ]
-1/autotile/priority_map = [  ]
+1/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 1/autotile/z_index_map = [  ]
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
@@ -53,7 +55,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Dirt Mask"
-2/texture = ExtResource( 1 )
+2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 320, 0, 48, 80 )
@@ -76,7 +78,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "Dirt Rich Dirt"
-3/texture = ExtResource( 1 )
+3/texture = ExtResource( 3 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 96, 144, 80 )
@@ -88,7 +90,7 @@
 3/autotile/spacing = 0
 3/autotile/occluder_map = [  ]
 3/autotile/navpoly_map = [  ]
-3/autotile/priority_map = [  ]
+3/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 3/autotile/z_index_map = [  ]
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
@@ -99,7 +101,7 @@
 3/shapes = [  ]
 3/z_index = 0
 4/name = "Dirt Dirt"
-4/texture = ExtResource( 1 )
+4/texture = ExtResource( 3 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 160, 96, 144, 80 )
@@ -111,7 +113,7 @@
 4/autotile/spacing = 0
 4/autotile/occluder_map = [  ]
 4/autotile/navpoly_map = [  ]
-4/autotile/priority_map = [  ]
+4/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 4, 2, 50 ) ]
 4/autotile/z_index_map = [  ]
 4/occluder_offset = Vector2( 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
@@ -122,7 +124,7 @@
 4/shapes = [  ]
 4/z_index = 0
 5/name = "Dirt Void"
-5/texture = ExtResource( 1 )
+5/texture = ExtResource( 3 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 320, 96, 48, 80 )
@@ -145,7 +147,7 @@
 5/shapes = [  ]
 5/z_index = 0
 6/name = "Dirt Jungle Grass"
-6/texture = ExtResource( 1 )
+6/texture = ExtResource( 3 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 176, 144, 80 )
@@ -157,7 +159,7 @@
 6/autotile/spacing = 0
 6/autotile/occluder_map = [  ]
 6/autotile/navpoly_map = [  ]
-6/autotile/priority_map = [  ]
+6/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 6/autotile/z_index_map = [  ]
 6/occluder_offset = Vector2( 0, 0 )
 6/navigation_offset = Vector2( 0, 0 )
@@ -168,7 +170,7 @@
 6/shapes = [  ]
 6/z_index = 0
 7/name = "Dirt Snow"
-7/texture = ExtResource( 1 )
+7/texture = ExtResource( 3 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 160, 176, 144, 80 )
@@ -180,7 +182,7 @@
 7/autotile/spacing = 0
 7/autotile/occluder_map = [  ]
 7/autotile/navpoly_map = [  ]
-7/autotile/priority_map = [  ]
+7/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 4, 1, 50 ), Vector3( 5, 1, 50 ), Vector3( 6, 1, 50 ) ]
 7/autotile/z_index_map = [  ]
 7/occluder_offset = Vector2( 0, 0 )
 7/navigation_offset = Vector2( 0, 0 )
@@ -191,7 +193,7 @@
 7/shapes = [  ]
 7/z_index = 0
 8/name = "Dirt Stairs"
-8/texture = ExtResource( 1 )
+8/texture = ExtResource( 3 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 0, 256, 64, 48 )
@@ -212,7 +214,7 @@
 8/shapes = [  ]
 8/z_index = 0
 9/name = "Dirt Cave Blocked"
-9/texture = ExtResource( 1 )
+9/texture = ExtResource( 3 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 64, 272, 32, 32 )
@@ -226,7 +228,7 @@
 9/shapes = [  ]
 9/z_index = 0
 10/name = "Dirt Ent Sm"
-10/texture = ExtResource( 1 )
+10/texture = ExtResource( 3 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 96, 272, 16, 32 )
@@ -240,7 +242,7 @@
 10/shapes = [  ]
 10/z_index = 0
 11/name = "Dirt Ent Lg"
-11/texture = ExtResource( 1 )
+11/texture = ExtResource( 3 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 112, 272, 32, 32 )
@@ -254,7 +256,7 @@
 11/shapes = [  ]
 11/z_index = 0
 12/name = "Dirt Exit Lg"
-12/texture = ExtResource( 1 )
+12/texture = ExtResource( 3 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 144, 272, 32, 32 )
@@ -268,7 +270,7 @@
 12/shapes = [  ]
 12/z_index = 0
 13/name = "Dirt Wall Parts"
-13/texture = ExtResource( 1 )
+13/texture = ExtResource( 3 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 176, 272, 144, 32 )
@@ -289,7 +291,7 @@
 13/shapes = [  ]
 13/z_index = 0
 14/name = "Jungle Grass"
-14/texture = ExtResource( 2 )
+14/texture = ExtResource( 4 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 0, 0, 144, 96 )
@@ -301,7 +303,7 @@
 14/autotile/spacing = 0
 14/autotile/occluder_map = [  ]
 14/autotile/navpoly_map = [  ]
-14/autotile/priority_map = [  ]
+14/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 3, 0, 255 ), Vector3( 4, 0, 255 ) ]
 14/autotile/z_index_map = [  ]
 14/occluder_offset = Vector2( 0, 0 )
 14/navigation_offset = Vector2( 0, 0 )
@@ -312,7 +314,7 @@
 14/shapes = [  ]
 14/z_index = 0
 15/name = "Jungle Sand"
-15/texture = ExtResource( 2 )
+15/texture = ExtResource( 4 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 160, 0, 144, 80 )
@@ -324,7 +326,7 @@
 15/autotile/spacing = 0
 15/autotile/occluder_map = [  ]
 15/autotile/navpoly_map = [  ]
-15/autotile/priority_map = [  ]
+15/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 15/autotile/z_index_map = [  ]
 15/occluder_offset = Vector2( 0, 0 )
 15/navigation_offset = Vector2( 0, 0 )
@@ -335,7 +337,7 @@
 15/shapes = [  ]
 15/z_index = 0
 16/name = "Jungle Rich Dirt"
-16/texture = ExtResource( 2 )
+16/texture = ExtResource( 4 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 0, 96, 144, 80 )
@@ -347,7 +349,7 @@
 16/autotile/spacing = 0
 16/autotile/occluder_map = [  ]
 16/autotile/navpoly_map = [  ]
-16/autotile/priority_map = [  ]
+16/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 16/autotile/z_index_map = [  ]
 16/occluder_offset = Vector2( 0, 0 )
 16/navigation_offset = Vector2( 0, 0 )
@@ -358,7 +360,7 @@
 16/shapes = [  ]
 16/z_index = 0
 17/name = "Jungle Dirt"
-17/texture = ExtResource( 2 )
+17/texture = ExtResource( 4 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 160, 96, 144, 80 )
@@ -370,7 +372,7 @@
 17/autotile/spacing = 0
 17/autotile/occluder_map = [  ]
 17/autotile/navpoly_map = [  ]
-17/autotile/priority_map = [  ]
+17/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 17/autotile/z_index_map = [  ]
 17/occluder_offset = Vector2( 0, 0 )
 17/navigation_offset = Vector2( 0, 0 )
@@ -381,7 +383,7 @@
 17/shapes = [  ]
 17/z_index = 0
 18/name = "Jungle Jungle Grass"
-18/texture = ExtResource( 2 )
+18/texture = ExtResource( 4 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 0, 176, 144, 80 )
@@ -393,7 +395,7 @@
 18/autotile/spacing = 0
 18/autotile/occluder_map = [  ]
 18/autotile/navpoly_map = [  ]
-18/autotile/priority_map = [  ]
+18/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 18/autotile/z_index_map = [  ]
 18/occluder_offset = Vector2( 0, 0 )
 18/navigation_offset = Vector2( 0, 0 )
@@ -404,7 +406,7 @@
 18/shapes = [  ]
 18/z_index = 0
 19/name = "Jungle Snow"
-19/texture = ExtResource( 2 )
+19/texture = ExtResource( 4 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 160, 176, 144, 80 )
@@ -416,7 +418,7 @@
 19/autotile/spacing = 0
 19/autotile/occluder_map = [  ]
 19/autotile/navpoly_map = [  ]
-19/autotile/priority_map = [  ]
+19/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 4, 1, 50 ), Vector3( 5, 1, 50 ), Vector3( 6, 1, 50 ) ]
 19/autotile/z_index_map = [  ]
 19/occluder_offset = Vector2( 0, 0 )
 19/navigation_offset = Vector2( 0, 0 )
@@ -427,7 +429,7 @@
 19/shapes = [  ]
 19/z_index = 0
 20/name = "Jungle Mask"
-20/texture = ExtResource( 2 )
+20/texture = ExtResource( 4 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 320, 0, 48, 80 )
@@ -450,7 +452,7 @@
 20/shapes = [  ]
 20/z_index = 0
 21/name = "Jungle Void"
-21/texture = ExtResource( 2 )
+21/texture = ExtResource( 4 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 320, 96, 48, 80 )
@@ -473,7 +475,7 @@
 21/shapes = [  ]
 21/z_index = 0
 22/name = "Jungle Stairs"
-22/texture = ExtResource( 2 )
+22/texture = ExtResource( 4 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 0, 256, 64, 48 )
@@ -494,7 +496,7 @@
 22/shapes = [  ]
 22/z_index = 0
 23/name = "Jungle Wall Parts"
-23/texture = ExtResource( 2 )
+23/texture = ExtResource( 4 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 176, 272, 144, 32 )
@@ -515,7 +517,7 @@
 23/shapes = [  ]
 23/z_index = 0
 24/name = "Jungle Cave Blocked"
-24/texture = ExtResource( 2 )
+24/texture = ExtResource( 4 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 64, 272, 32, 32 )
@@ -529,7 +531,7 @@
 24/shapes = [  ]
 24/z_index = 0
 25/name = "Jungle Ent Sm"
-25/texture = ExtResource( 2 )
+25/texture = ExtResource( 4 )
 25/tex_offset = Vector2( 0, 0 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 96, 272, 16, 32 )
@@ -543,7 +545,7 @@
 25/shapes = [  ]
 25/z_index = 0
 26/name = "Jungle Ent Lg"
-26/texture = ExtResource( 2 )
+26/texture = ExtResource( 4 )
 26/tex_offset = Vector2( 0, 0 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 112, 272, 32, 32 )
@@ -557,7 +559,7 @@
 26/shapes = [  ]
 26/z_index = 0
 27/name = "Jungle Exit Lg"
-27/texture = ExtResource( 2 )
+27/texture = ExtResource( 4 )
 27/tex_offset = Vector2( 0, 0 )
 27/modulate = Color( 1, 1, 1, 1 )
 27/region = Rect2( 144, 272, 32, 32 )
@@ -571,7 +573,7 @@
 27/shapes = [  ]
 27/z_index = 0
 28/name = "Sandstone Grass"
-28/texture = ExtResource( 3 )
+28/texture = ExtResource( 1 )
 28/tex_offset = Vector2( 0, 0 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 0, 0, 144, 96 )
@@ -583,7 +585,7 @@
 28/autotile/spacing = 0
 28/autotile/occluder_map = [  ]
 28/autotile/navpoly_map = [  ]
-28/autotile/priority_map = [  ]
+28/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 3, 0, 255 ), Vector3( 4, 0, 255 ) ]
 28/autotile/z_index_map = [  ]
 28/occluder_offset = Vector2( 0, 0 )
 28/navigation_offset = Vector2( 0, 0 )
@@ -594,7 +596,7 @@
 28/shapes = [  ]
 28/z_index = 0
 29/name = "Sandstone Sand"
-29/texture = ExtResource( 3 )
+29/texture = ExtResource( 1 )
 29/tex_offset = Vector2( 0, 0 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 160, 0, 144, 80 )
@@ -606,7 +608,7 @@
 29/autotile/spacing = 0
 29/autotile/occluder_map = [  ]
 29/autotile/navpoly_map = [  ]
-29/autotile/priority_map = [  ]
+29/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 29/autotile/z_index_map = [  ]
 29/occluder_offset = Vector2( 0, 0 )
 29/navigation_offset = Vector2( 0, 0 )
@@ -617,7 +619,7 @@
 29/shapes = [  ]
 29/z_index = 0
 30/name = "Sandstone Mask"
-30/texture = ExtResource( 3 )
+30/texture = ExtResource( 1 )
 30/tex_offset = Vector2( 0, 0 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 320, 0, 48, 80 )
@@ -640,7 +642,7 @@
 30/shapes = [  ]
 30/z_index = 0
 31/name = "Sandstone Void"
-31/texture = ExtResource( 3 )
+31/texture = ExtResource( 1 )
 31/tex_offset = Vector2( 0, 0 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 320, 96, 48, 80 )
@@ -663,7 +665,7 @@
 31/shapes = [  ]
 31/z_index = 0
 32/name = "Sandstone Rich Dirt"
-32/texture = ExtResource( 3 )
+32/texture = ExtResource( 1 )
 32/tex_offset = Vector2( 0, 0 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( 0, 96, 144, 80 )
@@ -675,7 +677,7 @@
 32/autotile/spacing = 0
 32/autotile/occluder_map = [  ]
 32/autotile/navpoly_map = [  ]
-32/autotile/priority_map = [  ]
+32/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 32/autotile/z_index_map = [  ]
 32/occluder_offset = Vector2( 0, 0 )
 32/navigation_offset = Vector2( 0, 0 )
@@ -686,7 +688,7 @@
 32/shapes = [  ]
 32/z_index = 0
 33/name = "Sandstone Dirt"
-33/texture = ExtResource( 3 )
+33/texture = ExtResource( 1 )
 33/tex_offset = Vector2( 0, 0 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 160, 96, 144, 80 )
@@ -698,7 +700,7 @@
 33/autotile/spacing = 0
 33/autotile/occluder_map = [  ]
 33/autotile/navpoly_map = [  ]
-33/autotile/priority_map = [  ]
+33/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 33/autotile/z_index_map = [  ]
 33/occluder_offset = Vector2( 0, 0 )
 33/navigation_offset = Vector2( 0, 0 )
@@ -709,7 +711,7 @@
 33/shapes = [  ]
 33/z_index = 0
 34/name = "Sandstone Jungle Grass"
-34/texture = ExtResource( 3 )
+34/texture = ExtResource( 1 )
 34/tex_offset = Vector2( 0, 0 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 0, 176, 144, 80 )
@@ -721,7 +723,7 @@
 34/autotile/spacing = 0
 34/autotile/occluder_map = [  ]
 34/autotile/navpoly_map = [  ]
-34/autotile/priority_map = [  ]
+34/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 34/autotile/z_index_map = [  ]
 34/occluder_offset = Vector2( 0, 0 )
 34/navigation_offset = Vector2( 0, 0 )
@@ -732,7 +734,7 @@
 34/shapes = [  ]
 34/z_index = 0
 35/name = "Sandstone Snow"
-35/texture = ExtResource( 3 )
+35/texture = ExtResource( 1 )
 35/tex_offset = Vector2( 0, 0 )
 35/modulate = Color( 1, 1, 1, 1 )
 35/region = Rect2( 160, 176, 144, 80 )
@@ -744,7 +746,7 @@
 35/autotile/spacing = 0
 35/autotile/occluder_map = [  ]
 35/autotile/navpoly_map = [  ]
-35/autotile/priority_map = [  ]
+35/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 4, 1, 50 ), Vector3( 5, 1, 50 ), Vector3( 6, 1, 50 ) ]
 35/autotile/z_index_map = [  ]
 35/occluder_offset = Vector2( 0, 0 )
 35/navigation_offset = Vector2( 0, 0 )
@@ -755,7 +757,7 @@
 35/shapes = [  ]
 35/z_index = 0
 36/name = "Sandstone Stairs"
-36/texture = ExtResource( 3 )
+36/texture = ExtResource( 1 )
 36/tex_offset = Vector2( 0, 0 )
 36/modulate = Color( 1, 1, 1, 1 )
 36/region = Rect2( 0, 256, 64, 48 )
@@ -776,7 +778,7 @@
 36/shapes = [  ]
 36/z_index = 0
 37/name = "Sandstone Wall Parts"
-37/texture = ExtResource( 3 )
+37/texture = ExtResource( 1 )
 37/tex_offset = Vector2( 0, 0 )
 37/modulate = Color( 1, 1, 1, 1 )
 37/region = Rect2( 176, 272, 144, 32 )
@@ -797,7 +799,7 @@
 37/shapes = [  ]
 37/z_index = 0
 38/name = "Sandstone Cave Blocked"
-38/texture = ExtResource( 3 )
+38/texture = ExtResource( 1 )
 38/tex_offset = Vector2( 0, 0 )
 38/modulate = Color( 1, 1, 1, 1 )
 38/region = Rect2( 64, 272, 32, 32 )
@@ -811,7 +813,7 @@
 38/shapes = [  ]
 38/z_index = 0
 39/name = "Sandstone Ent Sm"
-39/texture = ExtResource( 3 )
+39/texture = ExtResource( 1 )
 39/tex_offset = Vector2( 0, 0 )
 39/modulate = Color( 1, 1, 1, 1 )
 39/region = Rect2( 96, 272, 16, 32 )
@@ -825,7 +827,7 @@
 39/shapes = [  ]
 39/z_index = 0
 40/name = "Sandstone Ent Lg"
-40/texture = ExtResource( 3 )
+40/texture = ExtResource( 1 )
 40/tex_offset = Vector2( 0, 0 )
 40/modulate = Color( 1, 1, 1, 1 )
 40/region = Rect2( 112, 272, 32, 32 )
@@ -839,7 +841,7 @@
 40/shapes = [  ]
 40/z_index = 0
 41/name = "Sandstone Exit Lg"
-41/texture = ExtResource( 3 )
+41/texture = ExtResource( 1 )
 41/tex_offset = Vector2( 0, 0 )
 41/modulate = Color( 1, 1, 1, 1 )
 41/region = Rect2( 144, 272, 32, 32 )
@@ -853,7 +855,7 @@
 41/shapes = [  ]
 41/z_index = 0
 42/name = "Stone Grass"
-42/texture = ExtResource( 4 )
+42/texture = ExtResource( 5 )
 42/tex_offset = Vector2( 0, 0 )
 42/modulate = Color( 1, 1, 1, 1 )
 42/region = Rect2( 0, 0, 144, 96 )
@@ -865,7 +867,7 @@
 42/autotile/spacing = 0
 42/autotile/occluder_map = [  ]
 42/autotile/navpoly_map = [  ]
-42/autotile/priority_map = [  ]
+42/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 3, 0, 255 ), Vector3( 4, 0, 255 ) ]
 42/autotile/z_index_map = [  ]
 42/occluder_offset = Vector2( 0, 0 )
 42/navigation_offset = Vector2( 0, 0 )
@@ -876,7 +878,7 @@
 42/shapes = [  ]
 42/z_index = 0
 43/name = "Stone Sand"
-43/texture = ExtResource( 4 )
+43/texture = ExtResource( 5 )
 43/tex_offset = Vector2( 0, 0 )
 43/modulate = Color( 1, 1, 1, 1 )
 43/region = Rect2( 160, 0, 144, 80 )
@@ -888,7 +890,7 @@
 43/autotile/spacing = 0
 43/autotile/occluder_map = [  ]
 43/autotile/navpoly_map = [  ]
-43/autotile/priority_map = [  ]
+43/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 43/autotile/z_index_map = [  ]
 43/occluder_offset = Vector2( 0, 0 )
 43/navigation_offset = Vector2( 0, 0 )
@@ -899,7 +901,7 @@
 43/shapes = [  ]
 43/z_index = 0
 44/name = "Stone Rich Dirt"
-44/texture = ExtResource( 4 )
+44/texture = ExtResource( 5 )
 44/tex_offset = Vector2( 0, 0 )
 44/modulate = Color( 1, 1, 1, 1 )
 44/region = Rect2( 0, 96, 144, 80 )
@@ -911,7 +913,7 @@
 44/autotile/spacing = 0
 44/autotile/occluder_map = [  ]
 44/autotile/navpoly_map = [  ]
-44/autotile/priority_map = [  ]
+44/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 44/autotile/z_index_map = [  ]
 44/occluder_offset = Vector2( 0, 0 )
 44/navigation_offset = Vector2( 0, 0 )
@@ -922,7 +924,7 @@
 44/shapes = [  ]
 44/z_index = 0
 45/name = "Stone Dirt"
-45/texture = ExtResource( 4 )
+45/texture = ExtResource( 5 )
 45/tex_offset = Vector2( 0, 0 )
 45/modulate = Color( 1, 1, 1, 1 )
 45/region = Rect2( 160, 96, 144, 80 )
@@ -934,7 +936,7 @@
 45/autotile/spacing = 0
 45/autotile/occluder_map = [  ]
 45/autotile/navpoly_map = [  ]
-45/autotile/priority_map = [  ]
+45/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 45/autotile/z_index_map = [  ]
 45/occluder_offset = Vector2( 0, 0 )
 45/navigation_offset = Vector2( 0, 0 )
@@ -945,7 +947,7 @@
 45/shapes = [  ]
 45/z_index = 0
 46/name = "StoneCliffParts.png 46"
-46/texture = ExtResource( 4 )
+46/texture = ExtResource( 5 )
 46/tex_offset = Vector2( 0, 0 )
 46/modulate = Color( 1, 1, 1, 1 )
 46/region = Rect2( 320, 0, 48, 80 )
@@ -968,7 +970,7 @@
 46/shapes = [  ]
 46/z_index = 0
 47/name = "StoneCliffParts.png 47"
-47/texture = ExtResource( 4 )
+47/texture = ExtResource( 5 )
 47/tex_offset = Vector2( 0, 0 )
 47/modulate = Color( 1, 1, 1, 1 )
 47/region = Rect2( 320, 96, 48, 80 )
@@ -991,7 +993,7 @@
 47/shapes = [  ]
 47/z_index = 0
 48/name = "Stone Jungle Grass"
-48/texture = ExtResource( 4 )
+48/texture = ExtResource( 5 )
 48/tex_offset = Vector2( 0, 0 )
 48/modulate = Color( 1, 1, 1, 1 )
 48/region = Rect2( 0, 176, 144, 80 )
@@ -1003,7 +1005,7 @@
 48/autotile/spacing = 0
 48/autotile/occluder_map = [  ]
 48/autotile/navpoly_map = [  ]
-48/autotile/priority_map = [  ]
+48/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
 48/autotile/z_index_map = [  ]
 48/occluder_offset = Vector2( 0, 0 )
 48/navigation_offset = Vector2( 0, 0 )
@@ -1014,7 +1016,7 @@
 48/shapes = [  ]
 48/z_index = 0
 49/name = "Stone Snow"
-49/texture = ExtResource( 4 )
+49/texture = ExtResource( 5 )
 49/tex_offset = Vector2( 0, 0 )
 49/modulate = Color( 1, 1, 1, 1 )
 49/region = Rect2( 160, 176, 144, 80 )
@@ -1026,7 +1028,7 @@
 49/autotile/spacing = 0
 49/autotile/occluder_map = [  ]
 49/autotile/navpoly_map = [  ]
-49/autotile/priority_map = [  ]
+49/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 4, 1, 50 ), Vector3( 5, 1, 50 ), Vector3( 6, 1, 50 ) ]
 49/autotile/z_index_map = [  ]
 49/occluder_offset = Vector2( 0, 0 )
 49/navigation_offset = Vector2( 0, 0 )
@@ -1037,7 +1039,7 @@
 49/shapes = [  ]
 49/z_index = 0
 50/name = "Stone Stairs"
-50/texture = ExtResource( 4 )
+50/texture = ExtResource( 5 )
 50/tex_offset = Vector2( 0, 0 )
 50/modulate = Color( 1, 1, 1, 1 )
 50/region = Rect2( 0, 256, 64, 48 )
@@ -1058,7 +1060,7 @@
 50/shapes = [  ]
 50/z_index = 0
 51/name = "Stone Wall Parts"
-51/texture = ExtResource( 4 )
+51/texture = ExtResource( 5 )
 51/tex_offset = Vector2( 0, 0 )
 51/modulate = Color( 1, 1, 1, 1 )
 51/region = Rect2( 176, 272, 144, 32 )
@@ -1079,7 +1081,7 @@
 51/shapes = [  ]
 51/z_index = 0
 52/name = "Stone Cave Blocked"
-52/texture = ExtResource( 4 )
+52/texture = ExtResource( 5 )
 52/tex_offset = Vector2( 0, 0 )
 52/modulate = Color( 1, 1, 1, 1 )
 52/region = Rect2( 64, 272, 32, 32 )
@@ -1093,7 +1095,7 @@
 52/shapes = [  ]
 52/z_index = 0
 53/name = "Stone Ent Sm"
-53/texture = ExtResource( 4 )
+53/texture = ExtResource( 5 )
 53/tex_offset = Vector2( 0, 0 )
 53/modulate = Color( 1, 1, 1, 1 )
 53/region = Rect2( 96, 272, 16, 32 )
@@ -1107,7 +1109,7 @@
 53/shapes = [  ]
 53/z_index = 0
 54/name = "Stone Ent Lg"
-54/texture = ExtResource( 4 )
+54/texture = ExtResource( 5 )
 54/tex_offset = Vector2( 0, 0 )
 54/modulate = Color( 1, 1, 1, 1 )
 54/region = Rect2( 112, 272, 32, 32 )
@@ -1121,7 +1123,7 @@
 54/shapes = [  ]
 54/z_index = 0
 55/name = "Stone Exit Lg"
-55/texture = ExtResource( 4 )
+55/texture = ExtResource( 5 )
 55/tex_offset = Vector2( 0, 0 )
 55/modulate = Color( 1, 1, 1, 1 )
 55/region = Rect2( 144, 272, 32, 32 )
@@ -1134,3 +1136,155 @@
 55/shape_one_way_margin = 0.0
 55/shapes = [  ]
 55/z_index = 0
+56/name = "Grass AT"
+56/texture = ExtResource( 2 )
+56/tex_offset = Vector2( 0, 0 )
+56/modulate = Color( 1, 1, 1, 1 )
+56/region = Rect2( 0, 0, 112, 224 )
+56/tile_mode = 1
+56/autotile/bitmask_mode = 1
+56/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 178, Vector2( 0, 4 ), 58, Vector2( 0, 5 ), 255, Vector2( 0, 6 ), 507, Vector2( 0, 8 ), 511, Vector2( 0, 9 ), 511, Vector2( 0, 10 ), 511, Vector2( 0, 11 ), 511, Vector2( 0, 12 ), 511, Vector2( 0, 13 ), 511, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 184, Vector2( 1, 4 ), 154, Vector2( 1, 5 ), 447, Vector2( 1, 6 ), 510, Vector2( 1, 8 ), 511, Vector2( 1, 9 ), 511, Vector2( 1, 10 ), 511, Vector2( 1, 11 ), 511, Vector2( 1, 12 ), 511, Vector2( 1, 13 ), 511, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 218, Vector2( 2, 4 ), 440, Vector2( 2, 5 ), 251, Vector2( 2, 6 ), 506, Vector2( 2, 8 ), 511, Vector2( 2, 9 ), 511, Vector2( 2, 10 ), 511, Vector2( 2, 11 ), 511, Vector2( 2, 12 ), 511, Vector2( 2, 13 ), 511, Vector2( 3, 0 ), 48, Vector2( 3, 1 ), 187, Vector2( 3, 2 ), 250, Vector2( 3, 3 ), 59, Vector2( 3, 4 ), 182, Vector2( 3, 5 ), 191, Vector2( 3, 6 ), 446, Vector2( 3, 8 ), 511, Vector2( 3, 9 ), 511, Vector2( 3, 10 ), 511, Vector2( 3, 11 ), 511, Vector2( 3, 12 ), 511, Vector2( 3, 13 ), 511, Vector2( 4, 0 ), 56, Vector2( 4, 1 ), 190, Vector2( 4, 2 ), 442, Vector2( 4, 3 ), 434, Vector2( 4, 4 ), 62, Vector2( 4, 5 ), 176, Vector2( 4, 6 ), 50, Vector2( 4, 8 ), 511, Vector2( 4, 9 ), 511, Vector2( 4, 10 ), 511, Vector2( 4, 11 ), 511, Vector2( 4, 12 ), 511, Vector2( 4, 13 ), 511, Vector2( 5, 0 ), 24, Vector2( 5, 1 ), 254, Vector2( 5, 2 ), 443, Vector2( 5, 3 ), 248, Vector2( 5, 4 ), 155, Vector2( 5, 5 ), 152, Vector2( 5, 6 ), 26, Vector2( 5, 8 ), 511, Vector2( 5, 9 ), 511, Vector2( 5, 10 ), 511, Vector2( 5, 11 ), 511, Vector2( 5, 12 ), 511, Vector2( 5, 13 ), 511, Vector2( 6, 0 ), 144, Vector2( 6, 1 ), 146, Vector2( 6, 2 ), 18, Vector2( 6, 3 ), 16, Vector2( 6, 4 ), 186 ]
+56/autotile/icon_coordinate = Vector2( 6, 3 )
+56/autotile/tile_size = Vector2( 16, 16 )
+56/autotile/spacing = 0
+56/autotile/occluder_map = [  ]
+56/autotile/navpoly_map = [  ]
+56/autotile/priority_map = [ Vector3( 0, 8, 255 ), Vector3( 1, 1, 255 ), Vector3( 1, 8, 255 ) ]
+56/autotile/z_index_map = [  ]
+56/occluder_offset = Vector2( 0, 0 )
+56/navigation_offset = Vector2( 0, 0 )
+56/shape_offset = Vector2( 0, 0 )
+56/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+56/shape_one_way = false
+56/shape_one_way_margin = 0.0
+56/shapes = [  ]
+56/z_index = 0
+57/name = "Jungle Grass AT"
+57/texture = ExtResource( 2 )
+57/tex_offset = Vector2( 0, 0 )
+57/modulate = Color( 1, 1, 1, 1 )
+57/region = Rect2( 128, 0, 112, 192 )
+57/tile_mode = 1
+57/autotile/bitmask_mode = 1
+57/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 178, Vector2( 0, 4 ), 58, Vector2( 0, 5 ), 255, Vector2( 0, 6 ), 507, Vector2( 0, 8 ), 511, Vector2( 0, 9 ), 511, Vector2( 0, 10 ), 511, Vector2( 0, 11 ), 511, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 184, Vector2( 1, 4 ), 154, Vector2( 1, 5 ), 447, Vector2( 1, 6 ), 510, Vector2( 1, 8 ), 511, Vector2( 1, 9 ), 511, Vector2( 1, 10 ), 511, Vector2( 1, 11 ), 511, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 218, Vector2( 2, 4 ), 440, Vector2( 2, 5 ), 251, Vector2( 2, 6 ), 506, Vector2( 2, 8 ), 511, Vector2( 2, 9 ), 511, Vector2( 2, 10 ), 511, Vector2( 3, 0 ), 48, Vector2( 3, 1 ), 187, Vector2( 3, 2 ), 250, Vector2( 3, 3 ), 59, Vector2( 3, 4 ), 182, Vector2( 3, 5 ), 191, Vector2( 3, 6 ), 446, Vector2( 3, 8 ), 511, Vector2( 3, 9 ), 511, Vector2( 3, 10 ), 511, Vector2( 4, 0 ), 56, Vector2( 4, 1 ), 190, Vector2( 4, 2 ), 442, Vector2( 4, 3 ), 434, Vector2( 4, 4 ), 62, Vector2( 4, 5 ), 176, Vector2( 4, 6 ), 50, Vector2( 4, 8 ), 511, Vector2( 4, 9 ), 511, Vector2( 4, 10 ), 511, Vector2( 5, 0 ), 24, Vector2( 5, 1 ), 254, Vector2( 5, 2 ), 443, Vector2( 5, 3 ), 248, Vector2( 5, 4 ), 155, Vector2( 5, 5 ), 152, Vector2( 5, 6 ), 26, Vector2( 5, 8 ), 511, Vector2( 5, 9 ), 511, Vector2( 5, 10 ), 511, Vector2( 6, 0 ), 144, Vector2( 6, 1 ), 146, Vector2( 6, 2 ), 18, Vector2( 6, 3 ), 16, Vector2( 6, 4 ), 186 ]
+57/autotile/icon_coordinate = Vector2( 6, 3 )
+57/autotile/tile_size = Vector2( 16, 16 )
+57/autotile/spacing = 0
+57/autotile/occluder_map = [  ]
+57/autotile/navpoly_map = [  ]
+57/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
+57/autotile/z_index_map = [  ]
+57/occluder_offset = Vector2( 0, 0 )
+57/navigation_offset = Vector2( 0, 0 )
+57/shape_offset = Vector2( 0, 0 )
+57/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+57/shape_one_way = false
+57/shape_one_way_margin = 0.0
+57/shapes = [  ]
+57/z_index = 0
+58/name = "Dirt AT"
+58/texture = ExtResource( 2 )
+58/tex_offset = Vector2( 0, 0 )
+58/modulate = Color( 1, 1, 1, 1 )
+58/region = Rect2( 256, 0, 112, 192 )
+58/tile_mode = 1
+58/autotile/bitmask_mode = 1
+58/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 178, Vector2( 0, 4 ), 58, Vector2( 0, 5 ), 255, Vector2( 0, 6 ), 507, Vector2( 0, 8 ), 511, Vector2( 0, 9 ), 511, Vector2( 0, 10 ), 511, Vector2( 0, 11 ), 511, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 184, Vector2( 1, 4 ), 154, Vector2( 1, 5 ), 447, Vector2( 1, 6 ), 510, Vector2( 1, 8 ), 511, Vector2( 1, 9 ), 511, Vector2( 1, 10 ), 511, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 218, Vector2( 2, 4 ), 440, Vector2( 2, 5 ), 251, Vector2( 2, 6 ), 506, Vector2( 2, 8 ), 511, Vector2( 2, 9 ), 511, Vector2( 2, 10 ), 511, Vector2( 3, 0 ), 48, Vector2( 3, 1 ), 187, Vector2( 3, 2 ), 250, Vector2( 3, 3 ), 59, Vector2( 3, 4 ), 182, Vector2( 3, 5 ), 191, Vector2( 3, 6 ), 446, Vector2( 3, 8 ), 511, Vector2( 3, 9 ), 511, Vector2( 3, 10 ), 511, Vector2( 4, 0 ), 56, Vector2( 4, 1 ), 190, Vector2( 4, 2 ), 442, Vector2( 4, 3 ), 434, Vector2( 4, 4 ), 62, Vector2( 4, 5 ), 176, Vector2( 4, 6 ), 50, Vector2( 4, 8 ), 511, Vector2( 4, 9 ), 511, Vector2( 4, 10 ), 511, Vector2( 5, 0 ), 24, Vector2( 5, 1 ), 254, Vector2( 5, 2 ), 443, Vector2( 5, 3 ), 248, Vector2( 5, 4 ), 155, Vector2( 5, 5 ), 152, Vector2( 5, 6 ), 26, Vector2( 5, 8 ), 511, Vector2( 5, 9 ), 511, Vector2( 5, 10 ), 511, Vector2( 6, 0 ), 144, Vector2( 6, 1 ), 146, Vector2( 6, 2 ), 18, Vector2( 6, 3 ), 16, Vector2( 6, 4 ), 186 ]
+58/autotile/icon_coordinate = Vector2( 6, 3 )
+58/autotile/tile_size = Vector2( 16, 16 )
+58/autotile/spacing = 0
+58/autotile/occluder_map = [  ]
+58/autotile/navpoly_map = [  ]
+58/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
+58/autotile/z_index_map = [  ]
+58/occluder_offset = Vector2( 0, 0 )
+58/navigation_offset = Vector2( 0, 0 )
+58/shape_offset = Vector2( 0, 0 )
+58/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+58/shape_one_way = false
+58/shape_one_way_margin = 0.0
+58/shapes = [  ]
+58/z_index = 0
+59/name = "Rich Dirt AT"
+59/texture = ExtResource( 2 )
+59/tex_offset = Vector2( 0, 0 )
+59/modulate = Color( 1, 1, 1, 1 )
+59/region = Rect2( 384, 0, 112, 160 )
+59/tile_mode = 1
+59/autotile/bitmask_mode = 1
+59/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 178, Vector2( 0, 4 ), 58, Vector2( 0, 5 ), 255, Vector2( 0, 6 ), 507, Vector2( 0, 8 ), 511, Vector2( 0, 9 ), 511, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 184, Vector2( 1, 4 ), 154, Vector2( 1, 5 ), 447, Vector2( 1, 6 ), 510, Vector2( 1, 8 ), 511, Vector2( 1, 9 ), 511, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 218, Vector2( 2, 4 ), 440, Vector2( 2, 5 ), 251, Vector2( 2, 6 ), 506, Vector2( 2, 8 ), 511, Vector2( 2, 9 ), 511, Vector2( 3, 0 ), 48, Vector2( 3, 1 ), 187, Vector2( 3, 2 ), 250, Vector2( 3, 3 ), 59, Vector2( 3, 4 ), 182, Vector2( 3, 5 ), 191, Vector2( 3, 6 ), 446, Vector2( 3, 8 ), 511, Vector2( 3, 9 ), 511, Vector2( 4, 0 ), 56, Vector2( 4, 1 ), 190, Vector2( 4, 2 ), 442, Vector2( 4, 3 ), 434, Vector2( 4, 4 ), 62, Vector2( 4, 5 ), 176, Vector2( 4, 6 ), 50, Vector2( 4, 8 ), 511, Vector2( 4, 9 ), 511, Vector2( 5, 0 ), 24, Vector2( 5, 1 ), 254, Vector2( 5, 2 ), 443, Vector2( 5, 3 ), 248, Vector2( 5, 4 ), 155, Vector2( 5, 5 ), 152, Vector2( 5, 6 ), 26, Vector2( 5, 9 ), 511, Vector2( 6, 0 ), 144, Vector2( 6, 1 ), 146, Vector2( 6, 2 ), 18, Vector2( 6, 3 ), 16, Vector2( 6, 4 ), 186 ]
+59/autotile/icon_coordinate = Vector2( 6, 3 )
+59/autotile/tile_size = Vector2( 16, 16 )
+59/autotile/spacing = 0
+59/autotile/occluder_map = [  ]
+59/autotile/navpoly_map = [  ]
+59/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
+59/autotile/z_index_map = [  ]
+59/occluder_offset = Vector2( 0, 0 )
+59/navigation_offset = Vector2( 0, 0 )
+59/shape_offset = Vector2( 0, 0 )
+59/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+59/shape_one_way = false
+59/shape_one_way_margin = 0.0
+59/shapes = [  ]
+59/z_index = 0
+60/name = "Sand AT"
+60/texture = ExtResource( 2 )
+60/tex_offset = Vector2( 0, 0 )
+60/modulate = Color( 1, 1, 1, 1 )
+60/region = Rect2( 512, 0, 112, 192 )
+60/tile_mode = 1
+60/autotile/bitmask_mode = 1
+60/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 178, Vector2( 0, 4 ), 58, Vector2( 0, 5 ), 255, Vector2( 0, 6 ), 507, Vector2( 0, 8 ), 511, Vector2( 0, 9 ), 511, Vector2( 0, 10 ), 511, Vector2( 0, 11 ), 511, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 184, Vector2( 1, 4 ), 154, Vector2( 1, 5 ), 447, Vector2( 1, 6 ), 510, Vector2( 1, 8 ), 511, Vector2( 1, 9 ), 511, Vector2( 1, 10 ), 511, Vector2( 1, 11 ), 511, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 218, Vector2( 2, 4 ), 440, Vector2( 2, 5 ), 251, Vector2( 2, 6 ), 506, Vector2( 2, 8 ), 511, Vector2( 2, 9 ), 511, Vector2( 2, 10 ), 511, Vector2( 2, 11 ), 511, Vector2( 3, 0 ), 48, Vector2( 3, 1 ), 187, Vector2( 3, 2 ), 250, Vector2( 3, 3 ), 59, Vector2( 3, 4 ), 182, Vector2( 3, 5 ), 191, Vector2( 3, 6 ), 446, Vector2( 3, 8 ), 511, Vector2( 3, 9 ), 511, Vector2( 3, 10 ), 511, Vector2( 3, 11 ), 511, Vector2( 4, 0 ), 56, Vector2( 4, 1 ), 190, Vector2( 4, 2 ), 442, Vector2( 4, 3 ), 434, Vector2( 4, 4 ), 62, Vector2( 4, 5 ), 176, Vector2( 4, 6 ), 50, Vector2( 4, 8 ), 511, Vector2( 4, 9 ), 511, Vector2( 4, 10 ), 511, Vector2( 4, 11 ), 511, Vector2( 5, 0 ), 24, Vector2( 5, 1 ), 254, Vector2( 5, 2 ), 443, Vector2( 5, 3 ), 248, Vector2( 5, 4 ), 155, Vector2( 5, 5 ), 152, Vector2( 5, 6 ), 26, Vector2( 5, 8 ), 511, Vector2( 5, 9 ), 511, Vector2( 5, 10 ), 511, Vector2( 5, 11 ), 511, Vector2( 6, 0 ), 144, Vector2( 6, 1 ), 146, Vector2( 6, 2 ), 18, Vector2( 6, 3 ), 16, Vector2( 6, 4 ), 186 ]
+60/autotile/icon_coordinate = Vector2( 6, 3 )
+60/autotile/tile_size = Vector2( 16, 16 )
+60/autotile/spacing = 0
+60/autotile/occluder_map = [  ]
+60/autotile/navpoly_map = [  ]
+60/autotile/priority_map = [ Vector3( 1, 1, 255 ) ]
+60/autotile/z_index_map = [  ]
+60/occluder_offset = Vector2( 0, 0 )
+60/navigation_offset = Vector2( 0, 0 )
+60/shape_offset = Vector2( 0, 0 )
+60/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+60/shape_one_way = false
+60/shape_one_way_margin = 0.0
+60/shapes = [  ]
+60/z_index = 0
+61/name = "Snow AT"
+61/texture = ExtResource( 2 )
+61/tex_offset = Vector2( 0, 0 )
+61/modulate = Color( 1, 1, 1, 1 )
+61/region = Rect2( 640, 0, 112, 160 )
+61/tile_mode = 1
+61/autotile/bitmask_mode = 1
+61/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 178, Vector2( 0, 4 ), 58, Vector2( 0, 5 ), 255, Vector2( 0, 6 ), 507, Vector2( 0, 8 ), 511, Vector2( 0, 9 ), 511, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 184, Vector2( 1, 4 ), 154, Vector2( 1, 5 ), 447, Vector2( 1, 6 ), 510, Vector2( 1, 8 ), 511, Vector2( 1, 9 ), 511, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 218, Vector2( 2, 4 ), 440, Vector2( 2, 5 ), 251, Vector2( 2, 6 ), 506, Vector2( 2, 8 ), 511, Vector2( 2, 9 ), 511, Vector2( 3, 0 ), 48, Vector2( 3, 1 ), 187, Vector2( 3, 2 ), 250, Vector2( 3, 3 ), 59, Vector2( 3, 4 ), 182, Vector2( 3, 5 ), 191, Vector2( 3, 6 ), 446, Vector2( 3, 8 ), 511, Vector2( 3, 9 ), 511, Vector2( 4, 0 ), 56, Vector2( 4, 1 ), 190, Vector2( 4, 2 ), 442, Vector2( 4, 3 ), 434, Vector2( 4, 4 ), 62, Vector2( 4, 5 ), 176, Vector2( 4, 6 ), 50, Vector2( 4, 8 ), 511, Vector2( 4, 9 ), 511, Vector2( 5, 0 ), 24, Vector2( 5, 1 ), 254, Vector2( 5, 2 ), 443, Vector2( 5, 3 ), 248, Vector2( 5, 4 ), 155, Vector2( 5, 5 ), 152, Vector2( 5, 6 ), 26, Vector2( 5, 8 ), 511, Vector2( 6, 0 ), 144, Vector2( 6, 1 ), 146, Vector2( 6, 2 ), 18, Vector2( 6, 3 ), 16, Vector2( 6, 4 ), 186 ]
+61/autotile/icon_coordinate = Vector2( 6, 3 )
+61/autotile/tile_size = Vector2( 16, 16 )
+61/autotile/spacing = 0
+61/autotile/occluder_map = [  ]
+61/autotile/navpoly_map = [  ]
+61/autotile/priority_map = [ Vector3( 1, 1, 255 ), Vector3( 1, 9, 255 ), Vector3( 2, 9, 50 ), Vector3( 3, 9, 50 ) ]
+61/autotile/z_index_map = [  ]
+61/occluder_offset = Vector2( 0, 0 )
+61/navigation_offset = Vector2( 0, 0 )
+61/shape_offset = Vector2( 0, 0 )
+61/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+61/shape_one_way = false
+61/shape_one_way_margin = 0.0
+61/shapes = [  ]
+61/z_index = 0
+62/name = "Water"
+62/texture = ExtResource( 6 )
+62/tex_offset = Vector2( 0, 0 )
+62/modulate = Color( 1, 1, 1, 1 )
+62/region = Rect2( 0, 0, 16, 16 )
+62/tile_mode = 0
+62/occluder_offset = Vector2( 0, 0 )
+62/navigation_offset = Vector2( 0, 0 )
+62/shape_offset = Vector2( 0, 0 )
+62/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+62/shape_one_way = false
+62/shape_one_way_margin = 0.0
+62/shapes = [  ]
+62/z_index = 0
