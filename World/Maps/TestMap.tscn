@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://World/Tilesets/HouseParts.tres" type="TileSet" id=1]
-[ext_resource path="res://World/Tilesets/Props.tres" type="TileSet" id=2]
 [ext_resource path="res://World/Tilesets/Terrains.tres" type="TileSet" id=3]
 
 [node name="Node2D" type="Node2D"]
@@ -31,10 +30,3 @@ tile_set = ExtResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 65547, 33, 0, 65548, 33, 1, 65549, 33, 5, 131083, 33, 65536, 131084, 33, 65538, 131085, 33, 65541, 196619, 33, 196608, 196620, 33, 196610, 196621, 33, 196613 )
-
-[node name="Props" type="TileMap" parent="."]
-skew = 4.37114e-08
-tile_set = ExtResource( 2 )
-cell_size = Vector2( 16, 16 )
-format = 1
-tile_data = PoolIntArray( 15, 3, 2, 16, 3, 3, 65551, 3, 65538, 65552, 3, 65539, 65555, 1, 196612, 131087, 3, 131074, 131088, 3, 131075, 131090, 1, 4, 131092, 1, 196612, 196626, 1, 65539, 262155, 5, 6, 262156, 5, 65537, 262157, 5, 6, 262162, 0, 196608, 327692, 5, 131073, 327697, 0, 262145, 327698, 0, 131075, 327700, 4, 196610, 393235, 4, 196611, 589838, 2, 5, 589839, 2, 6 )

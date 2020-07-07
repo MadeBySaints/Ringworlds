@@ -1,8 +1,8 @@
 [gd_resource type="AnimatedTexture" load_steps=4 format=2]
 
-[ext_resource path="res://World/Tilesets/Animated Tiles/SwampWaterfallMid1.png" type="Texture" id=1]
-[ext_resource path="res://World/Tilesets/Animated Tiles/SwampWaterfallMid2.png" type="Texture" id=2]
-[ext_resource path="res://World/Tilesets/Animated Tiles/SwampWaterfallMid3.png" type="Texture" id=3]
+[ext_resource path="res://World/Tilesets/Animated Tiles/Images/SwampWaterfallMid1.png" type="Texture" id=1]
+[ext_resource path="res://World/Tilesets/Animated Tiles/Images/SwampWaterfallMid2.png" type="Texture" id=2]
+[ext_resource path="res://World/Tilesets/Animated Tiles/Images/SwampWaterfallMid3.png" type="Texture" id=3]
 
 [resource]
 frames = 3

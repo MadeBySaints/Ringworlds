@@ -1,8 +1,9 @@
 [gd_resource type="TileSet" load_steps=4 format=2]
 
-[ext_resource path="res://World/Tilesets/HouseExtWalls.png" type="Texture" id=1]
-[ext_resource path="res://World/Tilesets/HouseIntWalls.png" type="Texture" id=2]
-[ext_resource path="res://World/Tilesets/HouseRoof.png" type="Texture" id=3]
+[ext_resource path="res://World/Tilesets/Images/HouseExtWalls.png" type="Texture" id=1]
+[ext_resource path="res://World/Tilesets/Images/HouseIntWalls.png" type="Texture" id=2]
+[ext_resource path="res://World/Tilesets/Images/HouseRoof.png" type="Texture" id=3]
+
 
 [resource]
 0/name = "Panel Walls"
