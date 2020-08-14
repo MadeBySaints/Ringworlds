@@ -9,43 +9,43 @@ region = Rect2( 26, 36, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
-region = Rect2( 26, 72, 26, 36 )
+region = Rect2( 26, 36, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 72, 26, 36 )
+region = Rect2( 0, 36, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )
-region = Rect2( 52, 72, 26, 36 )
+region = Rect2( 52, 36, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
-region = Rect2( 26, 108, 26, 36 )
+region = Rect2( 26, 72, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 108, 26, 36 )
+region = Rect2( 0, 72, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 1 )
-region = Rect2( 52, 108, 26, 36 )
+region = Rect2( 52, 72, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 1 )
-region = Rect2( 26, 36, 26, 36 )
+region = Rect2( 26, 108, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 36, 26, 36 )
+region = Rect2( 26, 108, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 1 )
-region = Rect2( 52, 36, 26, 36 )
+region = Rect2( 0, 108, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 1 )
-region = Rect2( 26, 0, 26, 36 )
+region = Rect2( 52, 108, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 1 )
@@ -61,11 +61,11 @@ region = Rect2( 52, 0, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 1 )
-region = Rect2( 26, 108, 26, 36 )
+region = Rect2( 26, 72, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 1 )
-region = Rect2( 26, 72, 26, 36 )
+region = Rect2( 26, 0, 26, 36 )
 
 [sub_resource type="SpriteFrames" id=17]
 animations = [ {
@@ -76,22 +76,22 @@ animations = [ {
 }, {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 2 ), SubResource( 4 ) ],
 "loop": true,
-"name": "walkright",
+"name": "walkleft",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 5 ), SubResource( 7 ) ],
 "loop": true,
+"name": "walkright",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": true,
+"name": "idleup",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 9 ), SubResource( 11 ) ],
+"loop": true,
 "name": "walkup",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 8 ), SubResource( 10 ) ],
-"loop": true,
-"name": "walkleft",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 11 ) ],
-"loop": true,
-"name": "idledown",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 12 ), SubResource( 14 ) ],
@@ -101,28 +101,26 @@ animations = [ {
 }, {
 "frames": [ SubResource( 15 ) ],
 "loop": true,
-"name": "idleup",
+"name": "idleright",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 16 ) ],
 "loop": true,
-"name": "idleright",
+"name": "idledown",
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=18]
-radius = 8.0
-height = 4.0
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 6, 6 )
 
 [node name="Fighter Skin" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -18 )
-skew = 4.37114e-08
 frames = SubResource( 17 )
-animation = "idleright"
+animation = "idledown"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -10 )
+position = Vector2( 0, -7 )
 shape = SubResource( 18 )
