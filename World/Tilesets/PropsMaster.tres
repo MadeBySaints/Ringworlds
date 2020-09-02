@@ -4,11 +4,11 @@
 [ext_resource path="res://World/Tilesets/Images/Props_Large_Master.png" type="Texture" id=2]
 
 [resource]
-0/name = "Props_Small_Master.png 0"
+0/name = "Props_Small"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 320, 112 )
+0/region = Rect2( 0, 0, 320, 208 )
 0/tile_mode = 2
 0/autotile/icon_coordinate = Vector2( 0, 0 )
 0/autotile/tile_size = Vector2( 16, 16 )
