@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://World/Tilesets/HouseParts.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=2]
 [ext_resource path="res://World/Tilesets/Terrains.tres" type="TileSet" id=3]
+[ext_resource path="res://Core/Actors/Animal/Sheep.tscn" type="PackedScene" id=4]
 
 [sub_resource type="TileSet" id=1]
 
@@ -60,3 +61,6 @@ tile_data = PoolIntArray( 393232, 1, 0 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
+
+[node name="Sheep" parent="." instance=ExtResource( 4 )]
+position = Vector2( 327.1, 282.98 )

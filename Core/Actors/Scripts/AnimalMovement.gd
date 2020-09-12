@@ -1,50 +1,51 @@
 extends KinematicBody2D
 
-export (int) var speed = 100
+enum {
+	IDLE,
+	NEW_DIR,
+	MOVE
+}
 
-var velocity = Vector2()
-
-var default_dir = 0
-#0 = idle 1=U 2=D 3=L 4=R
-
-var wait = 80
-var move = randi() % 100 + 1
-var dir = 0
-
-func rand_move():
-	velocity = Vector2()
-	if move == 0:
-		dir = 0
-	if move > 0 and move < 25:
-		velocity.y -= 1 #Up
-		dir = 1
-		rot_col()
-	if move > 24 and move < 50:
-		velocity.y += 1 #Down
-		dir = 2
-		rot_col()
-	if move > 50 and move < 75:
-		velocity.x -= 1 #Left
-		dir = 3
-		rot_col()
-	if move > 75:
-		velocity.x += 1 #Right
-		dir = 4
-		rot_col()
-		
-	velocity = velocity.normalized() * speed
-	
-func rot_col():
-	if dir == 1 or dir == 3:
-		Transform2D(0, velocity)
-	if dir == 2 or dir == 4:
-		Transform2D(90, velocity)
-	if dir == 0:
-		print("animal idle")
-
-func _physics_process(delta):
-	rand_move()
-	velocity = move_and_slide(velocity)
+const SPEED = 25
+var state = IDLE
+var dir = Vector2.DOWN
 
 func _ready():
-	pass
+	randomize()
+	
+func _process(delta):
+	match state:
+		IDLE:
+			pass
+			
+		NEW_DIR:
+			dir = choose([Vector2.UP, Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT])
+#			if dir == Vector2.UP or dir == Vector2.DOWN:
+#				$CollisionShape2D.Transform2D(0, dir)
+#			if dir == Vector2.LEFT or dir == Vector2.RIGHT:
+#				$CollisionShape2D.Transform2D(90, dir)
+			state = choose([IDLE, MOVE])
+			
+#			if state == IDLE:
+#				print("animal idle")
+		MOVE:
+			move(delta)
+
+#	if dir == Vector2.UP:
+#		$AnimatedSprite.animation = "idleup" #walkup - change after adding
+#	if dir == Vector2.DOWN:
+#		$AnimatedSprite.animation = "idledown"
+#	if dir == Vector2.LEFT:
+#		$AnimatedSprite.animation = "idleleft"
+#	if dir == Vector2.RIGHT:
+#		$AnimatedSprite.animation = "idleright"
+func move(delta):
+	position += dir * SPEED * delta
+	
+func choose(array):
+	array.shuffle()
+	return array.front()
+	
+func _on_Timer_timeout():
+	$Timer.wait_time = choose([0.1, 0.3])
+	state = choose([IDLE, NEW_DIR, MOVE])
