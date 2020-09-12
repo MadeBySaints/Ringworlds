@@ -1,15 +1,16 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Core/Player/BasicPlayerSkins.png" type="Texture" id=1]
 [ext_resource path="res://Core/Actors/Scripts/AnimalMovement.gd" type="Script" id=2]
+[ext_resource path="res://Core/Actors/Images/Sheep.png" type="Texture" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 1 )
-region = Rect2( 26, 36, 26, 36 )
+atlas = ExtResource( 3 )
+region = Rect2( 48, 48, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 1 )
-region = Rect2( 26, 72, 26, 36 )
+atlas = ExtResource( 3 )
+region = Rect2( 48, 96, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
@@ -24,12 +25,12 @@ atlas = ExtResource( 1 )
 region = Rect2( 52, 108, 26, 36 )
 
 [sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 1 )
-region = Rect2( 26, 108, 26, 36 )
+atlas = ExtResource( 3 )
+region = Rect2( 48, 144, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 1 )
-region = Rect2( 26, 0, 26, 36 )
+atlas = ExtResource( 3 )
+region = Rect2( 48, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 1 )
@@ -110,17 +111,19 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=18]
-extents = Vector2( 6, 6 )
+[sub_resource type="CapsuleShape2D" id=18]
+radius = 2.62041
+height = 2.7915
 
-[node name="Fighter Skin" type="KinematicBody2D"]
+[node name="Sheep" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -18 )
+position = Vector2( 0, -7 )
+scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 17 )
 animation = "idledown"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -7 )
+position = Vector2( 0, -5.11496 )
 shape = SubResource( 18 )

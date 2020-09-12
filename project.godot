@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Ringworlds"
+run/main_scene="res://World/Maps/TestMap.tscn"
 config/icon="res://Ringworld128x128.png"
 
 [display]
