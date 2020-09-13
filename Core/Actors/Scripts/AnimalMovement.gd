@@ -7,7 +7,7 @@ enum {
 }
 
 const SPEED = 25
-var state = IDLE
+var state = NEW_DIR
 var dir = Vector2.DOWN
 
 func _ready():
@@ -20,10 +20,10 @@ func _process(delta):
 			
 		NEW_DIR:
 			dir = choose([Vector2.UP, Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT])
-#			if dir == Vector2.UP or dir == Vector2.DOWN:
-#				$CollisionShape2D.Transform2D(0, dir)
-#			if dir == Vector2.LEFT or dir == Vector2.RIGHT:
-#				$CollisionShape2D.Transform2D(90, dir)
+			if dir == Vector2.UP or dir == Vector2.DOWN:
+				$CollisionShape2D.set_rotation_degrees(0)
+			if dir == Vector2.LEFT or dir == Vector2.RIGHT:
+				$CollisionShape2D.set_rotation_degrees(90)
 			state = choose([IDLE, MOVE])
 			
 #			if state == IDLE:
@@ -47,5 +47,5 @@ func choose(array):
 	return array.front()
 	
 func _on_Timer_timeout():
-	$Timer.wait_time = choose([0.1, 0.3])
+	$Timer.wait_time = choose([1.0, 1.5])
 	state = choose([IDLE, NEW_DIR, MOVE])
