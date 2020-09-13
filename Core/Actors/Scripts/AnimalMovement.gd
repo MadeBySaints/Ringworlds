@@ -7,7 +7,7 @@ enum {
 }
 
 const SPEED = 25
-var state = NEW_DIR
+var state = IDLE
 var dir = Vector2.DOWN
 
 func _ready():
@@ -26,10 +26,28 @@ func _process(delta):
 				$CollisionShape2D.set_rotation_degrees(90)
 			state = choose([IDLE, MOVE])
 			
+			if state == IDLE and dir == Vector2.UP:
+				$AnimatedSprite.play("idleup")
+			if state == IDLE and dir == Vector2.DOWN:
+				$AnimatedSprite.play("idledown")
+			if state == IDLE and dir == Vector2.LEFT:
+				$AnimatedSprite.play("idleleft")
+			if state == IDLE and dir == Vector2.RIGHT:
+				$AnimatedSprite.play("idleright")
+			
 #			if state == IDLE:
 #				print("animal idle")
 		MOVE:
 			move(delta)
+			if dir == Vector2.UP:
+				$AnimatedSprite.play("walkup")
+			if dir == Vector2.DOWN:
+				$AnimatedSprite.play("walkdown")
+			if dir == Vector2.LEFT:
+				$AnimatedSprite.play("walkleft")
+			if dir == Vector2.RIGHT:
+				$AnimatedSprite.play("walkright")
+				
 
 #	if dir == Vector2.UP:
 #		$AnimatedSprite.animation = "idleup" #walkup - change after adding
