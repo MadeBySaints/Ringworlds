@@ -62,5 +62,7 @@ tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
 
-[node name="Sheep" parent="." instance=ExtResource( 4 )]
-position = Vector2( 459.697, 174.762 )
+[node name="Sheep Farm" type="YSort" parent="."]
+
+[node name="Sheep96" parent="Sheep Farm" instance=ExtResource( 4 )]
+position = Vector2( 210.686, 141.584 )
