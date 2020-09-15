@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://World/Tilesets/HouseParts.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=2]
 [ext_resource path="res://World/Tilesets/Terrains.tres" type="TileSet" id=3]
 [ext_resource path="res://Core/Actors/Animal/Sheep.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Core/Actors/Enemy/Red Shroom.tscn" type="PackedScene" id=5]
 
 [sub_resource type="TileSet" id=1]
 
@@ -66,3 +67,8 @@ format = 1
 
 [node name="Sheep96" parent="Sheep Farm" instance=ExtResource( 4 )]
 position = Vector2( 210.686, 141.584 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Red Shroom3" parent="YSort" instance=ExtResource( 5 )]
+position = Vector2( 347.732, 261.571 )

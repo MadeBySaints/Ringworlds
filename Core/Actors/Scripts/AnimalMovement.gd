@@ -1,16 +1,9 @@
-extends KinematicBody2D
+extends Area2D
 
 enum Action {
 	IDLE,
 	NEW_DIR,
 	MOVE
-}
-
-enum Vec {
-	UP,
-	DOWN,
-	LEFT,
-	RIGHT
 }
 
 const SPEED = 50
@@ -36,16 +29,6 @@ func _physics_process(delta):
 				$CollisionShape2D.set_rotation_degrees(90)
 			state = choose([Action.IDLE, Action.MOVE])
 			
-			#switch to idle if animal not moving
-			if state == Action.IDLE and last_dir == Vector2.UP:
-				$AnimatedSprite.play("idleup")
-			if state == Action.IDLE and last_dir == Vector2.DOWN:
-				$AnimatedSprite.play("idledown")
-			if state == Action.IDLE and last_dir == Vector2.LEFT:
-				$AnimatedSprite.play("idleleft")
-			if state == Action.IDLE and last_dir == Vector2.RIGHT:
-				$AnimatedSprite.play("idleright")
-			
 		Action.MOVE:
 			move(delta)
 			
@@ -58,8 +41,18 @@ func _physics_process(delta):
 			if dir == Vector2.RIGHT:
 				$AnimatedSprite.play("walkright")
 				
+			#switch to idle if animal not moving
+			if state == Action.IDLE and last_dir == Vector2.UP:
+				$AnimatedSprite.play("idleup")
+			if state == Action.IDLE and last_dir == Vector2.DOWN:
+				$AnimatedSprite.play("idledown")
+			if state == Action.IDLE and last_dir == Vector2.LEFT:
+				$AnimatedSprite.play("idleleft")
+			if state == Action.IDLE and last_dir == Vector2.RIGHT:
+				$AnimatedSprite.play("idleright")
+				
 func move(delta):
-	move_and_collide(dir * SPEED * delta)
+	position += dir * SPEED * delta
 	
 func choose(array):
 	array.shuffle()
