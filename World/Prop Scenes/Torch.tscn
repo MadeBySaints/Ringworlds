@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Tilesets/Images/Props_Small_Master.png" type="Texture" id=2]
 [ext_resource path="res://World/Tilesets/Images/RadiusLight.png" type="Texture" id=3]
+[ext_resource path="res://World/Prop Scenes/TorchLight.gd" type="Script" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0125
@@ -28,7 +29,7 @@ animations = [ {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 4 ), SubResource( 3 ) ],
 "loop": true,
 "name": "flicker",
-"speed": 5.0
+"speed": 2.0
 } ]
 
 [node name="Torch" type="Area2D"]
@@ -49,9 +50,11 @@ light_mask = 0
 position = Vector2( 0, -32 )
 frames = SubResource( 6 )
 animation = "flicker"
-frame = 4
+frame = 5
 playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
 position = Vector2( 0, -32 )
 texture = ExtResource( 3 )
+script = ExtResource( 4 )
+[connection signal="frame_changed" from="AnimatedSprite" to="Light2D" method="_on_AnimatedSprite_frame_changed"]
