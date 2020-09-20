@@ -33,6 +33,7 @@ animations = [ {
 } ]
 
 [node name="Torch" type="Area2D"]
+script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -32 )
@@ -50,11 +51,11 @@ light_mask = 0
 position = Vector2( 0, -32 )
 frames = SubResource( 6 )
 animation = "flicker"
-frame = 5
+frame = 3
 playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
 position = Vector2( 0, -32 )
 texture = ExtResource( 3 )
-script = ExtResource( 4 )
-[connection signal="frame_changed" from="AnimatedSprite" to="Light2D" method="_on_AnimatedSprite_frame_changed"]
+shadow_enabled = true
+[connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
