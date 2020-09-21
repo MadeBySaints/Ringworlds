@@ -1,4 +1,4 @@
-extends Area2D
+extends KinematicBody2D
 
 enum Action {
 	IDLE,
@@ -21,8 +21,6 @@ func _physics_process(delta):
 			
 		Action.NEW_DIR:
 			dir = choose([Vector2.UP, Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT])
-			#update recent direction
-			last_dir = dir
 			if dir == Vector2.UP or dir == Vector2.DOWN:
 				$CollisionShape2D.set_rotation_degrees(0)
 			if dir == Vector2.LEFT or dir == Vector2.RIGHT:
@@ -40,6 +38,8 @@ func _physics_process(delta):
 				$AnimatedSprite.play("walkleft")
 			if dir == Vector2.RIGHT:
 				$AnimatedSprite.play("walkright")
+			#update recent direction
+			last_dir = dir
 				
 			#switch to idle if animal not moving
 			if state == Action.IDLE and last_dir == Vector2.UP:
@@ -52,7 +52,7 @@ func _physics_process(delta):
 				$AnimatedSprite.play("idleright")
 				
 func move(delta):
-	position += dir * SPEED * delta
+	move_and_slide(dir * SPEED)
 	
 func choose(array):
 	array.shuffle()
