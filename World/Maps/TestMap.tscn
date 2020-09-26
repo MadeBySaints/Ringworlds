@@ -87,38 +87,5 @@ position = Vector2( 382.863, 229.74 )
 [node name="Sheep96" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
 position = Vector2( 250.418, 155.183 )
 
-[node name="Sheep97" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 315.167, 98.0025 )
-
-[node name="Sheep98" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 283.213, 87.0708 )
-
-[node name="Sheep99" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 216.783, 178.729 )
-
-[node name="Sheep100" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 163.806, 76.1391 )
-
-[node name="Sheep101" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 200.806, 72.7756 )
-
-[node name="Sheep102" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 244.532, 56.7985 )
-
-[node name="Sheep103" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 228.555, 107.252 )
-
-[node name="Sheep104" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 183.147, 114.82 )
-
-[node name="Sheep105" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 176.42, 151.82 )
-
-[node name="Sheep106" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 160.443, 114.82 )
-
-[node name="Sheep107" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 229.396, 144.252 )
-
 [node name="Fighter Skin" parent="Kinematic Bodies" instance=ExtResource( 7 )]
 position = Vector2( 250.252, 85.7855 )
