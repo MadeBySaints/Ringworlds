@@ -2,7 +2,7 @@
 
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Tilesets/Images/Props_Small_Master.png" type="Texture" id=2]
-[ext_resource path="res://World/Tilesets/Images/RadiusLight.png" type="Texture" id=3]
+[ext_resource path="res://World/Prop Scenes/RadiusLight.png" type="Texture" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0125
@@ -50,7 +50,7 @@ light_mask = 0
 position = Vector2( 0, -32 )
 frames = SubResource( 6 )
 animation = "flicker"
-frame = 3
+frame = 1
 playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
