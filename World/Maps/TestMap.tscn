@@ -69,10 +69,15 @@ format = 1
 [node name="Lights" type="Node" parent="."]
 
 [node name="Torch" parent="Lights" instance=ExtResource( 6 )]
-position = Vector2( 284.353, 242.547 )
+position = Vector2( 113, 139 )
+input_pickable = false
+
+[node name="Torch2" parent="Lights" instance=ExtResource( 6 )]
+position = Vector2( 289, 170 )
 input_pickable = false
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.929412, 0.929412, 0.929412, 1 )
 script = ExtResource( 8 )
 
 [node name="Kinematic Bodies" type="YSort" parent="."]
@@ -80,7 +85,7 @@ script = ExtResource( 8 )
 [node name="Enemies" type="YSort" parent="Kinematic Bodies"]
 
 [node name="Red Shroom8" parent="Kinematic Bodies/Enemies" instance=ExtResource( 5 )]
-position = Vector2( 382.863, 229.74 )
+position = Vector2( 757, -51 )
 
 [node name="Sheep Farm" type="YSort" parent="Kinematic Bodies"]
 
