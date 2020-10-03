@@ -8,10 +8,11 @@ func _ready():
 	pass
 	
 func rot():
-	if anim.rotation_degrees < 359.9:
+	if anim.rotation_degrees < 359:
 		anim.set_rotation_degrees(anim.rotation_degrees + 1)
-	elif anim.rotation_degrees == 359.9:
+	elif anim.rotation_degrees >= 359.9:
 		anim.set_rotation_degrees(-360)
+	print(anim.rotation_degrees)
 	
 func _process(_delta):
 	rot()

@@ -77,7 +77,7 @@ position = Vector2( 289, 170 )
 input_pickable = false
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.278431, 0.278431, 0.278431, 1 )
+color = Color( 0.407843, 0.407843, 0.407843, 1 )
 script = ExtResource( 8 )
 
 [node name="Kinematic Bodies" type="YSort" parent="."]
