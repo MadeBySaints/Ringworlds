@@ -1,0 +1,92 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://World/Tilesets/Images/Foliage_Large_Master.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 6.0
+
+[node name="Green Pine Small Cluster" type="YSort"]
+
+[node name="Green Pine" type="Node2D" parent="."]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine"]
+position = Vector2( 0, -18 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Green Pine2" type="Node2D" parent="."]
+position = Vector2( 32.0263, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine2"]
+position = Vector2( 0, -18 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Green Pine3" type="Node2D" parent="."]
+position = Vector2( 16, -16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine3"]
+position = Vector2( 0, -18 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Green Pine4" type="Node2D" parent="."]
+position = Vector2( 0, -32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine4"]
+position = Vector2( 0, -18 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Green Pine5" type="Node2D" parent="."]
+position = Vector2( 32.0263, -32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine5"]
+position = Vector2( 0, -18 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine5/StaticBody2D"]
+shape = SubResource( 1 )
