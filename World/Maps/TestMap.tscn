@@ -66,31 +66,31 @@ tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
 
-[node name="Lights" type="Node" parent="."]
-
-[node name="Torch" parent="Lights" instance=ExtResource( 6 )]
-position = Vector2( 113, 139 )
-input_pickable = false
-
-[node name="Torch2" parent="Lights" instance=ExtResource( 6 )]
-position = Vector2( 289, 170 )
-input_pickable = false
-
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0.407843, 0.407843, 0.407843, 1 )
 script = ExtResource( 8 )
 
-[node name="Kinematic Bodies" type="YSort" parent="."]
+[node name="Ysorted Objects" type="YSort" parent="."]
 
-[node name="Enemies" type="YSort" parent="Kinematic Bodies"]
+[node name="Enemies" type="YSort" parent="Ysorted Objects"]
 
-[node name="Red Shroom8" parent="Kinematic Bodies/Enemies" instance=ExtResource( 5 )]
-position = Vector2( 757, -51 )
+[node name="Red Shroom8" parent="Ysorted Objects/Enemies" instance=ExtResource( 5 )]
+position = Vector2( 659, 124 )
 
-[node name="Sheep Farm" type="YSort" parent="Kinematic Bodies"]
+[node name="Sheep Farm" type="YSort" parent="Ysorted Objects"]
 
-[node name="Sheep96" parent="Kinematic Bodies/Sheep Farm" instance=ExtResource( 4 )]
+[node name="Sheep96" parent="Ysorted Objects/Sheep Farm" instance=ExtResource( 4 )]
 position = Vector2( 250.418, 155.183 )
 
-[node name="Fighter Skin" parent="Kinematic Bodies" instance=ExtResource( 7 )]
+[node name="Fighter Skin" parent="Ysorted Objects" instance=ExtResource( 7 )]
 position = Vector2( 250.252, 85.7855 )
+
+[node name="Lights" type="Node" parent="Ysorted Objects"]
+
+[node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( 137, 168 )
+input_pickable = false
+
+[node name="Torch2" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( 289, 170 )
+input_pickable = false
