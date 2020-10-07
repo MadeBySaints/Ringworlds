@@ -1,0 +1,773 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/Foliage_Large_Master.png-3c77e1ff6fd63ef017c85795e4b6fed7.stex"
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 6.0
+
+[node name="Green Pine Large Cluster" type="YSort"]
+
+[node name="Green Pine" type="Node2D" parent="."]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine2" type="Node2D" parent="."]
+position = Vector2( 32.0263, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine2"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine2/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine3" type="Node2D" parent="."]
+position = Vector2( 16, -16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine3"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine3/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine4" type="Node2D" parent="."]
+position = Vector2( 0, -32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine4"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine4/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine5" type="Node2D" parent="."]
+position = Vector2( 32, -32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine5"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine5/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine6" type="Node2D" parent="."]
+position = Vector2( 48, -16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine6"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine6/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine7" type="Node2D" parent="."]
+position = Vector2( -16, -16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine7"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine7/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine8" type="Node2D" parent="."]
+position = Vector2( 16, -48 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine8"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine8/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine9" type="Node2D" parent="."]
+position = Vector2( 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine9"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine9/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine10" type="Node2D" parent="."]
+position = Vector2( 48.0263, -48 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine10"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine10/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine11" type="Node2D" parent="."]
+position = Vector2( 80.0526, -48 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine11"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine11/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine12" type="Node2D" parent="."]
+position = Vector2( 64.0263, -64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine12"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine12/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine13" type="Node2D" parent="."]
+position = Vector2( 48.0263, -80 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine13"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine13/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine14" type="Node2D" parent="."]
+position = Vector2( 80.0263, -80 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine14"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine14/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine15" type="Node2D" parent="."]
+position = Vector2( 96.0263, -64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine15"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine15/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine16" type="Node2D" parent="."]
+position = Vector2( 32.0263, -64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine16"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine16/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine17" type="Node2D" parent="."]
+position = Vector2( 64.0263, -96 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine17"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine17/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine18" type="Node2D" parent="."]
+position = Vector2( 64.0263, -32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine18"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine18/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine19" type="Node2D" parent="."]
+position = Vector2( 0, -96 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine19"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine19/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine20" type="Node2D" parent="."]
+position = Vector2( 32.0263, -96 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine20"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine20"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine20/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine21" type="Node2D" parent="."]
+position = Vector2( 16, -112 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine21"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine21"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine21/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine22" type="Node2D" parent="."]
+position = Vector2( 0, -128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine22"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine22"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine22/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine23" type="Node2D" parent="."]
+position = Vector2( 32, -128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine23"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine23"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine23/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine24" type="Node2D" parent="."]
+position = Vector2( 48, -112 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine24"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine24"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine24/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine25" type="Node2D" parent="."]
+position = Vector2( -16, -112 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine25"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine25"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine25/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine26" type="Node2D" parent="."]
+position = Vector2( 16, -144 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine26"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine26"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine26/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine27" type="Node2D" parent="."]
+position = Vector2( 16, -80 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine27"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine27"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine27/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine28" type="Node2D" parent="."]
+position = Vector2( 96, -96 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine28"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine28"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine28/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine29" type="Node2D" parent="."]
+position = Vector2( 128.026, -96 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine29"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine29"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine29/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine30" type="Node2D" parent="."]
+position = Vector2( 112, -112 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine30"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine30"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine30/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine31" type="Node2D" parent="."]
+position = Vector2( 96, -128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine31"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine31"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine31/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine32" type="Node2D" parent="."]
+position = Vector2( 128, -128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine32"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine32"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine32/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine33" type="Node2D" parent="."]
+position = Vector2( 144, -112 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine33"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine33"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine33/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine34" type="Node2D" parent="."]
+position = Vector2( 80, -112 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine34"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine34"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine34/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine35" type="Node2D" parent="."]
+position = Vector2( 112, -144 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine35"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine35"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine35/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine36" type="Node2D" parent="."]
+position = Vector2( 112, -80 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine36"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine36"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine36/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine37" type="Node2D" parent="."]
+position = Vector2( 96.0526, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine37"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine37"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine37/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine38" type="Node2D" parent="."]
+position = Vector2( 128.079, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine38"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine38"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine38/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine39" type="Node2D" parent="."]
+position = Vector2( 112.053, -16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine39"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine39"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine39/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine40" type="Node2D" parent="."]
+position = Vector2( 96.0526, -32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine40"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine40"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine40/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine41" type="Node2D" parent="."]
+position = Vector2( 128.053, -32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine41"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine41"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine41/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine42" type="Node2D" parent="."]
+position = Vector2( 144.053, -16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine42"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine42"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine42/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine43" type="Node2D" parent="."]
+position = Vector2( 80.0526, -16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine43"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine43"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine43/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine44" type="Node2D" parent="."]
+position = Vector2( 112.053, -48 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine44"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine44"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine44/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Green Pine45" type="Node2D" parent="."]
+position = Vector2( 112.053, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Green Pine45"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine45"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine45/StaticBody2D"]
+shape = SubResource( 2 )

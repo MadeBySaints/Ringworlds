@@ -1,9 +1,7 @@
 extends CanvasModulate
 
-var col = get_color()
-
 enum colors {
-	FULLBRIGHT,
+	DEFAULT,
 	DUSK,
 	DAWN,
 	RED,
@@ -15,6 +13,11 @@ enum colors {
 	VIOLET
 }
 
+var col = get_color()
+
+export (int) var multiplier = 1
+#multiplier for wait time... 1 = 1 minute
+
 export (int) var day_length
 export (int) var dusk_length
 export (int) var dawn_length
@@ -25,7 +28,7 @@ export (int) var trans_length
 #transition length between cycles
 
 
-#var fullbright = Color(1, 1, 1)
+#var default = Color(1, 1, 1)
 #var dusk = Color(0.407843, 0.407843, 0.407843)
 #var dawn = Color(0.54902, 0.54902, 0.54902)
 #var reddusk = Color(0.734375, 0.327026, 0.327026)
