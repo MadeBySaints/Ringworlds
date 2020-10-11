@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [sub_resource type="StreamTexture" id=1]
 load_path = "res://.import/Foliage_Large_Master.png-3c77e1ff6fd63ef017c85795e4b6fed7.stex"
@@ -6,10 +6,18 @@ load_path = "res://.import/Foliage_Large_Master.png-3c77e1ff6fd63ef017c85795e4b6
 [sub_resource type="CircleShape2D" id=2]
 radius = 6.0
 
-[node name="Green Pine Small Cluster" type="YSort"]
+[sub_resource type="OccluderPolygon2D" id=3]
+closed = false
+cull_mode = 2
+polygon = PoolVector2Array( -9, -32, -16, -10, -12, -4, -7, -2, 7, -2, 12, -4, 16, -10, 9, -32 )
+
+[sub_resource type="OccluderPolygon2D" id=4]
+closed = false
+polygon = PoolVector2Array( -9, -32, -6, -36, 0, -42, 6, -36, 9, -32 )
+
+[node name="Green Pine Cluster Occluded" type="YSort"]
 
 [node name="Green Pine" type="Node2D" parent="."]
-position = Vector2( 32, 0 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -25,8 +33,14 @@ region_rect = Rect2( 48, 0, 32, 48 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine/StaticBody2D"]
 shape = SubResource( 2 )
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Green Pine"]
+occluder = SubResource( 3 )
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Green Pine"]
+occluder = SubResource( 4 )
+
 [node name="Green Pine2" type="Node2D" parent="."]
-position = Vector2( 48.0263, -16 )
+position = Vector2( 32, 0 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -42,8 +56,14 @@ region_rect = Rect2( 48, 0, 32, 48 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine2/StaticBody2D"]
 shape = SubResource( 2 )
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Green Pine2"]
+occluder = SubResource( 3 )
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Green Pine2"]
+occluder = SubResource( 4 )
+
 [node name="Green Pine3" type="Node2D" parent="."]
-position = Vector2( 32, -32 )
+position = Vector2( 0, -32 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -59,8 +79,14 @@ region_rect = Rect2( 48, 0, 32, 48 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine3/StaticBody2D"]
 shape = SubResource( 2 )
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Green Pine3"]
+occluder = SubResource( 3 )
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Green Pine3"]
+occluder = SubResource( 4 )
+
 [node name="Green Pine4" type="Node2D" parent="."]
-position = Vector2( 16, -48 )
+position = Vector2( 32, -32 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -76,8 +102,14 @@ region_rect = Rect2( 48, 0, 32, 48 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine4/StaticBody2D"]
 shape = SubResource( 2 )
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Green Pine4"]
+occluder = SubResource( 3 )
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Green Pine4"]
+occluder = SubResource( 4 )
+
 [node name="Green Pine5" type="Node2D" parent="."]
-position = Vector2( 48.0263, -48 )
+position = Vector2( 16, -16 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -93,70 +125,8 @@ region_rect = Rect2( 48, 0, 32, 48 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine5/StaticBody2D"]
 shape = SubResource( 2 )
 
-[node name="Green Pine6" type="Node2D" parent="."]
-position = Vector2( 64.0263, -32 )
-__meta__ = {
-"_edit_group_": true
-}
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Green Pine5"]
+occluder = SubResource( 3 )
 
-[node name="Sprite" type="Sprite" parent="Green Pine6"]
-position = Vector2( 0, -18 )
-texture = SubResource( 1 )
-region_enabled = true
-region_rect = Rect2( 48, 0, 32, 48 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine6"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine6/StaticBody2D"]
-shape = SubResource( 2 )
-
-[node name="Green Pine7" type="Node2D" parent="."]
-position = Vector2( 0, -32 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Green Pine7"]
-position = Vector2( 0, -18 )
-texture = SubResource( 1 )
-region_enabled = true
-region_rect = Rect2( 48, 0, 32, 48 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine7"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine7/StaticBody2D"]
-shape = SubResource( 2 )
-
-[node name="Green Pine8" type="Node2D" parent="."]
-position = Vector2( 32, -64 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Green Pine8"]
-position = Vector2( 0, -18 )
-texture = SubResource( 1 )
-region_enabled = true
-region_rect = Rect2( 48, 0, 32, 48 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine8"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine8/StaticBody2D"]
-shape = SubResource( 2 )
-
-[node name="Green Pine9" type="Node2D" parent="."]
-position = Vector2( 16, -16 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Green Pine9"]
-position = Vector2( 0, -18 )
-texture = SubResource( 1 )
-region_enabled = true
-region_rect = Rect2( 48, 0, 32, 48 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Green Pine9"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Green Pine9/StaticBody2D"]
-shape = SubResource( 2 )
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Green Pine5"]
+occluder = SubResource( 4 )

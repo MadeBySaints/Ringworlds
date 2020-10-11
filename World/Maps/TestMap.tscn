@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://World/Tilesets/HouseParts.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=2]
@@ -9,8 +9,7 @@
 [ext_resource path="res://Core/Player/Player_Fighter.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Core/Scripts/CanvasModulate.gd" type="Script" id=8]
 [ext_resource path="res://World/Prop Scenes/Tree_GreenPine.tscn" type="PackedScene" id=9]
-[ext_resource path="res://World/Prop Scenes/Tree_GreenPine_SmallCluster.tscn" type="PackedScene" id=10]
-[ext_resource path="res://World/Prop Scenes/Tree_GreenPine_LargeCluster.tscn" type="PackedScene" id=11]
+[ext_resource path="res://World/Prop Scenes/Tree_GreenPine_Cluster_O_SM.tscn" type="PackedScene" id=12]
 
 [node name="Node2D" type="Node2D"]
 
@@ -66,8 +65,37 @@ tile_data = PoolIntArray( 262174, 0, 196625, 262175, 0, 196625, 262176, 0, 19662
 
 [node name="Ysorted Objects" type="YSort" parent="."]
 
+[node name="Lights" type="YSort" parent="Ysorted Objects"]
+
+[node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( 137, 168 )
+input_pickable = false
+
+[node name="Torch2" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( 250, 116 )
+input_pickable = false
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="Torch3" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( 549, 157 )
+input_pickable = false
+
+[node name="Torch6" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( 903, 180 )
+input_pickable = false
+
+[node name="Torch4" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( 726, 647 )
+input_pickable = false
+
+[node name="Torch5" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( -207, 168 )
+input_pickable = false
+gravity = 38.085
+
 [node name="Player Fighter" parent="Ysorted Objects" instance=ExtResource( 7 )]
-position = Vector2( 773, 522 )
+position = Vector2( 773, 530 )
 
 [node name="Enemies" type="YSort" parent="Ysorted Objects"]
 
@@ -79,63 +107,16 @@ position = Vector2( 659, 124 )
 [node name="Sheep96" parent="Ysorted Objects/Sheep Farm" instance=ExtResource( 4 )]
 position = Vector2( 250.418, 155.183 )
 
-[node name="Lights" type="YSort" parent="Ysorted Objects"]
-
-[node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
-position = Vector2( 137, 168 )
-input_pickable = false
-
-[node name="Torch2" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
-position = Vector2( 289, 170 )
-input_pickable = false
-
-[node name="Torch3" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
-position = Vector2( 549, 157 )
-input_pickable = false
-
-[node name="Torch6" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
-position = Vector2( 903, 180 )
-input_pickable = false
-
-[node name="Torch4" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
-position = Vector2( 760, 630 )
-input_pickable = false
-
-[node name="Torch5" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
-position = Vector2( 416, 164 )
-input_pickable = false
-
 [node name="Foliage" type="YSort" parent="Ysorted Objects"]
 
-[node name="Green Pine Large Cluster" parent="Ysorted Objects/Foliage" instance=ExtResource( 11 )]
-position = Vector2( 480, 428 )
-
-[node name="Green Pine Large Cluster2" parent="Ysorted Objects/Foliage" instance=ExtResource( 11 )]
-position = Vector2( 624, 476 )
-
-[node name="Green Pine Large Cluster3" parent="Ysorted Objects/Foliage" instance=ExtResource( 11 )]
-position = Vector2( 672, 332 )
-
-[node name="Green Pine Large Cluster4" parent="Ysorted Objects/Foliage" instance=ExtResource( 11 )]
-position = Vector2( 864, 524 )
-
-[node name="Green Pine Large Cluster6" parent="Ysorted Objects/Foliage" instance=ExtResource( 11 )]
-position = Vector2( 1056, 428 )
-
-[node name="Green Pine Large Cluster5" parent="Ysorted Objects/Foliage" instance=ExtResource( 11 )]
-position = Vector2( 912, 380 )
-
-[node name="Green Pine Small Cluster" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
-position = Vector2( 1121, 238 )
-
-[node name="Green Pine Small Cluster2" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
-position = Vector2( 720, 188 )
+[node name="Node" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 364, 246 )
 
 [node name="Green Pine" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
-position = Vector2( 746, 601 )
+position = Vector2( 760, 601 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.262745, 0.254902, 0.254902, 1 )
+color = Color( 0.192157, 0.180392, 0.180392, 1 )
 script = ExtResource( 8 )
 
 [node name="Timer" type="Timer" parent="CanvasModulate"]

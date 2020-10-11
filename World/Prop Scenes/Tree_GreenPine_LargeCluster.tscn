@@ -9,6 +9,7 @@ radius = 6.0
 [node name="Green Pine Large Cluster" type="YSort"]
 
 [node name="Green Pine" type="Node2D" parent="."]
+position = Vector2( 16, -16 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -25,7 +26,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine2" type="Node2D" parent="."]
-position = Vector2( 32.0263, 0 )
+position = Vector2( 48.0263, -16 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -42,7 +43,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine3" type="Node2D" parent="."]
-position = Vector2( 16, -16 )
+position = Vector2( 32, -32 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -59,7 +60,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine4" type="Node2D" parent="."]
-position = Vector2( 0, -32 )
+position = Vector2( 16, -48 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -76,7 +77,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine5" type="Node2D" parent="."]
-position = Vector2( 32, -32 )
+position = Vector2( 48, -48 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -93,7 +94,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine6" type="Node2D" parent="."]
-position = Vector2( 48, -16 )
+position = Vector2( 64, -32 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -110,7 +111,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine7" type="Node2D" parent="."]
-position = Vector2( -16, -16 )
+position = Vector2( 0, -32 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -127,7 +128,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine8" type="Node2D" parent="."]
-position = Vector2( 16, -48 )
+position = Vector2( 32, -64 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -144,7 +145,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine9" type="Node2D" parent="."]
-position = Vector2( 16, 16 )
+position = Vector2( 32, 0 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -161,7 +162,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine10" type="Node2D" parent="."]
-position = Vector2( 48.0263, -48 )
+position = Vector2( 64.0263, -64 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -178,7 +179,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine11" type="Node2D" parent="."]
-position = Vector2( 80.0526, -48 )
+position = Vector2( 96.0526, -64 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -195,7 +196,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine12" type="Node2D" parent="."]
-position = Vector2( 64.0263, -64 )
+position = Vector2( 80.0263, -80 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -212,7 +213,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine13" type="Node2D" parent="."]
-position = Vector2( 48.0263, -80 )
+position = Vector2( 64.0263, -96 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -229,7 +230,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine14" type="Node2D" parent="."]
-position = Vector2( 80.0263, -80 )
+position = Vector2( 96.0263, -96 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -246,7 +247,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine15" type="Node2D" parent="."]
-position = Vector2( 96.0263, -64 )
+position = Vector2( 112.026, -80 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -263,7 +264,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine16" type="Node2D" parent="."]
-position = Vector2( 32.0263, -64 )
+position = Vector2( 48.0263, -80 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -280,7 +281,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine17" type="Node2D" parent="."]
-position = Vector2( 64.0263, -96 )
+position = Vector2( 80.0263, -112 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -297,7 +298,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine18" type="Node2D" parent="."]
-position = Vector2( 64.0263, -32 )
+position = Vector2( 80.0263, -48 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -314,7 +315,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine19" type="Node2D" parent="."]
-position = Vector2( 0, -96 )
+position = Vector2( 16, -112 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -331,7 +332,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine20" type="Node2D" parent="."]
-position = Vector2( 32.0263, -96 )
+position = Vector2( 48.0263, -112 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -348,7 +349,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine21" type="Node2D" parent="."]
-position = Vector2( 16, -112 )
+position = Vector2( 32, -128 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -365,7 +366,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine22" type="Node2D" parent="."]
-position = Vector2( 0, -128 )
+position = Vector2( 16, -144 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -382,7 +383,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine23" type="Node2D" parent="."]
-position = Vector2( 32, -128 )
+position = Vector2( 48, -144 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -399,7 +400,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine24" type="Node2D" parent="."]
-position = Vector2( 48, -112 )
+position = Vector2( 64, -128 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -416,7 +417,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine25" type="Node2D" parent="."]
-position = Vector2( -16, -112 )
+position = Vector2( 0, -128 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -433,7 +434,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine26" type="Node2D" parent="."]
-position = Vector2( 16, -144 )
+position = Vector2( 32, -160 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -450,7 +451,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine27" type="Node2D" parent="."]
-position = Vector2( 16, -80 )
+position = Vector2( 32, -96 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -467,7 +468,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine28" type="Node2D" parent="."]
-position = Vector2( 96, -96 )
+position = Vector2( 112, -112 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -484,7 +485,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine29" type="Node2D" parent="."]
-position = Vector2( 128.026, -96 )
+position = Vector2( 144.026, -112 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -501,7 +502,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine30" type="Node2D" parent="."]
-position = Vector2( 112, -112 )
+position = Vector2( 128, -128 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -518,7 +519,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine31" type="Node2D" parent="."]
-position = Vector2( 96, -128 )
+position = Vector2( 112, -144 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -535,7 +536,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine32" type="Node2D" parent="."]
-position = Vector2( 128, -128 )
+position = Vector2( 144, -144 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -552,7 +553,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine33" type="Node2D" parent="."]
-position = Vector2( 144, -112 )
+position = Vector2( 160, -128 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -569,7 +570,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine34" type="Node2D" parent="."]
-position = Vector2( 80, -112 )
+position = Vector2( 96, -128 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -586,7 +587,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine35" type="Node2D" parent="."]
-position = Vector2( 112, -144 )
+position = Vector2( 128, -160 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -603,7 +604,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine36" type="Node2D" parent="."]
-position = Vector2( 112, -80 )
+position = Vector2( 128, -96 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -620,7 +621,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine37" type="Node2D" parent="."]
-position = Vector2( 96.0526, 0 )
+position = Vector2( 112.053, -16 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -637,7 +638,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine38" type="Node2D" parent="."]
-position = Vector2( 128.079, 0 )
+position = Vector2( 144.079, -16 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -654,7 +655,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine39" type="Node2D" parent="."]
-position = Vector2( 112.053, -16 )
+position = Vector2( 128.053, -32 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -671,7 +672,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine40" type="Node2D" parent="."]
-position = Vector2( 96.0526, -32 )
+position = Vector2( 112.053, -48 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -688,7 +689,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine41" type="Node2D" parent="."]
-position = Vector2( 128.053, -32 )
+position = Vector2( 144.053, -48 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -705,7 +706,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine42" type="Node2D" parent="."]
-position = Vector2( 144.053, -16 )
+position = Vector2( 160.053, -32 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -722,7 +723,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine43" type="Node2D" parent="."]
-position = Vector2( 80.0526, -16 )
+position = Vector2( 96.0526, -32 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -739,7 +740,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine44" type="Node2D" parent="."]
-position = Vector2( 112.053, -48 )
+position = Vector2( 128.053, -64 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -756,7 +757,7 @@ region_rect = Rect2( 48, 0, 32, 48 )
 shape = SubResource( 2 )
 
 [node name="Green Pine45" type="Node2D" parent="."]
-position = Vector2( 112.053, 16 )
+position = Vector2( 128.053, 0 )
 __meta__ = {
 "_edit_group_": true
 }

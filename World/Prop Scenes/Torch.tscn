@@ -2,7 +2,7 @@
 
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Prop Scenes/Images/torchflame16x16.png" type="Texture" id=2]
-[ext_resource path="res://World/Prop Scenes/Images/RadiusLight.png" type="Texture" id=3]
+[ext_resource path="res://World/Prop Scenes/Images/RadiusLightBandedMulti.png" type="Texture" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0125
@@ -52,12 +52,14 @@ tile_data = PoolIntArray( -1835016, 105, 0 )
 position = Vector2( 0, -32 )
 frames = SubResource( 7 )
 animation = "flicker"
-frame = 1
+frame = 4
 playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
 position = Vector2( 0, -25 )
 texture = ExtResource( 3 )
+texture_scale = 2.93
+energy = 0.8
 shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1
