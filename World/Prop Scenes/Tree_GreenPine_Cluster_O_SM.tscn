@@ -15,7 +15,7 @@ polygon = PoolVector2Array( -9, -32, -16, -10, -12, -4, -7, -2, 7, -2, 12, -4, 1
 closed = false
 polygon = PoolVector2Array( -9, -32, -6, -36, 0, -42, 6, -36, 9, -32 )
 
-[node name="Green Pine Cluster Occluded" type="YSort"]
+[node name="Green Pine Cluster Small" type="YSort"]
 
 [node name="Green Pine" type="Node2D" parent="."]
 __meta__ = {
