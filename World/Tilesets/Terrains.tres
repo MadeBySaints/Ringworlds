@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=518 format=2]
+[gd_resource type="TileSet" load_steps=516 format=2]
 
 [ext_resource path="res://World/Tilesets/Images/TerrainAutotile.png" type="Texture" id=1]
 [ext_resource path="res://World/Tilesets/Images/Cliff_Jungle.png" type="Texture" id=2]
@@ -1495,17 +1495,11 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [sub_resource type="ConvexPolygonShape2D" id=491]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="OccluderPolygon2D" id=492]
-polygon = PoolVector2Array( 16, 14, 0, 14, 0, 12, 16, 12 )
+[sub_resource type="OccluderPolygon2D" id=497]
+polygon = PoolVector2Array( 0, 14, 8, 14, 8, 12, 0, 12 )
 
-[sub_resource type="OccluderPolygon2D" id=493]
-polygon = PoolVector2Array( 16, 14, 0, 14, 0, 12, 16, 12 )
-
-[sub_resource type="OccluderPolygon2D" id=494]
-polygon = PoolVector2Array( 16, 14, 0, 14, 0, 12, 16, 12 )
-
-[sub_resource type="OccluderPolygon2D" id=495]
-polygon = PoolVector2Array( 16, 14, 0, 14, 0, 12, 16, 12 )
+[sub_resource type="OccluderPolygon2D" id=498]
+polygon = PoolVector2Array( 16, 14, 8, 14, 8, 12, 16, 12 )
 
 [sub_resource type="ConvexPolygonShape2D" id=496]
 points = PoolVector2Array( 32, 28, 0, 28, 0, 0, 32, 0 )
@@ -2294,7 +2288,7 @@ points = PoolVector2Array( 32, 28, 0, 28, 0, 0, 32, 0 )
 8/autotile/icon_coordinate = Vector2( 0, 0 )
 8/autotile/tile_size = Vector2( 16, 16 )
 8/autotile/spacing = 0
-8/autotile/occluder_map = [ Vector2( 0, 0 ), SubResource( 492 ), Vector2( 1, 0 ), SubResource( 493 ), Vector2( 2, 0 ), SubResource( 494 ), Vector2( 3, 0 ), SubResource( 495 ) ]
+8/autotile/occluder_map = [ Vector2( 0, 0 ), SubResource( 497 ), Vector2( 2, 0 ), SubResource( 498 ) ]
 8/autotile/navpoly_map = [  ]
 8/autotile/priority_map = [  ]
 8/autotile/z_index_map = [  ]
