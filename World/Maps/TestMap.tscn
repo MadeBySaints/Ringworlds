@@ -86,6 +86,10 @@ input_pickable = false
 position = Vector2( 903, 180 )
 input_pickable = false
 
+[node name="Torch7" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
+position = Vector2( 742, 76 )
+input_pickable = false
+
 [node name="Torch4" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
 position = Vector2( 518, 562 )
 input_pickable = false
@@ -265,6 +269,18 @@ position = Vector2( 356, 826 )
 
 [node name="Green Pine" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
 position = Vector2( 456, 322 )
+
+[node name="Green Pine3" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
+position = Vector2( 810, 346 )
+
+[node name="Green Pine4" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
+position = Vector2( 934, 384 )
+
+[node name="Green Pine5" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
+position = Vector2( 970, 328 )
+
+[node name="Green Pine6" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
+position = Vector2( 1082, 490 )
 
 [node name="Green Pine2" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
 position = Vector2( 758, 156 )

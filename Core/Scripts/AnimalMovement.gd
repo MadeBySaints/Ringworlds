@@ -14,7 +14,7 @@ var last_dir
 func _ready():
 	randomize()
 	
-func _physics_process(delta):
+func _process(delta):
 	match state:
 		Action.IDLE:
 			pass
