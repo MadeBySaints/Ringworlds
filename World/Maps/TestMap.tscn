@@ -134,8 +134,56 @@ position = Vector2( 372, 714 )
 [node name="Green Pine Cluster Large4" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
 position = Vector2( 404, 906 )
 
+[node name="Green Pine Cluster Large9" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 646, 810 )
+
+[node name="Green Pine Cluster Large10" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 614, 714 )
+
+[node name="Green Pine Cluster Large11" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 646, 906 )
+
+[node name="Green Pine Cluster Large12" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 778, 810 )
+
+[node name="Green Pine Cluster Large13" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 598, 566 )
+
+[node name="Green Pine Cluster Large14" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 778, 906 )
+
+[node name="Green Pine Cluster Large15" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 1002, 746 )
+
+[node name="Green Pine Cluster Large16" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 1134, 746 )
+
+[node name="Green Pine Cluster Large17" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 1166, 650 )
+
+[node name="Green Pine Cluster Large18" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 1230, 554 )
+
+[node name="Green Pine Cluster Large19" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
+position = Vector2( 1230, 458 )
+
 [node name="Green Pine Cluster Small" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
 position = Vector2( 630, 380 )
+
+[node name="Green Pine Cluster Small28" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 694, 220 )
+
+[node name="Green Pine Cluster Small32" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 742, 204 )
+
+[node name="Green Pine Cluster Small29" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 662, 284 )
+
+[node name="Green Pine Cluster Small30" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 710, 268 )
+
+[node name="Green Pine Cluster Small31" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 646, 236 )
 
 [node name="Green Pine Cluster Small2" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
 position = Vector2( 502, 239 )
@@ -152,8 +200,74 @@ position = Vector2( 438, 572 )
 [node name="Green Pine Cluster Small6" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
 position = Vector2( 358, 428 )
 
+[node name="Green Pine Cluster Small7" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 726, 503 )
+
+[node name="Green Pine Cluster Small8" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 774, 518 )
+
+[node name="Green Pine Cluster Small9" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 822, 534 )
+
+[node name="Green Pine Cluster Small10" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 870, 518 )
+
+[node name="Green Pine Cluster Small11" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 886, 566 )
+
+[node name="Green Pine Cluster Small12" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 838, 582 )
+
+[node name="Green Pine Cluster Small13" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 934, 582 )
+
+[node name="Green Pine Cluster Small21" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 1070, 298 )
+
+[node name="Green Pine Cluster Small27" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 1086, 250 )
+
+[node name="Green Pine Cluster Small22" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 1118, 314 )
+
+[node name="Green Pine Cluster Small23" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 1166, 298 )
+
+[node name="Green Pine Cluster Small24" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 1182, 346 )
+
+[node name="Green Pine Cluster Small25" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 1134, 362 )
+
+[node name="Green Pine Cluster Small26" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 1230, 362 )
+
+[node name="Green Pine Cluster Small14" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 906, 746 )
+
+[node name="Green Pine Cluster Small15" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 954, 762 )
+
+[node name="Green Pine Cluster Small20" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 742, 714 )
+
+[node name="Green Pine Cluster Small16" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 906, 906 )
+
+[node name="Green Pine Cluster Small17" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 858, 954 )
+
+[node name="Green Pine Cluster Small18" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 598, 922 )
+
+[node name="Green Pine Cluster Small19" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 356, 826 )
+
 [node name="Green Pine" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
 position = Vector2( 456, 322 )
+
+[node name="Green Pine2" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
+position = Vector2( 758, 156 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0.34902, 0.34902, 0.34902, 1 )
