@@ -17,7 +17,14 @@ func _ready():
 func _process(delta):
 	match state:
 		Action.IDLE:
-			pass
+			if last_dir == Vector2.UP:
+				$AnimatedSprite.play("idleup")
+			if last_dir == Vector2.DOWN:
+				$AnimatedSprite.play("idledown")
+			if last_dir == Vector2.LEFT:
+				$AnimatedSprite.play("idleleft")
+			if last_dir == Vector2.RIGHT:
+				$AnimatedSprite.play("idleright")
 			
 		Action.NEW_DIR:
 			dir = choose([Vector2.UP, Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT])
@@ -42,14 +49,14 @@ func _process(delta):
 			last_dir = dir
 				
 			#switch to idle if animal not moving
-			if state == Action.IDLE and last_dir == Vector2.UP:
-				$AnimatedSprite.play("idleup")
-			if state == Action.IDLE and last_dir == Vector2.DOWN:
-				$AnimatedSprite.play("idledown")
-			if state == Action.IDLE and last_dir == Vector2.LEFT:
-				$AnimatedSprite.play("idleleft")
-			if state == Action.IDLE and last_dir == Vector2.RIGHT:
-				$AnimatedSprite.play("idleright")
+#			if state == Action.IDLE and last_dir == Vector2.UP:
+#				$AnimatedSprite.play("idleup")
+#			if state == Action.IDLE and last_dir == Vector2.DOWN:
+#				$AnimatedSprite.play("idledown")
+#			if state == Action.IDLE and last_dir == Vector2.LEFT:
+#				$AnimatedSprite.play("idleleft")
+#			if state == Action.IDLE and last_dir == Vector2.RIGHT:
+#				$AnimatedSprite.play("idleright")
 				
 func move(delta):
 	move_and_slide(dir * SPEED)
