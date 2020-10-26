@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "ASM",
+"language": "GDScript",
+"path": "res://Core/Scripts/ASM.gd"
+} ]
 _global_script_class_icons={
-
+"ASM": ""
 }
 
 [application]

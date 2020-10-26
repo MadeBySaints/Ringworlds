@@ -3,6 +3,11 @@ extends KinematicBody2D
 export (int) var speed = 70
 
 var velocity = Vector2()
+var state_machine
+
+func _ready():
+	state_machine = $AnimationPlayer.get("parameters/playback")
+	pass
 
 func get_input():
 	velocity = Vector2()
@@ -24,5 +29,3 @@ func _physics_process(delta):
 	get_input()
 	velocity = move_and_slide(velocity)
 
-func _ready():
-	pass
