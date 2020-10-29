@@ -1,14 +1,77 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=59 format=2]
 
-[ext_resource path="res://Core/Player/BasicPlayerSkins.png" type="Texture" id=1]
+[ext_resource path="res://Core/Player/FighterAnimations.png" type="Texture" id=1]
 [ext_resource path="res://Core/Player/PlayerController.gd" type="Script" id=2]
 
-[sub_resource type="CapsuleShape2D" id=18]
+[sub_resource type="CapsuleShape2D" id=1]
 radius = 7.0
 height = 2.0
 
-[sub_resource type="Animation" id=23]
-resource_name = "idledown"
+[sub_resource type="Animation" id=2]
+resource_name = "atkdown"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "atkleft"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 5 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "atkright"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 6 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "atkup"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+
+[sub_resource type="Animation" id=6]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -23,8 +86,7 @@ tracks/0/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=26]
-resource_name = "idleleft"
+[sub_resource type="Animation" id=7]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -36,11 +98,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 4 ]
+"values": [ 13 ]
 }
 
-[sub_resource type="Animation" id=27]
-resource_name = "idleright"
+[sub_resource type="Animation" id=8]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -52,11 +113,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 7 ]
+"values": [ 25 ]
 }
 
-[sub_resource type="Animation" id=28]
-resource_name = "idleup"
+[sub_resource type="Animation" id=9]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -68,11 +128,26 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 10 ]
+"values": [ 37 ]
 }
 
-[sub_resource type="Animation" id=19]
-resource_name = "walkdown"
+[sub_resource type="Animation" id=10]
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 16, 17, 18, 17 ]
+}
+
+[sub_resource type="Animation" id=11]
 length = 1.6
 loop = true
 tracks/0/type = "value"
@@ -88,8 +163,7 @@ tracks/0/keys = {
 "values": [ 1, 0, 1, 2 ]
 }
 
-[sub_resource type="Animation" id=21]
-resource_name = "walkleft"
+[sub_resource type="Animation" id=12]
 length = 1.6
 loop = true
 tracks/0/type = "value"
@@ -102,11 +176,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4, 0.8, 1.2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 4, 3, 4, 5 ]
+"values": [ 13, 14, 13, 12 ]
 }
 
-[sub_resource type="Animation" id=22]
-resource_name = "walkright"
+[sub_resource type="Animation" id=13]
 length = 1.6
 loop = true
 tracks/0/type = "value"
@@ -119,11 +192,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4, 0.8, 1.2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 7, 6, 7, 8 ]
+"values": [ 25, 26, 25, 24 ]
 }
 
-[sub_resource type="Animation" id=20]
-resource_name = "walkup"
+[sub_resource type="Animation" id=14]
 length = 1.6
 loop = true
 tracks/0/type = "value"
@@ -136,12 +208,138 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4, 0.8, 1.2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 10, 9, 10, 11 ]
+"values": [ 37, 38, 37, 36 ]
 }
 
-[sub_resource type="AnimationNodeStateMachine" id=24]
+[sub_resource type="AnimationNodeAnimation" id=15]
+animation = "atkdown"
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=25]
+[sub_resource type="AnimationNodeAnimation" id=16]
+animation = "atkleft"
+
+[sub_resource type="AnimationNodeAnimation" id=17]
+animation = "atkright"
+
+[sub_resource type="AnimationNodeAnimation" id=18]
+animation = "atkup"
+
+[sub_resource type="AnimationNodeAnimation" id=19]
+animation = "idledown"
+
+[sub_resource type="AnimationNodeAnimation" id=20]
+animation = "idleleft"
+
+[sub_resource type="AnimationNodeAnimation" id=21]
+animation = "idleright"
+
+[sub_resource type="AnimationNodeAnimation" id=22]
+animation = "idleup"
+
+[sub_resource type="AnimationNodeAnimation" id=23]
+animation = "walkdown"
+
+[sub_resource type="AnimationNodeAnimation" id=24]
+animation = "walkleft"
+
+[sub_resource type="AnimationNodeAnimation" id=25]
+animation = "walkright"
+
+[sub_resource type="AnimationNodeAnimation" id=26]
+animation = "walkup"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=27]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=31]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=32]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=33]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=34]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=35]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=36]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=37]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=38]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=39]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=40]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=41]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=42]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=43]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=44]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=45]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=46]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=47]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=48]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=49]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=50]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=51]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=52]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=53]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=54]
+
+[sub_resource type="AnimationNodeStateMachine" id=55]
+states/atkdown/node = SubResource( 15 )
+states/atkdown/position = Vector2( 342, 417 )
+states/atkleft/node = SubResource( 16 )
+states/atkleft/position = Vector2( 191, 30 )
+states/atkright/node = SubResource( 17 )
+states/atkright/position = Vector2( 971, 269 )
+states/atkup/node = SubResource( 18 )
+states/atkup/position = Vector2( 800, -94 )
+states/idledown/node = SubResource( 19 )
+states/idledown/position = Vector2( 577, 350 )
+states/idleleft/node = SubResource( 20 )
+states/idleleft/position = Vector2( 250, 154 )
+states/idleright/node = SubResource( 21 )
+states/idleright/position = Vector2( 887, 131 )
+states/idleup/node = SubResource( 22 )
+states/idleup/position = Vector2( 577, -33 )
+states/walkdown/node = SubResource( 23 )
+states/walkdown/position = Vector2( 800, 417 )
+states/walkleft/node = SubResource( 24 )
+states/walkleft/position = Vector2( 191, 269 )
+states/walkright/node = SubResource( 25 )
+states/walkright/position = Vector2( 971, 30 )
+states/walkup/node = SubResource( 26 )
+states/walkup/position = Vector2( 342, -94 )
+transitions = [ "idleup", "walkup", SubResource( 27 ), "idleright", "walkright", SubResource( 28 ), "idledown", "walkdown", SubResource( 29 ), "idleleft", "walkleft", SubResource( 30 ), "walkright", "idleright", SubResource( 31 ), "walkleft", "idleleft", SubResource( 32 ), "walkup", "idleup", SubResource( 33 ), "walkdown", "idledown", SubResource( 34 ), "idleup", "atkup", SubResource( 35 ), "idledown", "atkdown", SubResource( 36 ), "idleright", "atkright", SubResource( 37 ), "idleleft", "atkleft", SubResource( 38 ), "atkright", "idleright", SubResource( 39 ), "atkleft", "idleleft", SubResource( 40 ), "atkup", "idleup", SubResource( 41 ), "atkdown", "idledown", SubResource( 42 ), "idledown", "atkright", SubResource( 43 ), "idledown", "atkleft", SubResource( 44 ), "idledown", "atkup", SubResource( 45 ), "idleup", "atkleft", SubResource( 46 ), "idleup", "atkright", SubResource( 47 ), "idleup", "atkdown", SubResource( 48 ), "idleleft", "atkright", SubResource( 49 ), "idleleft", "atkdown", SubResource( 50 ), "idleleft", "atkup", SubResource( 51 ), "idleright", "atkdown", SubResource( 52 ), "idleright", "atkup", SubResource( 53 ), "idleright", "atkleft", SubResource( 54 ) ]
+graph_offset = Vector2( 78, -328 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=56]
 
 [node name="Fighter" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -149,15 +347,15 @@ script = ExtResource( 2 )
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -18 )
 texture = ExtResource( 1 )
-vframes = 4
-hframes = 3
-frame = 10
+vframes = 8
+hframes = 12
+frame = 25
 region_enabled = true
-region_rect = Rect2( 0, 0, 78, 144 )
+region_rect = Rect2( 0, 0, 312, 288 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -9 )
-shape = SubResource( 18 )
+shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -166,15 +364,22 @@ smoothing_enabled = true
 editor_draw_drag_margin = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/idledown = SubResource( 23 )
-anims/idleleft = SubResource( 26 )
-anims/idleright = SubResource( 27 )
-anims/idleup = SubResource( 28 )
-anims/walkdown = SubResource( 19 )
-anims/walkleft = SubResource( 21 )
-anims/walkright = SubResource( 22 )
-anims/walkup = SubResource( 20 )
+anims/atkdown = SubResource( 2 )
+anims/atkleft = SubResource( 3 )
+anims/atkright = SubResource( 4 )
+anims/atkup = SubResource( 5 )
+anims/idledown = SubResource( 6 )
+anims/idleleft = SubResource( 7 )
+anims/idleright = SubResource( 8 )
+anims/idleup = SubResource( 9 )
+anims/laugh = SubResource( 10 )
+anims/walkdown = SubResource( 11 )
+anims/walkleft = SubResource( 12 )
+anims/walkright = SubResource( 13 )
+anims/walkup = SubResource( 14 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 24 )
-parameters/playback = SubResource( 25 )
+tree_root = SubResource( 55 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 56 )

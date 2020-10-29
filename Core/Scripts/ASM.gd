@@ -5,7 +5,7 @@ enum PlayerAnim {
 	IDLE
 	WALK
 	ATTACK
-	DAMAGE
+	DAMAGE #canvas modulate blink
 	DEFEAT
 	HEAL
 	CAST
