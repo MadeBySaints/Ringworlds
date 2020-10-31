@@ -1,22 +1,24 @@
 extends CanvasModulate
-
-enum colors {
-	DEFAULT,
-	DUSK,
-	DAWN,
-	RED,
-	ORANGE,
-	YELLOW,
-	GREEN,
-	BLUE,
-	INDIGO,
-	VIOLET
+var a
+var b
+#access with cycle.4.["Purple Moon"]
+var cycle = {
+	"Default": Color(1, 1, 1),
+	"Dusk": Color(0.407843, 0.407843, 0.407843),
+	"Dawn": Color(0.54902, 0.54902, 0.54902),
+	"Purple_Moon": Color(0.376471, 0.247059, 1)
+}
+enum preset {
+	SOLAR_ECLIPSE
+	EXTENDED_DAY
+	EXTENDED_NIGHT
+	PERM_DAY
+	PERM_NIGHT
 }
 
-var col = get_color()
-
-export (int) var multiplier = 1
+	
 #multiplier for wait time... 1 = 1 minute
+export (int) var multiplier = 1
 
 export (int) var day_length
 export (int) var dusk_length
@@ -28,18 +30,8 @@ export (int) var trans_length
 #transition length between cycles
 
 
-#var default = Color(1, 1, 1)
-#var dusk = Color(0.407843, 0.407843, 0.407843)
-#var dawn = Color(0.54902, 0.54902, 0.54902)
-#var reddusk = Color(0.734375, 0.327026, 0.327026)
-#var purplemoon = Color(0.376471, 0.247059, 1)
-#future colors include rainbow and rgb flashing
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	self.set_color(cycle.Purple_Moon)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

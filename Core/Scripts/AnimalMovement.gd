@@ -48,16 +48,6 @@ func _process(delta):
 			#update recent direction
 			last_dir = dir
 				
-			#switch to idle if animal not moving
-#			if state == Action.IDLE and last_dir == Vector2.UP:
-#				$AnimatedSprite.play("idleup")
-#			if state == Action.IDLE and last_dir == Vector2.DOWN:
-#				$AnimatedSprite.play("idledown")
-#			if state == Action.IDLE and last_dir == Vector2.LEFT:
-#				$AnimatedSprite.play("idleleft")
-#			if state == Action.IDLE and last_dir == Vector2.RIGHT:
-#				$AnimatedSprite.play("idleright")
-				
 func move(delta):
 	move_and_slide(dir * SPEED)
 	

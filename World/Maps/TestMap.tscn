@@ -7,7 +7,7 @@
 [ext_resource path="res://Core/Actors/Enemy/Red Shroom.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/Prop Scenes/Torch.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Core/Player/Player_Fighter.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Core/Scripts/CanvasModulate.gd" type="Script" id=8]
+[ext_resource path="res://Core/Scripts/Day_Night_Cycle.gd" type="Script" id=8]
 [ext_resource path="res://World/Prop Scenes/Green Pine.tscn" type="PackedScene" id=9]
 
 [node name="Node2D" type="Node2D"]
