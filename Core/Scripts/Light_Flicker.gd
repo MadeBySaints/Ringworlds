@@ -4,11 +4,13 @@ onready var noise = OpenSimplexNoise.new()
 var value = 0.0
 const MAX = 100000000
 
+
 func _ready():
 	randomize()
 	value = randi() % MAX
 	noise.period = 16
 #	set_process(true)
+	
 	
 func flicker():
 	value += 0.5
@@ -17,9 +19,6 @@ func flicker():
 	var alpha = ((noise.get_noise_1d(value) + 1) / 4.0) + 0.5
 	self.color = Color(color.r, color.g, color.b, alpha)
 	
+	
 func _process(_delta):
 	flicker()
-	
-	
-	
-	

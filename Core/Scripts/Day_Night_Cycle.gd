@@ -15,21 +15,22 @@ var cycle = {
 #	PERM_NIGHT
 #}
 
-export (int) var multiplier = 1
-# multiplier for cycle length 1 = 1 minute
+
 
 export (int) var day_length
 export (int) var dusk_length
 export (int) var dawn_length
 export (int) var night_length
 export (int) var event_length
-
-export (int) var trans_length
+export (int) var trans_length 
 #transition length between cycles when canvas is lerping to new color
+export (int) var multiplier = 1
+# multiplier for cycle length 1 = 1 minute
 
 
 func _ready():
-	self.set_color(cycle.Purple_Moon)
+	#self.set_color(cycle.Purple_Moon)
+	pass
 
 
 func _on_Timer_timeout():
