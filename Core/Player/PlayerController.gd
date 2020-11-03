@@ -45,7 +45,7 @@ func get_input():
 	velocity = velocity.normalized() * speed
 	
 	if Input.is_action_just_pressed("attack"):
-		attack()
+		state_machine.travel("atk" + str(facing_dir))
 	if Input.is_action_just_pressed("emote_radial"):# 4 slot radial emote menu
 		emote()
 
@@ -59,12 +59,3 @@ func hurt():
 func emote():
 	pass
 	
-func attack():
-	if facing_dir == "up":
-		state_machine.travel("atkup")
-	if facing_dir == "down":
-		state_machine.travel("atkdown")
-	if facing_dir == "left":
-		state_machine.travel("atkleft")
-	if facing_dir == "right":
-		state_machine.travel("atkright")
