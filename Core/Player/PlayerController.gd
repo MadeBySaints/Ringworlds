@@ -18,8 +18,11 @@ func _ready():
 	pass
 
 func get_input():
+	
+	#initialize velocity so player doesnt run away
 	velocity = Vector2()
-	var current = state_machine.get_current_node()
+#	var current = state_machine.get_current_node()
+	
 	if Input.is_action_pressed("up"):
 		velocity.y -= 1
 		state_machine.travel("walkup")
@@ -36,14 +39,13 @@ func get_input():
 		velocity.x += 1
 		state_machine.travel("walkright")
 		facing_dir = "right"
-	if velocity.x.length() == 0 and velocity.y.length() == 0:
-		idle()
-		pass
+	if velocity.length() == 0:
+		state_machine.travel("idle" + str(facing_dir))
+		
 	velocity = velocity.normalized() * speed
 	
 	if Input.is_action_just_pressed("attack"):
 		attack()
-	
 	if Input.is_action_just_pressed("emote_radial"):# 4 slot radial emote menu
 		emote()
 
@@ -55,17 +57,6 @@ func hurt():
 	pass
 
 func emote():
-	pass
-
-func idle():
-	if facing_dir == "up":
-		state_machine.travel("idleup")
-	if facing_dir == "down":
-		state_machine.travel("idledown")
-	if facing_dir == "left":
-		state_machine.travel("idleleft")
-	if facing_dir == "right":
-		state_machine.travel("idleright")
 	pass
 	
 func attack():
