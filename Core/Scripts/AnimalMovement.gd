@@ -48,7 +48,7 @@ func _process(delta):
 			#update recent direction
 			last_dir = dir
 				
-func move(delta):
+func move(_delta):
 	move_and_slide(dir * SPEED)
 	
 func choose(array):

@@ -13,9 +13,21 @@ _global_script_classes=[ {
 "class": "ASM",
 "language": "GDScript",
 "path": "res://Core/Scripts/ASM.gd"
+}, {
+"base": "Node2D",
+"class": "Emoji",
+"language": "GDScript",
+"path": "res://Core/Scripts/EmoteBubble.gd"
+}, {
+"base": "Node",
+"class": "PlayerStats",
+"language": "GDScript",
+"path": "res://Core/Scripts/PlayerStats.gd"
 } ]
 _global_script_class_icons={
-"ASM": ""
+"ASM": "",
+"Emoji": "",
+"PlayerStats": ""
 }
 
 [application]

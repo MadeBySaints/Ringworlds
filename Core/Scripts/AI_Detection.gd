@@ -16,13 +16,13 @@ func _ready():
 #	pass
 
 
-func _on_Detection_Radius_area_entered(area):
+func _on_Detection_Radius_area_entered(_area):
 	#later on, certain gear types might make sound, this sound will be represented
 	#as an Area2D when it is active. This area collision should provide the same
 	#functionality as _on_Detection_Radius_body_entered(body):
 	pass # Replace with function body.
 
 
-func _on_Detection_Radius_body_entered(body):
+func _on_Detection_Radius_body_entered(_body):
 	#if player enters area, figure out direction to player then move and attack
 	pass # Replace with function body.

@@ -5,12 +5,13 @@ export (int) var speed = 70
 var velocity = Vector2()
 var state_machine
 var facing_dir
+var emote = Emoji.instance()
 
-#enum emotes {
-#	HAPPY
-#	ANGRY
-#	LOVE
-#	HATE
+#var emote = {
+#	"HAPPY" : state_machine.travel("happy"),
+#	"ANGRY" : state_machine.travel("angry"),
+#	"LOVE" : state_machine.travel("love"),
+#	"HATE" : state_machine.travel("hate")
 #}
 
 func _ready():
@@ -18,10 +19,9 @@ func _ready():
 	pass
 
 func get_input():
-	
 	#initialize velocity so player doesnt run away
 	velocity = Vector2()
-#	var current = state_machine.get_current_node()
+	var current = state_machine.get_current_node()
 	
 	if Input.is_action_pressed("up"):
 		velocity.y -= 1
@@ -46,16 +46,26 @@ func get_input():
 	
 	if Input.is_action_just_pressed("attack"):
 		state_machine.travel("atk" + str(facing_dir))
-	if Input.is_action_just_pressed("emote_radial"):# 4 slot radial emote menu
-		emote()
+#	if Input.is_action_just_pressed("emote_radial"):
+		#display radial menu
+#		pass
+	if Input.is_action_just_pressed("emote1"):
+		emote.happy()
+	if Input.is_action_just_pressed("emote2"):
+		emote.angry()
+	if Input.is_action_just_pressed("emote3"):
+		emote.love()
+	if Input.is_action_just_pressed("emote4"):
+		emote.hate()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
+	
 
 func hurt():
 	pass
 
-func emote():
-	pass
+#func emote():
+#	pass
 	

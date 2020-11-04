@@ -493,7 +493,7 @@ states/walkup/position = Vector2( 635, -16.4371 )
 transitions = [ "idledown", "pre-cast", SubResource( 34 ), "pre-cast", "cast", SubResource( 35 ), "cast", "idledown", SubResource( 36 ), "idleleft", "pre-cast", SubResource( 37 ), "idleright", "pre-cast", SubResource( 38 ), "idleup", "pre-cast", SubResource( 39 ), "idledown", "walkdown", SubResource( 40 ), "idledown", "walkleft", SubResource( 41 ), "idledown", "walkright", SubResource( 42 ), "idledown", "walkup", SubResource( 43 ), "idleleft", "walkdown", SubResource( 44 ), "idleleft", "walkleft", SubResource( 45 ), "idleleft", "walkright", SubResource( 46 ), "idleleft", "walkup", SubResource( 47 ), "idleright", "walkdown", SubResource( 48 ), "idleright", "walkleft", SubResource( 49 ), "idleright", "walkright", SubResource( 50 ), "idleright", "walkup", SubResource( 51 ), "idleup", "walkdown", SubResource( 52 ), "idleup", "walkleft", SubResource( 53 ), "idleup", "walkright", SubResource( 54 ), "idleup", "walkup", SubResource( 55 ), "walkdown", "idledown", SubResource( 56 ), "walkleft", "idleleft", SubResource( 57 ), "walkright", "idleright", SubResource( 58 ), "walkup", "idleup", SubResource( 59 ), "idledown", "laugh", SubResource( 60 ), "laugh", "idledown", SubResource( 61 ), "idledown", "die", SubResource( 62 ), "idleleft", "die", SubResource( 63 ), "idleright", "die", SubResource( 64 ), "idleup", "die", SubResource( 65 ), "walkdown", "atkdown", SubResource( 66 ), "atkdown", "idledown", SubResource( 67 ), "idledown", "atkdown", SubResource( 68 ), "idleleft", "atkleft", SubResource( 69 ), "walkleft", "atkleft", SubResource( 70 ), "atkleft", "idleleft", SubResource( 71 ), "walkright", "atkright", SubResource( 72 ), "idleright", "atkright", SubResource( 73 ), "atkright", "idleright", SubResource( 74 ), "walkup", "atkup", SubResource( 75 ), "idleup", "atkup", SubResource( 76 ), "atkup", "idleup", SubResource( 77 ), "walkdown", "walkleft", SubResource( 78 ), "walkleft", "walkright", SubResource( 79 ), "walkright", "walkup", SubResource( 80 ), "walkdown", "walkright", SubResource( 81 ), "walkdown", "walkup", SubResource( 82 ), "walkleft", "walkup", SubResource( 83 ), "walkup", "walkdown", SubResource( 84 ), "walkright", "walkdown", SubResource( 85 ), "walkleft", "walkdown", SubResource( 86 ), "walkup", "walkleft", SubResource( 87 ), "walkright", "walkleft", SubResource( 88 ), "walkup", "walkright", SubResource( 89 ), "idledown", "idleleft", SubResource( 90 ), "idleleft", "idleright", SubResource( 91 ), "idleright", "idleup", SubResource( 92 ), "idledown", "idleright", SubResource( 93 ), "idledown", "idleup", SubResource( 94 ), "idleleft", "idleup", SubResource( 95 ), "idleup", "idledown", SubResource( 96 ), "idleup", "idleleft", SubResource( 97 ), "idleup", "idleright", SubResource( 98 ), "idleright", "idledown", SubResource( 99 ), "idleright", "idleleft", SubResource( 100 ), "idleleft", "idledown", SubResource( 101 ) ]
 start_node = "idledown"
 end_node = "die"
-graph_offset = Vector2( -331, -319.566 )
+graph_offset = Vector2( -291, -204.249 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=103]
 
@@ -505,7 +505,7 @@ position = Vector2( 0, -18 )
 texture = ExtResource( 1 )
 vframes = 8
 hframes = 12
-frame = 37
+frame = 4
 region_enabled = true
 region_rect = Rect2( 0, 0, 312, 288 )
 
@@ -518,6 +518,7 @@ shape = SubResource( 1 )
 current = true
 zoom = Vector2( 0.25, 0.25 )
 smoothing_enabled = true
+smoothing_speed = 9.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/atkdown = SubResource( 2 )
