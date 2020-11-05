@@ -1,16 +1,17 @@
 extends Node2D
 
-class_name Emoji
 
+var a
 var iter = 0
 export (int) var max_iter = 3
+var process
 #set position
 
-
-func _ready():
+func _init():
+	
 	pass
 
-func get_pos():
+func _ready():
 	pass
 
 #set animation name
@@ -41,4 +42,4 @@ func _on_AnimatedSprite_animation_finished():
 	if iter >= max_iter:
 		iter = 0
 		$AnimatedSprite.stop()
-		queue_free()
+		.get_parent().remove_child(self)

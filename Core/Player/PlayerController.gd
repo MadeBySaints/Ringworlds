@@ -5,14 +5,10 @@ export (int) var speed = 70
 var velocity = Vector2()
 var state_machine
 var facing_dir
-var emote = Emoji.instance()
+#var a = preload("res://Core/Scripts/EmoteBubble.gd")
 
-#var emote = {
-#	"HAPPY" : state_machine.travel("happy"),
-#	"ANGRY" : state_machine.travel("angry"),
-#	"LOVE" : state_machine.travel("love"),
-#	"HATE" : state_machine.travel("hate")
-#}
+var emote = load("res://Core/Abstract Scenes/Emoji.tscn")#script
+var a = emote.instance()
 
 func _ready():
 	state_machine = $AnimationTree.get("parameters/playback")
@@ -48,15 +44,22 @@ func get_input():
 		state_machine.travel("atk" + str(facing_dir))
 #	if Input.is_action_just_pressed("emote_radial"):
 		#display radial menu
-#		pass
+##		pass
+#	if a != null:
 	if Input.is_action_just_pressed("emote1"):
-		emote.happy()
+		a.happy()
+		add_child(a)
 	if Input.is_action_just_pressed("emote2"):
-		emote.angry()
+		a.angry()
+		add_child(a)
 	if Input.is_action_just_pressed("emote3"):
-		emote.love()
+		a.love()
+		add_child(a)
 	if Input.is_action_just_pressed("emote4"):
-		emote.hate()
+		a.hate()
+		add_child(a)
+#	else:
+#		print(str(a) + "is running")
 
 func _physics_process(_delta):
 	get_input()
