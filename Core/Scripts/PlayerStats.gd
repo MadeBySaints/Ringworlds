@@ -3,12 +3,47 @@ extends Node
 class_name PlayerStats
 
 var base_health
+var current_health
 var base_mana
+var current_mana
 var base_energy
+var current_energy
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var job
+var level
+var total_time
+var enemies_slain
+
+var ability_score = [
+	"Strength",
+	"Dexterity",
+	"Intellect",
+	"Luck"
+	]
+	
+var modifier = [
+	"Attack",
+	"Defense",
+	"Speed",
+	"Critical Rate",
+	"Drop Rate",
+	"EXP Rate"
+	]
+
+var point = [
+	"HP",
+	"MP",
+	"SP",
+	"AP"
+	] 
+	#hp/mp, skill point, ability point
+
+var tracker = {
+	"Time Played" : total_time,
+	"Enemies Slain" : enemies_slain
+}
+
+var save_data = {}
 
 
 # Called when the node enters the scene tree for the first time.
