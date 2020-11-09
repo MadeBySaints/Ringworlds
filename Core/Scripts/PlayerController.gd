@@ -6,12 +6,14 @@ var velocity = Vector2()
 var state_machine
 var facing_dir
 
-var emote = load("res://Core/Abstract Scenes/Emoji.tscn")#script
-var a = emote.instance()
+var utility = preload("res://Core/Scripts/Utils.gd")
+onready var u = utility.new()
+
+var emote = preload("res://Core/Abstract Scenes/Emoji.tscn")
+onready var a = emote.instance()
 
 func _ready():
 	state_machine = $AnimationTree.get("parameters/playback")
-#	if facing_dir == null:
 	facing_dir = "down"
 	pass
 
@@ -63,6 +65,11 @@ func get_input():
 	if Input.is_action_just_pressed("emote4"):
 		a.hate()
 		add_child(a)
+		
+		
+###Debug###
+	if Input.is_action_just_pressed("garbage_collect"):
+		u.garbage_collection()
 		
 		
 func _physics_process(_delta):

@@ -23,3 +23,5 @@ func _on_AnimatedSprite_animation_finished():
 		i = 0
 		$AnimatedSprite.stop()
 		.get_parent().remove_child(self)
+
+

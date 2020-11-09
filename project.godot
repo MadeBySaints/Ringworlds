@@ -15,13 +15,13 @@ _global_script_classes=[ {
 "path": "res://Core/Scripts/ASM.gd"
 }, {
 "base": "Node",
-"class": "PlayerStats",
+"class": "Utils",
 "language": "GDScript",
-"path": "res://Core/Scripts/PlayerStats.gd"
+"path": "res://Core/Scripts/Utils.gd"
 } ]
 _global_script_class_icons={
 "ASM": "",
-"PlayerStats": ""
+"Utils": ""
 }
 
 [application]
@@ -29,6 +29,12 @@ _global_script_class_icons={
 config/name="Ringworlds"
 run/main_scene="res://World/Maps/TestMap.tscn"
 config/icon="res://Ringworld128x128.png"
+
+[autoload]
+
+Global="*res://Core/Scripts/GlobalStrings.gd"
+PlayerStats="*res://Core/Scripts/PlayerStats.gd"
+Utils="res://Core/Scripts/Utils.gd"
 
 [display]
 
@@ -148,6 +154,7 @@ right={
 attack={
 "deadzone": 0.5,
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
  ]
 }
 emote1={
@@ -188,6 +195,11 @@ emote7={
 emote8={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777251,"unicode":0,"echo":false,"script":null)
+ ]
+}
+garbage_collect={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777255,"unicode":0,"echo":false,"script":null)
  ]
 }
 

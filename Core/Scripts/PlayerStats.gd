@@ -1,7 +1,5 @@
 extends Node
 
-class_name PlayerStats
-
 var base_health
 var current_health
 var base_mana
@@ -41,7 +39,7 @@ var point = [
 var tracker = {
 	"Time Played" : total_time,
 	"Enemies Slain" : enemies_slain
-}
+	}
 
 var save_data = {}
 
