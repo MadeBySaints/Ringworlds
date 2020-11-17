@@ -17,7 +17,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Utils",
 "language": "GDScript",
-"path": "res://Core/Scripts/Utils.gd"
+"path": "res://Core/Scripts/Utilities.gd"
 } ]
 _global_script_class_icons={
 "ASM": "",
@@ -34,7 +34,6 @@ config/icon="res://Ringworld128x128.png"
 
 Global="*res://Core/Scripts/GlobalStrings.gd"
 PlayerStats="*res://Core/Scripts/PlayerStats.gd"
-Utils="res://Core/Scripts/Utils.gd"
 
 [display]
 

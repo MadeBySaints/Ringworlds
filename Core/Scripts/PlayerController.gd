@@ -6,8 +6,8 @@ var velocity = Vector2()
 var state_machine
 var facing_dir
 
-var utility = preload("res://Core/Scripts/Utils.gd")
-onready var u = utility.new()
+#const utility = preload("res://Core/Scripts/Utilities.gd")
+var u = Utils.new()
 
 var emote = preload("res://Core/Abstract Scenes/Emoji.tscn")
 onready var a = emote.instance()
