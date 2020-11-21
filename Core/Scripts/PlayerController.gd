@@ -1,16 +1,14 @@
 extends KinematicBody2D
 
+const util = preload("res://Core/Scripts/Utilities.gd")
+
 export (int) var speed = 70
 
 var velocity = Vector2()
 var state_machine
 var facing_dir
 
-#const utility = preload("res://Core/Scripts/Utilities.gd")
-var u = Utils.new()
-
-var emote = preload("res://Core/Abstract Scenes/Emoji.tscn")
-onready var a = emote.instance()
+var u = util.new()
 
 func _ready():
 	state_machine = $AnimationTree.get("parameters/playback")
@@ -41,35 +39,18 @@ func get_input():
 		facing_dir = "right"
 	if velocity.length() == 0:
 		state_machine.travel("idle" + str(facing_dir))
-		
-		
 	velocity = velocity.normalized() * speed
-	
-	
+
+
 	if Input.is_action_just_pressed("attack"):
 		state_machine.travel("atk" + str(facing_dir))
-		
-		
-	if Input.is_action_just_pressed("emote_radial"):
-		#display radial menu
-		pass
-	if Input.is_action_just_pressed("emote1"):
-		a.happy()
-		add_child(a)
-	if Input.is_action_just_pressed("emote2"):
-		a.angry()
-		add_child(a)
-	if Input.is_action_just_pressed("emote3"):
-		a.love()
-		add_child(a)
-	if Input.is_action_just_pressed("emote4"):
-		a.hate()
-		add_child(a)
-		
-		
+
+
+
 ###Debug###
 	if Input.is_action_just_pressed("garbage_collect"):
-		u.garbage_collection()
+		if OS.is_debug_build():
+			u.garbage_collection()
 		
 		
 func _physics_process(_delta):

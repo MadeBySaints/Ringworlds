@@ -1,7 +1,8 @@
-[gd_scene load_steps=111 format=2]
+[gd_scene load_steps=112 format=2]
 
 [ext_resource path="res://Core/Player/FighterAnimations.png" type="Texture" id=1]
 [ext_resource path="res://Core/Scripts/PlayerController.gd" type="Script" id=2]
+[ext_resource path="res://Core/Abstract Scenes/Emoji.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 7.0
@@ -543,7 +544,7 @@ position = Vector2( 0, -18 )
 texture = ExtResource( 1 )
 vframes = 8
 hframes = 12
-frame = 4
+frame = 1
 region_enabled = true
 region_rect = Rect2( 0, 0, 312, 288 )
 
@@ -582,3 +583,5 @@ anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 108 )
 parameters/BlendTree/Transition/current = 0
+
+[node name="Emoji" parent="." instance=ExtResource( 3 )]

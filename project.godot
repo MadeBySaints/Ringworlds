@@ -15,12 +15,18 @@ _global_script_classes=[ {
 "path": "res://Core/Scripts/ASM.gd"
 }, {
 "base": "Node",
+"class": "UserSettings",
+"language": "GDScript",
+"path": "res://Core/Scripts/Autoload/PlayerSettings.gd"
+}, {
+"base": "Node",
 "class": "Utils",
 "language": "GDScript",
 "path": "res://Core/Scripts/Utilities.gd"
 } ]
 _global_script_class_icons={
 "ASM": "",
+"UserSettings": "",
 "Utils": ""
 }
 
@@ -34,6 +40,8 @@ config/icon="res://Ringworld128x128.png"
 
 Global="*res://Core/Scripts/GlobalStrings.gd"
 PlayerStats="*res://Core/Scripts/PlayerStats.gd"
+Utilities="*res://Core/Scripts/Utilities.gd"
+PlayerSettings="*res://Core/Scripts/Autoload/PlayerSettings.gd"
 
 [display]
 
