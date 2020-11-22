@@ -53,7 +53,7 @@ tile_data = PoolIntArray( -1835016, 105, 0 )
 position = Vector2( 0, -32 )
 frames = SubResource( 7 )
 animation = "flicker"
-frame = 4
+frame = 2
 playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
