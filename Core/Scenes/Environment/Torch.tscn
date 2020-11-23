@@ -1,9 +1,11 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=1]
-[ext_resource path="res://World/Prop Scenes/Images/torchflame16x16.png" type="Texture" id=2]
-[ext_resource path="res://World/Prop Scenes/Images/RadiusLightBandedMulti.png" type="Texture" id=3]
+[ext_resource path="res://Core/Image Library/torchflame16x16.png" type="Texture" id=2]
+[ext_resource path="res://Core/Image Library/RadiusLightBandedMulti.png" type="Texture" id=3]
 [ext_resource path="res://Core/Scripts/Light_Flicker.gd" type="Script" id=4]
+
+
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0125
