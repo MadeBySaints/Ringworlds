@@ -11,6 +11,9 @@ var state = Action.IDLE
 var dir = Vector2.DOWN
 var last_dir
 
+export (float) var wait_min = 1.0
+export (float) var wait_max = 1.5
+
 func _ready():
 	randomize()
 	
@@ -56,5 +59,5 @@ func choose(array):
 	return array.front()
 	
 func _on_Timer_timeout():
-	$Timer.wait_time = choose([1.0, 1.5])
+	$Timer.wait_time = choose([wait_min, wait_max])
 	state = choose([Action.IDLE, Action.NEW_DIR, Action.MOVE])

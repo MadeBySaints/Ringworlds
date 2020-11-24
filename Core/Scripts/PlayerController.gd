@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const util = preload("res://Core/Scripts/Utilities.gd")
+#const util = preload("res://Core/Scripts/Utilities.gd")
 
 export (int) var speed = 70
 
@@ -8,7 +8,7 @@ var velocity = Vector2()
 var state_machine
 var facing_dir
 
-var u = util.new()
+#var u = util.new()
 
 func _ready():
 	state_machine = $AnimationTree.get("parameters/playback")
@@ -48,9 +48,9 @@ func get_input():
 
 
 ###Debug###
-	if Input.is_action_just_pressed("garbage_collect"):
-		if OS.is_debug_build():
-			u.garbage_collection()
+#	if Input.is_action_just_pressed("garbage_collect"):
+#		if OS.is_debug_build():
+#			u.garbage_collection()
 		
 		
 func _physics_process(_delta):

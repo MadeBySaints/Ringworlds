@@ -5,8 +5,6 @@
 [ext_resource path="res://Core/Image Library/RadiusLightBandedMulti.png" type="Texture" id=3]
 [ext_resource path="res://Core/Scripts/Light_Flicker.gd" type="Script" id=4]
 
-
-
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0125
 
@@ -42,6 +40,7 @@ animations = [ {
 light_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 0, -32 )
 shape = SubResource( 1 )
 
@@ -55,7 +54,6 @@ tile_data = PoolIntArray( -1835016, 105, 0 )
 position = Vector2( 0, -32 )
 frames = SubResource( 7 )
 animation = "flicker"
-frame = 2
 playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
