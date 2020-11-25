@@ -163,15 +163,13 @@ position = Vector2( 114.44, -71.52 )
 position = Vector2( 351.218, 0 )
 
 [node name="Sheep99" parent="Ysorted Objects/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 96.4401, 0 )
+position = Vector2( 247.769, 108.582 )
 
 [node name="Sheep100" parent="Ysorted Objects/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 498.614, 290.494 )
-wait_min = 0.1
-wait_max = 0.05
+position = Vector2( 543.756, 333.129 )
 
 [node name="Sheep101" parent="Ysorted Objects/Sheep Farm" instance=ExtResource( 4 )]
-position = Vector2( 574, 186 )
+position = Vector2( 173.203, 132.582 )
 
 [node name="Foliage" type="YSort" parent="Ysorted Objects"]
 

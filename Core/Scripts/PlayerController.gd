@@ -16,7 +16,7 @@ func _ready():
 	pass
 
 func get_input():
-	#initialize velocity so player doesnt run away
+	# initialize velocity so player doesnt run away
 	velocity = Vector2()
 #	var current = state_machine.get_current_node()
 #	print(current)
