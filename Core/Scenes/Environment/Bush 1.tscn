@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/Foliage_Large_Master.png-3c77e1ff6fd63ef017c85795e4b6fed7.stex"
+
+[node name="Bush 1" type="Node2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -14 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 112, 32, 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -4, -1, -11, -3, -13, -7, -13, -14, -8, -15, 8, -15, 13, -14, 13, -7, 11, -3, 4, -1 )

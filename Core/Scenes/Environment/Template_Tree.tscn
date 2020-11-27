@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Core/Scenes/Environment/Huge Oak.tscn" type="PackedScene" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/Foliage_Large_Master.png-3c77e1ff6fd63ef017c85795e4b6fed7.stex"
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 8.0
+
+[node name="Trees" type="Node2D"]
+
+[node name="Pine 1" type="Node2D" parent="."]
+visible = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Pine 1"]
+position = Vector2( 0, -18 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 32, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Pine 1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pine 1/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Oak 1" type="Node2D" parent="."]
+visible = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Oak 1"]
+position = Vector2( 0, -19 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 0, 48, 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Oak 1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Oak 1/StaticBody2D"]
+polygon = PoolVector2Array( -8, 1, -4, -4, 4, -4, 8, 1, 8, 4, -8, 4 )
+
+[node name="Huge Oak" parent="." instance=ExtResource( 1 )]

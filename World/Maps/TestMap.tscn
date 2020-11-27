@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://World/Tilesets/HouseParts.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Tilesets/SmallProps.tres" type="TileSet" id=2]
@@ -8,9 +8,10 @@
 [ext_resource path="res://Core/Scenes/Environment/Torch.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Core/Scenes/Player/Player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Core/Scripts/Day_Night_Cycle.gd" type="Script" id=8]
-[ext_resource path="res://Core/Scenes/Environment/Green Pine.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Core/Scenes/Environment/Bush 1.tscn" type="PackedScene" id=9]
 [ext_resource path="res://World/Tilesets/Extras.tres" type="TileSet" id=10]
 [ext_resource path="res://World/Tilesets/WallsMaster.tres" type="TileSet" id=11]
+[ext_resource path="res://Core/Scenes/Environment/Huge Oak.tscn" type="PackedScene" id=12]
 
 [node name="Node2D" type="Node2D"]
 
@@ -134,7 +135,7 @@ position = Vector2( 903, 180 )
 input_pickable = false
 
 [node name="Torch7" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
-position = Vector2( 750, 70.3877 )
+position = Vector2( 742, 59.7811 )
 input_pickable = false
 
 [node name="Torch4" parent="Ysorted Objects/Lights" instance=ExtResource( 6 )]
@@ -173,23 +174,17 @@ position = Vector2( 173.203, 132.582 )
 
 [node name="Foliage" type="YSort" parent="Ysorted Objects"]
 
-[node name="Green Pine" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
-position = Vector2( 443, 148 )
+[node name="Bush 1" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
+position = Vector2( 556, 92 )
 
-[node name="Green Pine2" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
-position = Vector2( 455.913, 213.664 )
+[node name="Bush 2" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
+position = Vector2( 584, 92 )
 
-[node name="Green Pine3" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
-position = Vector2( 446.372, 200.756 )
+[node name="Bush 3" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
+position = Vector2( 570, 105 )
 
-[node name="Green Pine4" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
-position = Vector2( 533.649, 218 )
-
-[node name="Green Pine5" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
-position = Vector2( 543.756, 210 )
-
-[node name="Green Pine6" parent="Ysorted Objects/Foliage" instance=ExtResource( 9 )]
-position = Vector2( 592, -47.0278 )
+[node name="Huge Oak" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 132.44, 319.041 )
 
 [node name="Player Fighter" parent="Ysorted Objects" instance=ExtResource( 7 )]
 position = Vector2( 385, 242 )

@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/Foliage_Large_Master.png-3c77e1ff6fd63ef017c85795e4b6fed7.stex"
+
+[node name="Huge Oak" type="Node2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -53 )
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 160, 48, 96, 128 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 0, 11 )
+polygon = PoolVector2Array( -22, -12, -9, -24, 14, -24, 19, -17, 26, -10, 25, -8, -16, -8, -21, -9 )
