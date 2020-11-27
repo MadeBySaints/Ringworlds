@@ -6,7 +6,8 @@ enum Action {
 	MOVE
 }
 
-const SPEED = 50
+
+export (int) var speed = 50
 var state = Action.IDLE
 var dir = Vector2.DOWN
 var last_dir
@@ -52,7 +53,7 @@ func _process(delta):
 			last_dir = dir
 				
 func move(_delta):
-	move_and_slide(dir * SPEED)
+	move_and_slide(dir * speed)
 	
 func choose(array):
 	array.shuffle()
