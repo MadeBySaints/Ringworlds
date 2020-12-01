@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+signal dead
+
 enum Action {
 	IDLE,
 	NEW_DIR,
@@ -62,3 +64,8 @@ func choose(array):
 func _on_Timer_timeout():
 	$Timer.wait_time = choose([wait_min, wait_max])
 	state = choose([Action.IDLE, Action.NEW_DIR, Action.MOVE])
+
+
+func _on_Sheep_tree_exited():
+	emit_signal("dead")
+	pass # Replace with function body.
