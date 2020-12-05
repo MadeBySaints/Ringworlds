@@ -53,19 +53,27 @@ func _process(delta):
 				$AnimatedSprite.play("walkright")
 			#update recent direction
 			last_dir = dir
-				
+
+
 func move(_delta):
 	move_and_slide(dir * speed)
-	
+
+
 func choose(array):
 	array.shuffle()
 	return array.front()
-	
+
+
 func _on_Timer_timeout():
 	$Timer.wait_time = choose([wait_min, wait_max])
 	state = choose([Action.IDLE, Action.NEW_DIR, Action.MOVE])
 
 
-func _on_Sheep_tree_exited():
-	emit_signal("dead")
+func _on_tree_exited():
+	pass # Replace with function body.
+
+
+func _on_dead():
+	var entity_name = self.name
+	emit_signal("dead", entity_name)
 	pass # Replace with function body.

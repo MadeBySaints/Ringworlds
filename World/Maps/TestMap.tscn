@@ -170,12 +170,14 @@ position = Vector2( 1334.72, 443.599 )
 [node name="Sheep01" parent="Ysorted Objects/Sheep Farm" instance=ExtResource( 4 )]
 position = Vector2( 253.203, 132.582 )
 
-[node name="Spawner" type="Position2D" parent="Ysorted Objects/Sheep Farm"]
+[node name="Spawner" type="YSort" parent="Ysorted Objects/Sheep Farm"]
 position = Vector2( 278.269, 72.8 )
 script = ExtResource( 14 )
 entity = ExtResource( 4 )
+time = 3.0
 
 [node name="Timer" type="Timer" parent="Ysorted Objects/Sheep Farm/Spawner"]
+autostart = true
 
 [node name="Foliage" type="YSort" parent="Ysorted Objects"]
 
