@@ -3,7 +3,8 @@ extends YSort
 
 var dirh = ["LEFT", "RIGHT"]
 var dirv = ["UP", "DOWN"]
-
+var spawn
+var spawned
 var h
 var v
 var rem_time
@@ -12,11 +13,9 @@ var spawn_name
 export (PackedScene) var entity
 export (float) var time = 5.0
 export (int) var max_spawns = 5
-export (int) var min_spawn_distance = 1
-export (int) var max_spawn_distance = 5
+export (int) var min_spawn_distance = 8
+export (int) var max_spawn_distance = 64
 
-var spawned
-var spawn
 
 
 func _physics_process(_delta):
@@ -53,18 +52,18 @@ func _on_Timer_timeout():
 	$Timer.wait_time = time
 	spawned = get_child_count() - 1
 	if spawned >= max_spawns:
-		print(str(spawned) + " nodes already spawned.")
+		print(str(spawned) + " nodes already spawned.")#debug
 		return
 	else:
-		h = randi() % max_spawn_distance + min_spawn_distance * 16
-		v = randi() % max_spawn_distance + min_spawn_distance * 16
+		h = randi() % max_spawn_distance + min_spawn_distance
+		v = randi() % max_spawn_distance + min_spawn_distance
 		spawn = entity.instance()
 		set_spawn_coords()
 		spawn.position = Vector2(h, v)
 		print(spawn.position)#debug
 		name_spawn()
 		spawn.name = spawn_name
-		print(spawn.name)
+		print(spawn.name)#debug
 		add_child(spawn)
 		spawn.connect("dead", self, "entity_dead")
 
