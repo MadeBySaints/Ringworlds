@@ -1,9 +1,11 @@
 extends KinematicBody2D
 
 #const util = preload("res://Core/Scripts/Utilities.gd")
+const stats = preload("PlayerStats.gd")
 
 export (int) var speed = 70
 
+var stat = stats.new()
 var velocity = Vector2()
 var state_machine
 var facing_dir
