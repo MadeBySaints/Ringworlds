@@ -1,5 +1,9 @@
 extends CanvasModulate
 
+var types = [
+	"Light2D",
+	"AnimatedSprite"
+]
 
 var cycle = {
 	"Default": Color(1, 1, 1),
@@ -7,32 +11,35 @@ var cycle = {
 	"Dawn": Color(0.54902, 0.54902, 0.54902),
 	"Purple_Moon": Color(0.376471, 0.247059, 1)
 }
-#enum preset {
-#	SOLAR_ECLIPSE
-#	EXTENDED_DAY
-#	EXTENDED_NIGHT
-#	PERM_DAY
-#	PERM_NIGHT
-#}
 
+onready var current_cycle = cycle.Default#returns Color(n,n,n)
 
+func _process(_delta):
+	if current_cycle == cycle.Default:
+		pass
+	else:
+		pass
 
-export (int) var day_length
-export (int) var dusk_length
-export (int) var dawn_length
-export (int) var night_length
-export (int) var event_length
-export (int) var trans_length 
-#transition length between cycles when canvas is lerping to new color
-export (int) var multiplier = 1
-# multiplier for cycle length 1 = 1 minute
 
 
 func _ready():
-	#self.set_color(cycle.Purple_Moon)
 	pass
 
 
+func update_cycle():
+	if current_cycle == cycle.Default:
+		current_cycle = cycle.Dusk
+		
+	elif current_cycle == cycle.Dusk:
+		current_cycle = cycle.Purple_Moon
+	elif current_cycle == cycle.Purple_Moon:
+		current_cycle = cycle.Dawn
+	elif current_cycle == cycle.Dawn:
+		current_cycle = cycle.Default
+	else:
+		return(current_cycle)
+
 func _on_Timer_timeout():
-	#restart timer
-	pass # Replace with function body.
+	$Timer.set_wait_time(6)
+	update_cycle()
+	color = current_cycle
