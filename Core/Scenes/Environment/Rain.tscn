@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World/Weather/Raindrop.png" type="Texture" id=1]
+
+[node name="CPUParticles2D" type="CPUParticles2D"]
+z_index = 1
+amount = 500
+speed_scale = 0.3
+texture = ExtResource( 1 )
+emission_shape = 2
+emission_rect_extents = Vector2( 200, 1 )
+gravity = Vector2( -250, 500 )
+angle = -28.7

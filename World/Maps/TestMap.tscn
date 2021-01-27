@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://World/Tilesets/HouseParts.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Tilesets/SmallProps.tres" type="TileSet" id=2]
@@ -19,7 +19,6 @@
 [ext_resource path="res://Core/Scenes/Environment/Oak 3.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Core/Scenes/Environment/Oak 2.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Core/Scenes/Environment/Campfire.tscn" type="PackedScene" id=19]
-[ext_resource path="res://World/Weather/Raindrop.png" type="Texture" id=20]
 
 [node name="Node2D" type="Node2D"]
 
@@ -30,16 +29,6 @@ script = ExtResource( 8 )
 [node name="Timer" type="Timer" parent="Day Night Cycle"]
 wait_time = 6.0
 autostart = true
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Day Night Cycle"]
-z_index = 1
-amount = 500
-speed_scale = 0.3
-texture = ExtResource( 20 )
-emission_shape = 2
-emission_rect_extents = Vector2( 200, 1 )
-gravity = Vector2( -250, 500 )
-angle = -28.7
 
 [node name="Tilemaps" type="Node2D" parent="."]
 
@@ -737,5 +726,5 @@ position = Vector2( 681.459, 457.062 )
 position = Vector2( 558, 499.649 )
 
 [node name="Oak 10" parent="Ysorted Objects/Foliage" instance=ExtResource( 16 )]
-position = Vector2( 488.704, 761.243 )
+position = Vector2( 512.704, 1209.72 )
 [connection signal="timeout" from="Day Night Cycle/Timer" to="Day Night Cycle" method="_on_Timer_timeout"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=112 format=2]
+[gd_scene load_steps=113 format=2]
 
 [ext_resource path="res://Core/Image Library/FighterAnimations.png" type="Texture" id=1]
 [ext_resource path="res://Core/Scripts/PlayerController.gd" type="Script" id=2]
 [ext_resource path="res://Core/Scenes/Abstract/Emoji.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Core/Scenes/Environment/Rain.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.0
@@ -557,6 +558,10 @@ current = true
 zoom = Vector2( 0.25, 0.25 )
 smoothing_enabled = true
 smoothing_speed = 9.0
+
+[node name="Rain" parent="Camera2D" instance=ExtResource( 4 )]
+position = Vector2( 48, -135 )
+emission_rect_extents = Vector2( 300, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/atkdown = SubResource( 2 )
