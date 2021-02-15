@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Ringworlds"
-run/main_scene="res://World/Maps/TestMap.tscn"
+run/main_scene="res://World/Maps/Sector 3 Forest.tscn"
 config/icon="res://Ringworld128x128.png"
 
 [autoload]
