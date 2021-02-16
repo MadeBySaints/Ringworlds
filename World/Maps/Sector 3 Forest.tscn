@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://World/Tilesets/HouseParts.tres" type="TileSet" id=1]
+[ext_resource path="res://World/Houses/Primitive Hut.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Tilesets/SmallProps.tres" type="TileSet" id=2]
 [ext_resource path="res://World/Tilesets/Terrains.tres" type="TileSet" id=3]
 [ext_resource path="res://Core/Scenes/Entity/Sheep.tscn" type="PackedScene" id=4]
@@ -52,22 +52,6 @@ tile_set = ExtResource( 11 )
 cell_size = Vector2( 16, 16 )
 format = 1
 
-[node name="House" type="TileMap" parent="Tilemaps"]
-tile_set = ExtResource( 1 )
-cell_size = Vector2( 16, 16 )
-format = 1
-
-[node name="Fences" type="TileMap" parent="Tilemaps/House"]
-tile_set = ExtResource( 11 )
-cell_size = Vector2( 16, 16 )
-format = 1
-
-[node name="Roof" type="TileMap" parent="Tilemaps/House"]
-z_index = 1
-tile_set = ExtResource( 1 )
-cell_size = Vector2( 16, 16 )
-format = 1
-
 [node name="Small Props 1" type="TileMap" parent="Tilemaps"]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 1, 1 )
@@ -85,6 +69,11 @@ format = 1
 
 [node name="Ysorted Objects" type="YSort" parent="."]
 
+[node name="Structures" type="YSort" parent="Ysorted Objects"]
+
+[node name="Node2D" parent="Ysorted Objects/Structures" instance=ExtResource( 1 )]
+position = Vector2( 183.686, 85.3071 )
+
 [node name="Lights" type="YSort" parent="Ysorted Objects"]
 
 [node name="Enemies" type="YSort" parent="Ysorted Objects"]
@@ -97,7 +86,7 @@ entity = ExtResource( 4 )
 
 [node name="Foliage" type="YSort" parent="Ysorted Objects"]
 
-[node name="Player Fighter" parent="." instance=ExtResource( 7 )]
+[node name="Player Fighter" parent="Ysorted Objects" instance=ExtResource( 7 )]
 position = Vector2( 289.8, 132.582 )
 collision_layer = 2147483649
 collision_mask = 2147483649
