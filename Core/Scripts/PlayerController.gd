@@ -3,7 +3,7 @@ extends KinematicBody2D
 #const util = preload("res://Core/Scripts/Utilities.gd")
 #const stats = preload("res://Core/Scripts/Autoload/PlayerStats.gd")
 
-export (int) var speed = 70
+export (int) var speed = 250
 
 onready var stat = get_node("/root/PlayerStats")
 var velocity = Vector2()
@@ -48,13 +48,6 @@ func get_input():
 		state_machine.travel("atk" + str(facing_dir))
 
 
-
-###Debug###
-#	if Input.is_action_just_pressed("garbage_collect"):
-#		if OS.is_debug_build():
-#			u.garbage_collection()
-		
-		
 func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
