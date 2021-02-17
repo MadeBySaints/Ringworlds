@@ -1,7 +1,7 @@
 extends Light2D
 
 export (bool) var isoff = false
-export (int) var nPer = 16
+export (int) var nPer = 16#noise period
 export (float) var defEnergy = 0.8
 export (float) var flux = 0.5
 

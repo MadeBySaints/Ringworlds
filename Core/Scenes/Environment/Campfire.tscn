@@ -1,89 +1,106 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=27 format=2]
 
-[ext_resource path="res://Core/Image Library/flame_11.png" type="Texture" id=1]
+[ext_resource path="res://Core/Image Library/CampfireFlame.png" type="Texture" id=1]
 [ext_resource path="res://World/Tilesets/SmallProps.tres" type="TileSet" id=2]
 [ext_resource path="res://Core/Image Library/RadiusLightBandedMulti.png" type="Texture" id=3]
 [ext_resource path="res://Core/Scripts/Light_Flicker.gd" type="Script" id=4]
+[ext_resource path="res://Core/Image Library/TorchSmoke.png" type="Texture" id=5]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 40.0125
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 6, 44 )
 
 [sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 17, 40 )
+atlas = ExtResource( 5 )
+region = Rect2( 6, 0, 6, 44 )
 
 [sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 1 )
-region = Rect2( 17, 0, 17, 40 )
+atlas = ExtResource( 5 )
+region = Rect2( 12, 0, 6, 44 )
 
 [sub_resource type="AtlasTexture" id=4]
-atlas = ExtResource( 1 )
-region = Rect2( 34, 0, 17, 40 )
+atlas = ExtResource( 5 )
+region = Rect2( 18, 0, 6, 44 )
 
 [sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 1 )
-region = Rect2( 51, 0, 17, 40 )
+atlas = ExtResource( 5 )
+region = Rect2( 24, 0, 6, 44 )
 
 [sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 1 )
-region = Rect2( 68, 0, 17, 40 )
+atlas = ExtResource( 5 )
+region = Rect2( 30, 0, 6, 44 )
 
 [sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 1 )
-region = Rect2( 85, 0, 17, 40 )
+atlas = ExtResource( 5 )
+region = Rect2( 36, 0, 6, 44 )
 
 [sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 1 )
-region = Rect2( 102, 0, 17, 40 )
+atlas = ExtResource( 5 )
+region = Rect2( 42, 0, 6, 44 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 1 )
-region = Rect2( 119, 0, 17, 40 )
+region = Rect2( 0, 0, 17, 40 )
 
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 1 )
-region = Rect2( 136, 0, 17, 40 )
+region = Rect2( 17, 0, 17, 40 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 1 )
-region = Rect2( 153, 0, 17, 40 )
+region = Rect2( 34, 0, 17, 40 )
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 1 )
-region = Rect2( 170, 0, 17, 40 )
+region = Rect2( 51, 0, 17, 40 )
 
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 1 )
+region = Rect2( 68, 0, 17, 40 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 1 )
+region = Rect2( 85, 0, 17, 40 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 1 )
+region = Rect2( 102, 0, 17, 40 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 1 )
+region = Rect2( 119, 0, 17, 40 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 1 )
+region = Rect2( 136, 0, 17, 40 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 1 )
+region = Rect2( 153, 0, 17, 40 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 1 )
+region = Rect2( 170, 0, 17, 40 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 1 )
 region = Rect2( 187, 0, 17, 40 )
 
-[sub_resource type="SpriteFrames" id=14]
+[sub_resource type="SpriteFrames" id=21]
 animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "off",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
 "loop": true,
 "name": "flicker",
 "speed": 6.0
 } ]
 
-[node name="Campfire" type="Area2D"]
+[node name="Campfire" type="Node2D"]
 light_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( 0, -32 )
-shape = SubResource( 1 )
-
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 2 )
-cell_size = Vector2( 1, 1 )
-format = 1
-tile_data = PoolIntArray( -1835016, 105, 0, -589831, 0, 4 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -18 )
-frames = SubResource( 14 )
-animation = "flicker"
-frame = 7
-playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
 texture = ExtResource( 3 )
@@ -93,3 +110,16 @@ shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1
 script = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 1, 1 )
+format = 1
+tile_data = PoolIntArray( -1835016, 105, 0, -589831, 0, 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -18 )
+frames = SubResource( 21 )
+animation = "flicker"
+frame = 3
+playing = true

@@ -9,5 +9,5 @@ speed_scale = 0.3
 texture = ExtResource( 1 )
 emission_shape = 2
 emission_rect_extents = Vector2( 200, 1 )
-gravity = Vector2( -250, 500 )
+gravity = Vector2( -250, 900 )
 angle = -28.7
