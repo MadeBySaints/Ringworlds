@@ -1,12 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=1]
 [ext_resource path="res://Core/Image Library/torchflame16x16.png" type="Texture" id=2]
 [ext_resource path="res://Core/Image Library/RadiusLightBandedMulti.png" type="Texture" id=3]
 [ext_resource path="res://Core/Scripts/Light_Flicker.gd" type="Script" id=4]
-
-[sub_resource type="CircleShape2D" id=1]
-radius = 40.0125
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
@@ -36,25 +33,20 @@ animations = [ {
 "speed": 6.0
 } ]
 
-[node name="Torch" type="Area2D"]
+[node name="Torch" type="Node2D"]
 light_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( 0, -32 )
-shape = SubResource( 1 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 1, 1 )
 format = 1
-tile_data = PoolIntArray( -1835016, 105, 0 )
+tile_data = PoolIntArray( -1835016, 0, 0 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -32 )
 frames = SubResource( 7 )
 animation = "flicker"
-frame = 4
+frame = 1
 playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
