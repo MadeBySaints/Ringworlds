@@ -72,7 +72,10 @@ position = Vector2( 183.686, 85.3071 )
 [node name="Lights" type="YSort" parent="Ysorted Objects"]
 
 [node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 5 )]
-position = Vector2( 161.785, 142.19 )
+position = Vector2( 148.101, 108.448 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Ysorted Objects/Lights"]
+color = Color( 0.384314, 0.384314, 0.384314, 1 )
 
 [node name="Enemies" type="YSort" parent="Ysorted Objects"]
 

@@ -1,53 +1,90 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://World/Tilesets/PropsMaster.tres" type="TileSet" id=1]
-[ext_resource path="res://Core/Image Library/torchflame16x16.png" type="Texture" id=2]
+[ext_resource path="res://Core/Image Library/TorchFlame.png" type="Texture" id=2]
 [ext_resource path="res://Core/Image Library/RadiusLightBandedMulti.png" type="Texture" id=3]
 [ext_resource path="res://Core/Scripts/Light_Flicker.gd" type="Script" id=4]
+[ext_resource path="res://Core/Image Library/TorchSmoke.png" type="Texture" id=5]
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 6, 44 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 5 )
+region = Rect2( 6, 0, 6, 44 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 5 )
+region = Rect2( 12, 0, 6, 44 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 5 )
+region = Rect2( 18, 0, 6, 44 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 5 )
+region = Rect2( 24, 0, 6, 44 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 5 )
+region = Rect2( 30, 0, 6, 44 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 5 )
+region = Rect2( 36, 0, 6, 44 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 5 )
+region = Rect2( 42, 0, 6, 44 )
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 18, 44 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 16, 16 )
+region = Rect2( 18, 0, 18, 44 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
-region = Rect2( 16, 0, 16, 16 )
+region = Rect2( 36, 0, 18, 44 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
-region = Rect2( 32, 0, 16, 16 )
+region = Rect2( 54, 0, 18, 44 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
-region = Rect2( 48, 0, 16, 16 )
+region = Rect2( 72, 0, 18, 44 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 2 )
-region = Rect2( 64, 0, 16, 16 )
+region = Rect2( 90, 0, 18, 44 )
 
-[sub_resource type="SpriteFrames" id=7]
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 108, 0, 18, 44 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 126, 0, 18, 44 )
+
+[sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"loop": true,
+"name": "off",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
 "loop": true,
 "name": "flicker",
-"speed": 6.0
+"speed": 8.0
 } ]
 
 [node name="Torch" type="Node2D"]
 light_mask = 0
-
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 1 )
-cell_size = Vector2( 1, 1 )
-format = 1
-tile_data = PoolIntArray( -1835016, 0, 0 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -32 )
-frames = SubResource( 7 )
-animation = "flicker"
-frame = 1
-playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
 position = Vector2( 0, -25 )
@@ -58,3 +95,17 @@ shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1
 script = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 1, 1 )
+format = 1
+tile_data = PoolIntArray( -1835016, 0, 0 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -42 )
+scale = Vector2( 0.75, 0.75 )
+frames = SubResource( 9 )
+animation = "flicker"
+frame = 2
+playing = true
