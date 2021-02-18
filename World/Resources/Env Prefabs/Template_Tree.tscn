@@ -1,6 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Core/Scenes/Environment/Huge Oak.tscn" type="PackedScene" id=1]
+[ext_resource path="res://World/Resources/Env Prefabs/Huge Oak.tscn" type="PackedScene" id=1]
+
+
+
 
 [sub_resource type="StreamTexture" id=1]
 load_path = "res://.import/Foliage_Large_Master.png-3c77e1ff6fd63ef017c85795e4b6fed7.stex"

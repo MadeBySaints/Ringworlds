@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Core/Scenes/Entity/Neutral/Sheep.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Core/Scenes/Environment/Rain.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Core/Scenes/Environment/Torch.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Core/Scenes/Environment/Campfire.tscn" type="PackedScene" id=4]
+[ext_resource path="res://World/Resources/Env Prefabs/Rain.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World/Resources/Env Prefabs/Torch.tscn" type="PackedScene" id=3]
+[ext_resource path="res://World/Resources/Env Prefabs/Campfire.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Core/Scenes/Spawner.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Core/Scenes/Player/Player.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Maps/Tilesets/SmallProps.tres" type="TileSet" id=7]
-[ext_resource path="res://World/Maps/Tilesets/Terrains.tres" type="TileSet" id=8]
+[ext_resource path="res://World/Resources/Tilesets/SmallProps.tres" type="TileSet" id=7]
+[ext_resource path="res://World/Resources/Tilesets/Terrains.tres" type="TileSet" id=8]
 
 [node name="Node2D" type="Node2D"]
 
