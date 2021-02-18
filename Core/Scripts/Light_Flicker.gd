@@ -4,9 +4,6 @@ export (bool) var isoff = false
 export (int) var nPer = 16#noise period
 export (float) var defEnergy = 0.8
 export (float) var flux = 0.1
-export (float) var red = 0.0
-export (float) var green = 0.0
-export (float) var blue = 0.0
 
 onready var noise = OpenSimplexNoise.new()
 var value = 0.0
@@ -22,10 +19,12 @@ func _ready():
 
 func turn_off():
 	$Light2D.set_energy(0.0)
+	$AnimatedSprite.set_animation("off")
 	pass
 
 func turn_on():
 	$Light2D.set_energy(defEnergy)
+	$AnimatedSprite.set_animation("flicker")
 	pass
 
 func flicker():
