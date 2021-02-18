@@ -1,9 +1,12 @@
-extends Light2D
+extends Node2D
 
 export (bool) var isoff = false
 export (int) var nPer = 16#noise period
 export (float) var defEnergy = 0.8
-export (float) var flux = 0.5
+export (float) var flux = 0.1
+export (float) var red = 0.0
+export (float) var green = 0.0
+export (float) var blue = 0.0
 
 onready var noise = OpenSimplexNoise.new()
 var value = 0.0
@@ -18,20 +21,20 @@ func _ready():
 		turn_off()
 
 func turn_off():
-	set_energy(0.0)
+	$Light2D.set_energy(0.0)
 	pass
 
 func turn_on():
-	set_energy(defEnergy)
+	$Light2D.set_energy(defEnergy)
 	pass
 
 func flicker():
-	var a = get_color()
+	#var a = $Light2D.get_color()
 	value += flux
 	if(value > MAX):
 		value = 0.0
 	var alpha = ((noise.get_noise_1d(value) + 1) / 4.0) + 0.5
-	self.color = Color(color.r, color.g, color.b, alpha)
+	$Light2D.color = Color($Light2D.color.r, $Light2D.color.g, $Light2D.color.b, alpha)
 
 func _process(_delta):
 	flicker()

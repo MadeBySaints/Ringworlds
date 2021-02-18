@@ -6,8 +6,6 @@
 [ext_resource path="res://Core/Scripts/Light_Flicker.gd" type="Script" id=4]
 [ext_resource path="res://Core/Image Library/TorchSmoke.png" type="Texture" id=5]
 
-
-
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 6, 44 )
@@ -87,6 +85,7 @@ animations = [ {
 
 [node name="Torch" type="Node2D"]
 light_mask = 0
+script = ExtResource( 4 )
 
 [node name="Light2D" type="Light2D" parent="."]
 position = Vector2( 0, -25.5 )
@@ -96,7 +95,6 @@ energy = 0.8
 shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1
-script = ExtResource( 4 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -109,4 +107,5 @@ position = Vector2( 0, -42 )
 scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 17 )
 animation = "flicker"
+frame = 6
 playing = true
