@@ -1,6 +1,6 @@
-[gd_resource type="TileSet" load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
-[ext_resource path="res://World/Tilesets/Images/house primitive.png" type="Texture" id=1]
+[ext_resource path="res://World/Image Library/Tilesets/House Primitive.png" type="Texture" id=1]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 48, 92, 32, 88, 16, 75, 16, 48, 32, 32, 80, 32, 96, 48, 96, 75, 80, 88, 64, 92, 64, 72, 48, 72 )
@@ -74,7 +74,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 8, 0, 12 )
 [sub_resource type="ConvexPolygonShape2D" id=24]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 12, 0, 8 )
 
-[resource]
+[sub_resource type="TileSet" id=25]
 0/name = "House Primitive"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -256,3 +256,11 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 12, 0, 8 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="House" type="TileMap" parent="."]
+tile_set = SubResource( 25 )
+cell_size = Vector2( 2, 2 )
+format = 1
+tile_data = PoolIntArray( -2752540, 0, 0 )
