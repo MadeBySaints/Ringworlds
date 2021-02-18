@@ -79,7 +79,6 @@ color = Color( 0.384314, 0.384314, 0.384314, 1 )
 
 [node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 3 )]
 position = Vector2( 165.779, 100.582 )
-isoff = true
 
 [node name="Enemies" type="YSort" parent="Ysorted Objects"]
 
