@@ -14,7 +14,6 @@
 
 [node name="Rain" parent="Tilemaps" instance=ExtResource( 2 )]
 position = Vector2( 401.044, -185.859 )
-emitting = false
 amount = 5000
 lifetime = 1.1
 emission_rect_extents = Vector2( 750, 1 )
