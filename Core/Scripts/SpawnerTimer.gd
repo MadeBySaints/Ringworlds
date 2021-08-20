@@ -52,7 +52,7 @@ func _on_Timer_timeout():
 	$Timer.wait_time = time
 	spawned = get_child_count() - 1
 	if spawned >= max_spawns:
-		print(str(spawned) + " nodes already spawned.")#debug
+		#print(str(spawned) + " nodes already spawned.")#debug
 		return
 	else:
 		h = randi() % max_spawn_distance + min_spawn_distance

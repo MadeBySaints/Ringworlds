@@ -13,9 +13,8 @@ var total_time
 var enemies_slain
 
 var ability_score = [
-	"Strength",
-	"Dexterity",
-	"Intellect",
+	"Power",
+	"Intellegence",
 	"Luck"
 	]
 	
@@ -25,8 +24,12 @@ var modifier = [
 	"Speed",
 	"Critical Rate",
 	"Drop Rate",
-	"EXP Rate"
+	"EXP Rate",
+	"Level"
 	]
+var atkFormula = modifier.Attack
+var defFormula = modifier.Defense
+var damageCalc = atkFormula - defFormula
 
 var point = [
 	"HP",
