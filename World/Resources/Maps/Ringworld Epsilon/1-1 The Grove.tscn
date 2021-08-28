@@ -79,7 +79,7 @@ format = 1
 color = Color( 0.384314, 0.384314, 0.384314, 1 )
 
 [node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 2 )]
-position = Vector2( 184, 96 )
+position = Vector2( 184, 99 )
 
 [node name="Enemies" type="YSort" parent="Ysorted Objects"]
 
