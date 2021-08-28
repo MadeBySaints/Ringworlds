@@ -73,3 +73,7 @@ data_*/
 # 3D Images
 *.3dm
 *.max
+
+# Music and Sounds
+*.ogg
+*.wav
