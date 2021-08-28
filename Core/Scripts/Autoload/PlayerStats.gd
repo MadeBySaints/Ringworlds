@@ -2,42 +2,34 @@ extends Node
 
 var base_health
 var current_health
-var base_mana
-var current_mana
 var base_energy
 var current_energy
 
-var job
 var level
 var total_time
 var enemies_slain
 
 var ability_score = [
-	"Power",
-	"Intellegence",
-	"Luck"
+	"Power",#attack, base health
+	"Intellegence",#exp rate, crit rate
+	"Endurance",#defense, base energy
+	"Luck"#drop rate, crit rate
 	]
 	
 var modifier = [
 	"Attack",
 	"Defense",
-	"Speed",
+	"Move Speed",
 	"Critical Rate",
 	"Drop Rate",
 	"EXP Rate",
 	"Level"
 	]
-var atkFormula = modifier.Attack
-var defFormula = modifier.Defense
-var damageCalc = atkFormula - defFormula
 
 var point = [
 	"HP",
-	"MP",
-	"SP",
 	"AP"
-	] 
-	#hp/mp, skill point, ability point
+	]
 
 var tracker = {
 	"Time Played" : total_time,
@@ -51,10 +43,10 @@ var save_data = {}
 func _ready():
 	pass # Replace with function body.
 
-func remove_health(amount, damage_reduction):
+func remove_health(amount):
 	pass
 	
-func add_health(amount, mod):
+func add_health(amount):
 	pass
 	
 func remove_mana(amount):
