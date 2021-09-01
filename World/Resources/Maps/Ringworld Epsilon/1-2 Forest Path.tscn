@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://World/Resources/Tilesets/Terrains.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Resources/Tilesets/SmallProps.tres" type="TileSet" id=2]
 [ext_resource path="res://World/Resources/Env Prefabs/Pine 1.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 52 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -1341,3 +1344,11 @@ position = Vector2( 171, -87 )
 [node name="Lights" type="YSort" parent="Ysorted Objects"]
 
 [node name="Enemies" type="YSort" parent="Ysorted Objects"]
+
+[node name="Map Transition Boundaries" type="Node2D" parent="."]
+
+[node name="West Boundary" type="Area2D" parent="Map Transition Boundaries"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Transition Boundaries/West Boundary"]
+position = Vector2( -775, -125 )
+shape = SubResource( 1 )
