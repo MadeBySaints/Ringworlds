@@ -37,8 +37,11 @@ format = 1
 
 [node name="Props" type="TileMap" parent="TileMaps"]
 tile_set = ExtResource( 2 )
-cell_size = Vector2( 16, 16 )
+cell_size = Vector2( 1, 1 )
+cell_tile_origin = 2
+cell_y_sort = true
 format = 1
+tile_data = PoolIntArray( -10223142, 0, 720897, -7930488, 0, 851972, -6881321, 0, 786434, -6159828, 0, 786434, -3931731, 0, 851971, -3210739, 0, 720897, 786571, 0, 786434, 2097612, 0, 720897 )
 
 [node name="Props 2" type="TileMap" parent="TileMaps"]
 tile_set = ExtResource( 2 )
@@ -873,6 +876,36 @@ position = Vector2( -711, -165 )
 
 [node name="Pine 244" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
 position = Vector2( -711, -141 )
+
+[node name="Pine 419" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( -352, -13 )
+
+[node name="Pine 427" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( -537, -99 )
+
+[node name="Pine 428" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( -503, 18 )
+
+[node name="Pine 420" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( -151, -87 )
+
+[node name="Pine 421" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( -55, 6 )
+
+[node name="Pine 422" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( 75, 16 )
+
+[node name="Pine 423" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( 251, -87 )
+
+[node name="Pine 424" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( 267, -75 )
+
+[node name="Pine 425" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( 331, -75 )
+
+[node name="Pine 426" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
+position = Vector2( 283, 40 )
 
 [node name="Pine 245" parent="Ysorted Objects/Foliage" instance=ExtResource( 3 )]
 position = Vector2( -743, -141 )

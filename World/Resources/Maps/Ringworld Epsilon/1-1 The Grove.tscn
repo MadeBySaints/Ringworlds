@@ -60,6 +60,7 @@ cell_size = Vector2( 1, 1 )
 cell_tile_origin = 2
 cell_y_sort = true
 format = 1
+tile_data = PoolIntArray( 4456836, 536870912, 786433, 6225935, 0, 786433, 10158546, 0, 851972, 13828218, 0, 786433, 15270134, 0, 851968 )
 
 [node name="Small Props 2" type="TileMap" parent="Tilemaps"]
 z_index = 1
