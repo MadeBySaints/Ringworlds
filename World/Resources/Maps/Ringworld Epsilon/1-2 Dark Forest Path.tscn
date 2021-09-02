@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://World/Resources/Tilesets/Terrains.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Resources/Tilesets/SmallProps.tres" type="TileSet" id=2]
 [ext_resource path="res://World/Resources/Env Prefabs/Pine 1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://World/Resources/Env Prefabs/Torch.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 52 )
@@ -1342,6 +1343,33 @@ position = Vector2( 171, -87 )
 [node name="Structures" type="YSort" parent="Ysorted Objects"]
 
 [node name="Lights" type="YSort" parent="Ysorted Objects"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Ysorted Objects/Lights"]
+color = Color( 0.105882, 0.105882, 0.105882, 1 )
+
+[node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
+position = Vector2( -679, -140 )
+
+[node name="Torch2" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
+position = Vector2( -397, 0 )
+
+[node name="Torch3" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
+position = Vector2( -119, -86 )
+
+[node name="Torch4" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
+position = Vector2( 187, 36 )
+
+[node name="Torch5" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
+position = Vector2( 398, -80 )
+
+[node name="Torch6" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
+position = Vector2( 693, -63 )
+
+[node name="Torch7" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
+position = Vector2( 517, -237 )
+
+[node name="Torch8" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
+position = Vector2( 517, 118 )
 
 [node name="Enemies" type="YSort" parent="Ysorted Objects"]
 
