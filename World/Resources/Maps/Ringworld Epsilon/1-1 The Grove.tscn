@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Core/Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Resources/Env Prefabs/Torch.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://World/Resources/Env Prefabs/Rain.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Resources/Tilesets/Terrains.tres" type="TileSet" id=7]
 [ext_resource path="res://World/Resources/Tilesets/SmallProps.tres" type="TileSet" id=8]
+[ext_resource path="res://Core/Scripts/Map Change.gd" type="Script" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 25 )
@@ -341,9 +342,12 @@ collision_mask = 2147483649
 speed = 50
 
 [node name="Map Transition Boundaries" type="Node2D" parent="."]
+script = ExtResource( 9 )
 
 [node name="East Boundary" type="Area2D" parent="Map Transition Boundaries"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Map Transition Boundaries/East Boundary"]
 position = Vector2( 520, 194 )
 shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Map Transition Boundaries/East Boundary" to="Map Transition Boundaries" method="_on_East_Boundary_body_entered"]

@@ -1,7 +1,5 @@
 extends Node
 
-class_name Utils
-
 var gamestate
 #onready var data = []
 var strays = {}

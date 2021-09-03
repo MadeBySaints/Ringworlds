@@ -8,22 +8,6 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Node",
-"class": "UserSettings",
-"language": "GDScript",
-"path": "res://Core/Scripts/Autoload/PlayerSettings.gd"
-}, {
-"base": "Node",
-"class": "Utils",
-"language": "GDScript",
-"path": "res://Core/Scripts/Utilities.gd"
-} ]
-_global_script_class_icons={
-"UserSettings": "",
-"Utils": ""
-}
-
 [application]
 
 config/name="Ringworlds"
@@ -33,9 +17,6 @@ config/icon="res://Ringworld128x128.png"
 [autoload]
 
 Global="*res://Core/Scripts/Autoload/GlobalStrings.gd"
-PlayerStats="*res://Core/Scripts/Autoload/PlayerStats.gd"
-Utilities="*res://Core/Scripts/Utilities.gd"
-PlayerSettings="*res://Core/Scripts/Autoload/PlayerSettings.gd"
 
 [display]
 

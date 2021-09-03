@@ -5,7 +5,7 @@ extends KinematicBody2D
 
 export (int) var speed = 250
 
-onready var stat = get_node("/root/PlayerStats")
+#onready var stat = get_node("/root/PlayerStats")
 var velocity = Vector2()
 var state_machine
 var facing_dir
