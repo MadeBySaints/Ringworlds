@@ -107,5 +107,5 @@ position = Vector2( 0, -42 )
 scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 17 )
 animation = "flicker"
-frame = 6
+frame = 2
 playing = true

@@ -6,8 +6,6 @@
 [ext_resource path="res://Core/Scripts/Light_Flicker.gd" type="Script" id=4]
 [ext_resource path="res://Core/Image Library/TorchSmoke.png" type="Texture" id=5]
 
-
-
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 6, 44 )
@@ -123,5 +121,5 @@ tile_data = PoolIntArray( -1835016, 105, 0, -589831, 0, 4 )
 position = Vector2( 0, -18 )
 frames = SubResource( 21 )
 animation = "flicker"
-frame = 3
+frame = 2
 playing = true
