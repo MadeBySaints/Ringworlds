@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Core/Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Resources/Env Prefabs/Torch.tscn" type="PackedScene" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://World/Resources/Tilesets/SmallProps.tres" type="TileSet" id=8]
 [ext_resource path="res://Core/Scripts/Map Change.gd" type="Script" id=9]
 [ext_resource path="res://World/Resources/Env Prefabs/Huge Oak.tscn" type="PackedScene" id=10]
+[ext_resource path="res://World/Resources/Env Prefabs/Pine 2.tscn" type="PackedScene" id=11]
+[ext_resource path="res://World/Resources/Env Prefabs/Oak 1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Core/Scripts/Day_Night_Cycle.gd" type="Script" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 25 )
@@ -83,6 +86,11 @@ format = 1
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Ysorted Objects/Lights"]
 color = Color( 0.384314, 0.384314, 0.384314, 1 )
+script = ExtResource( 13 )
+
+[node name="Timer" type="Timer" parent="Ysorted Objects/Lights/CanvasModulate"]
+wait_time = 5.0
+autostart = true
 
 [node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 2 )]
 position = Vector2( 219, 152 )
@@ -360,6 +368,12 @@ position = Vector2( -67.072, 83.4185 )
 [node name="Huge Oak" parent="Ysorted Objects/Foliage" instance=ExtResource( 10 )]
 position = Vector2( 191, 74 )
 
+[node name="Oak 1" parent="Ysorted Objects/Foliage" instance=ExtResource( 12 )]
+position = Vector2( 68, 15 )
+
+[node name="Pine 87" parent="Ysorted Objects/Foliage" instance=ExtResource( 11 )]
+position = Vector2( 419, 101 )
+
 [node name="Player Fighter" parent="Ysorted Objects" instance=ExtResource( 1 )]
 position = Vector2( 289.8, 132.582 )
 collision_layer = 2147483649
@@ -375,4 +389,5 @@ script = ExtResource( 9 )
 position = Vector2( 520, 194 )
 shape = SubResource( 1 )
 
+[connection signal="timeout" from="Ysorted Objects/Lights/CanvasModulate/Timer" to="Ysorted Objects/Lights/CanvasModulate" method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Map Transition Boundaries/East Boundary" to="Map Transition Boundaries" method="_on_East_Boundary_body_entered"]

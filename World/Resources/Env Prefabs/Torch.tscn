@@ -90,7 +90,6 @@ script = ExtResource( 4 )
 [node name="Light2D" type="Light2D" parent="."]
 position = Vector2( 0, -25.5 )
 texture = ExtResource( 3 )
-texture_scale = 2.93
 energy = 0.8
 shadow_enabled = true
 shadow_filter = 5
@@ -107,5 +106,5 @@ position = Vector2( 0, -42 )
 scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 17 )
 animation = "flicker"
-frame = 2
+frame = 5
 playing = true

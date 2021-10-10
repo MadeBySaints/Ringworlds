@@ -1,21 +1,19 @@
 extends CanvasModulate
 
-var types = [
-	"Light2D",
-	"AnimatedSprite"
-]
-
-var cycle = {
-	"Default": Color(1, 1, 1),
-	"Dusk": Color(0.407843, 0.407843, 0.407843),
-	"Dawn": Color(0.54902, 0.54902, 0.54902),
-	"Purple_Moon": Color(0.376471, 0.247059, 1)
+var c_norm = {
+	day = Color(1, 1, 1, 1),
+	dusk = Color(0.407843, 0.407843, 0.407843, 1),
+	dawn = Color(0.54902, 0.54902, 0.54902, 1),
+	dark = Color(0.307843, 0.307843, 0.307843, 1)
+}
+var c_spec = {
+	purp_moon = Color(0.376471, 0.247059, 1, 1)
 }
 
-onready var current_cycle = cycle.Default#returns Color(n,n,n)
+onready var current_cycle = c_norm.day#returns Color(n,n,n,n)
 
 func _process(_delta):
-	if current_cycle == cycle.Default:
+	if current_cycle == c_norm.day:
 		pass
 	else:
 		pass
@@ -27,19 +25,19 @@ func _ready():
 
 
 func update_cycle():
-	if current_cycle == cycle.Default:
-		current_cycle = cycle.Dusk
+	if current_cycle == c_norm.day:
+		current_cycle = c_norm.dusk
 		
-	elif current_cycle == cycle.Dusk:
-		current_cycle = cycle.Purple_Moon
-	elif current_cycle == cycle.Purple_Moon:
-		current_cycle = cycle.Dawn
-	elif current_cycle == cycle.Dawn:
-		current_cycle = cycle.Default
+	elif current_cycle == c_norm.dusk:
+		current_cycle = c_norm.dark
+	elif current_cycle == c_norm.dark:
+		current_cycle = c_norm.dawn
+	elif current_cycle == c_norm.dawn:
+		current_cycle = c_norm.day
 	else:
 		return(current_cycle)
 
 func _on_Timer_timeout():
 	$Timer.set_wait_time(6)
 	update_cycle()
-	color = current_cycle
+	self.color = current_cycle
