@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://World/Resources/Tilesets/Terrains.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Resources/Env Prefabs/Pine 1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/Resources/Env Prefabs/Campfire.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Resources/Env Prefabs/Oak 1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Core/Scenes/World/Day Night Cycle Canvas Modulate.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -144,8 +145,7 @@ position = Vector2( 46, 16 )
 
 [node name="Light Sources" type="YSort" parent="Ysorted Objects"]
 
-[node name="CanvasModulate" type="CanvasModulate" parent="Ysorted Objects/Light Sources"]
-color = Color( 0.156863, 0.156863, 0.156863, 1 )
+[node name="CanvasModulate" parent="Ysorted Objects/Light Sources" instance=ExtResource( 5 )]
 
 [node name="Campfire" parent="Ysorted Objects/Light Sources" instance=ExtResource( 3 )]
 position = Vector2( 17, 5 )

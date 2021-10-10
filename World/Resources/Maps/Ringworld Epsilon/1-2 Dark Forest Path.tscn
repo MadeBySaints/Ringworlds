@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://World/Resources/Tilesets/Terrains.tres" type="TileSet" id=1]
 [ext_resource path="res://World/Resources/Tilesets/SmallProps.tres" type="TileSet" id=2]
 [ext_resource path="res://World/Resources/Env Prefabs/Pine 1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Resources/Env Prefabs/Torch.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Core/Scenes/World/Day Night Cycle Canvas Modulate.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 52 )
@@ -2977,8 +2978,7 @@ position = Vector2( 171, -87 )
 
 [node name="Lights" type="YSort" parent="Ysorted Objects"]
 
-[node name="CanvasModulate" type="CanvasModulate" parent="Ysorted Objects/Lights"]
-color = Color( 0.156863, 0.156863, 0.156863, 1 )
+[node name="CanvasModulate" parent="Ysorted Objects/Lights" instance=ExtResource( 5 )]
 
 [node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 4 )]
 position = Vector2( -679, -140 )
