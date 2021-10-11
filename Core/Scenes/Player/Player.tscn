@@ -1,8 +1,9 @@
-[gd_scene load_steps=105 format=2]
+[gd_scene load_steps=106 format=2]
 
 [ext_resource path="res://Core/Image Library/FighterAnimations.png" type="Texture" id=1]
 [ext_resource path="res://Core/Scripts/PlayerController.gd" type="Script" id=2]
 [ext_resource path="res://Core/Scenes/Abstract/Emoji.tscn" type="PackedScene" id=3]
+[ext_resource path="res://World/Image Library/Weather/Raindrop.png" type="Texture" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.0
@@ -539,3 +540,18 @@ active = true
 parameters/playback = SubResource( 107 )
 
 [node name="Emoji" parent="." instance=ExtResource( 3 )]
+
+[node name="Rain" type="CPUParticles2D" parent="."]
+position = Vector2( 0, -160 )
+z_index = 1
+emitting = false
+amount = 500
+lifetime = 0.85
+speed_scale = 0.3
+texture = ExtResource( 4 )
+emission_shape = 2
+emission_rect_extents = Vector2( 275, 1 )
+gravity = Vector2( 0, 900 )
+angle = 180.0
+scale_amount = 0.0
+scale_amount_random = 1.0

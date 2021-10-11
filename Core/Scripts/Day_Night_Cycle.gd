@@ -20,6 +20,7 @@ var weather = {
 onready var current_cycle = c_norm.day#returns Color(n,n,n,n)
 onready var current_weather = weather.clear
 
+
 func _process(_delta):
 	if current_cycle == c_norm.day:
 		pass
