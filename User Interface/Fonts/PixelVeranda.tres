@@ -1,10 +1,9 @@
 [gd_resource type="DynamicFont" load_steps=2 format=2]
 
-[ext_resource path="res://User Interface/Fonts/FutureGothic.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://User Interface/Fonts/PixelFJVerdana12pt.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 12
+size = 8
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
-extra_spacing_char = 2
 font_data = ExtResource( 1 )

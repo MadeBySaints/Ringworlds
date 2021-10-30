@@ -1,9 +1,11 @@
-[gd_scene load_steps=106 format=2]
+[gd_scene load_steps=108 format=2]
 
 [ext_resource path="res://Core/Image Library/FighterAnimations.png" type="Texture" id=1]
 [ext_resource path="res://Core/Scripts/PlayerController.gd" type="Script" id=2]
 [ext_resource path="res://Core/Scenes/Abstract/Emoji.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Image Library/Weather/Raindrop.png" type="Texture" id=4]
+[ext_resource path="res://Core/Scripts/QuickInfoPanel.gd" type="Script" id=5]
+[ext_resource path="res://User Interface/Fonts/PixelVeranda.tres" type="DynamicFont" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.0
@@ -556,43 +558,38 @@ angle = 180.0
 scale_amount = 0.0
 scale_amount_random = 1.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_left = -40.0
-margin_right = 45.0
-margin_bottom = 32.0
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -30, 0 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 5 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Position2D"]
+margin_right = 40.0
+margin_bottom = 20.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
-margin_right = 39.0
-margin_bottom = 32.0
+[node name="Name Text" type="Label" parent="Position2D/HBoxContainer"]
+margin_right = 99.0
+margin_bottom = 20.0
+grow_horizontal = 2
+size_flags_vertical = 5
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "13 Characters"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
-margin_right = 39.0
-margin_bottom = 14.0
-text = "Name"
-
-[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer"]
-margin_top = 18.0
-margin_right = 39.0
-margin_bottom = 32.0
-text = "Player"
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
-margin_left = 43.0
-margin_right = 85.0
-margin_bottom = 32.0
-
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
-margin_right = 42.0
-margin_bottom = 14.0
-text = "Class"
-align = 2
-
-[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer2"]
-margin_top = 18.0
-margin_right = 42.0
-margin_bottom = 32.0
-text = "Healer"
-align = 2
+[node name="Level Text" type="Label" parent="Position2D/HBoxContainer"]
+margin_left = 103.0
+margin_top = 1.0
+margin_right = 118.0
+margin_bottom = 19.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0.921569, 1, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "01"
