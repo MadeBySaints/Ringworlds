@@ -75,6 +75,8 @@ format = 1
 
 [node name="Torch" parent="Ysorted Objects/Lights" instance=ExtResource( 2 )]
 position = Vector2( 219, 152 )
+defEnergy = 0.15
+radius = 3
 
 [node name="Enemies" type="YSort" parent="Ysorted Objects"]
 
