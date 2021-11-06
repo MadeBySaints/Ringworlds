@@ -1,8 +1,10 @@
 extends Node2D
 
-export var dest : int = 0
-
+export (int) var dest = 0
 onready var curr_loc = 0
+var lastmap
+var curmap
+var boundary
 
 #onready var pc = $"Ysorted Objects/Player Fighter"
 
