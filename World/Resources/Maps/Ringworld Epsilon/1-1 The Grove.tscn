@@ -284,9 +284,6 @@ position = Vector2( 264.054, 42.082 )
 [node name="Pine 26" parent="Ysorted Objects/Foliage" instance=ExtResource( 5 )]
 position = Vector2( 151.172, -11.7962 )
 
-[node name="Pine 80" parent="Ysorted Objects/Foliage" instance=ExtResource( 5 )]
-position = Vector2( 296, -91 )
-
 [node name="Pine 81" parent="Ysorted Objects/Foliage" instance=ExtResource( 5 )]
 position = Vector2( -19, -24 )
 
