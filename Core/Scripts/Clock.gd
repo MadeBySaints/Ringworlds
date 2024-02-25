@@ -17,14 +17,14 @@ var test
 
 
 func init_clock():
-	test = 1
-	pass
-	
+    test = 1
+    pass
+    
 func _ready():
-	init_clock()
-	pass
-	
+    init_clock()
+    pass
+    
 func _process(delta):
-	test == +1
-	print(test)
-	pass
+    test == +1
+    print(test)
+    pass

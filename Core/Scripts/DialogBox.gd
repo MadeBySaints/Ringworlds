@@ -19,4 +19,4 @@ export var speaker : String
 
 #handle no speaker
 func _ready():
-	pass
+    pass

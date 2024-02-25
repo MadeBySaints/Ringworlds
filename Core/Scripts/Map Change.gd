@@ -9,17 +9,17 @@ var boundary
 #onready var pc = $"Ysorted Objects/Player Fighter"
 
 func _ready():
-	pass
+    pass
 
 
 func _process(delta):
-	pass
+    pass
 
 func save_curr_loc():
-	
-	pass
+    
+    pass
 
 
 
 func _on_East_Boundary_body_entered(body):
-	pass
+    pass

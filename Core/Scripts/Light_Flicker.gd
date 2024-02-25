@@ -11,35 +11,35 @@ var value = 0.0
 const MAX = 100000000
 
 func _ready():
-	randomize()
-	value = randi() % MAX
-	noise.period = nPer
-	set_process(true)
-	if isoff == true:
-		turn_off()
-	set_size()
+    randomize()
+    value = randi() % MAX
+    noise.period = nPer
+    set_process(true)
+    if isoff == true:
+        turn_off()
+    set_size()
 
 func turn_off():
-	$Light2D.set_energy(0.0)
-	$AnimatedSprite.set_animation("off")
-	pass
+    $Light2D.set_energy(0.0)
+    $AnimatedSprite.set_animation("off")
+    pass
 
 func turn_on():
-	$Light2D.set_energy(defEnergy)
-	$AnimatedSprite.set_animation("flicker")
-	pass
+    $Light2D.set_energy(defEnergy)
+    $AnimatedSprite.set_animation("flicker")
+    pass
 
 func set_size():
-	$Light2D.set_texture_scale(radius)
-	pass
+    $Light2D.set_texture_scale(radius)
+    pass
 
 func flicker():
-	#var a = $Light2D.get_color()
-	value += flux
-	if(value > MAX):
-		value = 0.0
-	var alpha = ((noise.get_noise_1d(value) + 1) / 4.0) + 0.5
-	$Light2D.color = Color($Light2D.color.r, $Light2D.color.g, $Light2D.color.b, alpha)
+    #var a = $Light2D.get_color()
+    value += flux
+    if(value > MAX):
+        value = 0.0
+    var alpha = ((noise.get_noise_1d(value) + 1) / 4.0) + 0.5
+    $Light2D.color = Color($Light2D.color.r, $Light2D.color.g, $Light2D.color.b, alpha)
 
 func _process(_delta):
-	flicker()
+    flicker()

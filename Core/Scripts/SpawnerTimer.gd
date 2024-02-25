@@ -19,56 +19,56 @@ export (int) var max_spawn_distance = 64
 
 
 func _physics_process(_delta):
-	rem_time = $Timer.get_wait_time()
+    rem_time = $Timer.get_wait_time()
 
 
 func _ready():
-	randomize()
-	pass
+    randomize()
+    pass
 
 
 func choose(array):
-	array.shuffle()
-	return array.front()
+    array.shuffle()
+    return array.front()
 
 
 func set_spawn_coords():
-	var a = choose(dirh)
-	var b = choose(dirv)
-	if a == "LEFT":
-		h = -h
-		return(h)
-	if b == "UP":
-		v = -v
-		return(v)
+    var a = choose(dirh)
+    var b = choose(dirv)
+    if a == "LEFT":
+        h = -h
+        return(h)
+    if b == "UP":
+        v = -v
+        return(v)
 
 
 func name_spawn():
-	spawn_name = spawn.name + str(OS.get_unix_time())
-	return(spawn_name)
+    spawn_name = spawn.name + str(OS.get_unix_time())
+    return(spawn_name)
 
 
 func _on_Timer_timeout():
-	$Timer.wait_time = time
-	spawned = get_child_count() - 1
-	if spawned >= max_spawns:
-		#print(str(spawned) + " nodes already spawned.")#debug
-		return
-	else:
-		h = randi() % max_spawn_distance + min_spawn_distance
-		v = randi() % max_spawn_distance + min_spawn_distance
-		spawn = entity.instance()
-		set_spawn_coords()
-		spawn.position = Vector2(h, v)
-		print(spawn.position)#debug
-		name_spawn()
-		spawn.name = spawn_name
-		print(spawn.name)#debug
-		add_child(spawn)
-		spawn.connect("dead", self, "entity_dead")
+    $Timer.wait_time = time
+    spawned = get_child_count() - 1
+    if spawned >= max_spawns:
+        #print(str(spawned) + " nodes already spawned.")#debug
+        return
+    else:
+        h = randi() % max_spawn_distance + min_spawn_distance
+        v = randi() % max_spawn_distance + min_spawn_distance
+        spawn = entity.instance()
+        set_spawn_coords()
+        spawn.position = Vector2(h, v)
+        print(spawn.position)#debug
+        name_spawn()
+        spawn.name = spawn_name
+        print(spawn.name)#debug
+        add_child(spawn)
+        spawn.connect("dead", self, "entity_dead")
 
 
 func entity_dead(entity_name):
-	entity_name.queue_free()
-	pass
+    entity_name.queue_free()
+    pass
 

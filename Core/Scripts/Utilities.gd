@@ -6,21 +6,21 @@ var strays = {}
 
 
 func _ready():
-	pass
+    pass
 
 
 func _enter_tree():
 #	.get_tree().connect("node_added", data, "append")
-	pass
+    pass
 
 
 func garbage_collection():
-	print_stray_nodes()
-	pass
-	
-	
-	
-	#queue free any orphaned nodes on main, scene change, and quit()
+    print_stray_nodes()
+    pass
+    
+    
+    
+    #queue free any orphaned nodes on main, scene change, and quit()
 #	var keep = []
 #	for a_node in data:
 #		if is_instance_valid(a_node):
@@ -33,4 +33,4 @@ func garbage_collection():
 
 
 func scene_reload():
-	pass
+    pass

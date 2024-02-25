@@ -3,9 +3,9 @@ extends KinematicBody2D
 signal dead
 
 enum Action {
-	IDLE,
-	NEW_DIR,
-	MOVE
+    IDLE,
+    NEW_DIR,
+    MOVE
 }
 
 
@@ -18,62 +18,62 @@ export (float) var wait_min = 1.0
 export (float) var wait_max = 1.5
 
 func _ready():
-	randomize()
-	
+    randomize()
+    
 func _process(delta):
-	match state:
-		Action.IDLE:
-			if last_dir == Vector2.UP:
-				$AnimatedSprite.play("idleup")
-			if last_dir == Vector2.DOWN:
-				$AnimatedSprite.play("idledown")
-			if last_dir == Vector2.LEFT:
-				$AnimatedSprite.play("idleleft")
-			if last_dir == Vector2.RIGHT:
-				$AnimatedSprite.play("idleright")
-			
-		Action.NEW_DIR:
-			dir = choose([Vector2.UP, Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT])
-			if dir == Vector2.UP or dir == Vector2.DOWN:
-				$CollisionShape2D.set_rotation_degrees(0)
-			if dir == Vector2.LEFT or dir == Vector2.RIGHT:
-				$CollisionShape2D.set_rotation_degrees(90)
-			state = choose([Action.IDLE, Action.MOVE])
-			
-		Action.MOVE:
-			move(delta)
-			
-			if dir == Vector2.UP:
-				$AnimatedSprite.play("walkup")
-			if dir == Vector2.DOWN:
-				$AnimatedSprite.play("walkdown")
-			if dir == Vector2.LEFT:
-				$AnimatedSprite.play("walkleft")
-			if dir == Vector2.RIGHT:
-				$AnimatedSprite.play("walkright")
-			#update recent direction
-			last_dir = dir
+    match state:
+        Action.IDLE:
+            if last_dir == Vector2.UP:
+                $AnimatedSprite.play("idleup")
+            if last_dir == Vector2.DOWN:
+                $AnimatedSprite.play("idledown")
+            if last_dir == Vector2.LEFT:
+                $AnimatedSprite.play("idleleft")
+            if last_dir == Vector2.RIGHT:
+                $AnimatedSprite.play("idleright")
+            
+        Action.NEW_DIR:
+            dir = choose([Vector2.UP, Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT])
+            if dir == Vector2.UP or dir == Vector2.DOWN:
+                $CollisionShape2D.set_rotation_degrees(0)
+            if dir == Vector2.LEFT or dir == Vector2.RIGHT:
+                $CollisionShape2D.set_rotation_degrees(90)
+            state = choose([Action.IDLE, Action.MOVE])
+            
+        Action.MOVE:
+            move(delta)
+            
+            if dir == Vector2.UP:
+                $AnimatedSprite.play("walkup")
+            if dir == Vector2.DOWN:
+                $AnimatedSprite.play("walkdown")
+            if dir == Vector2.LEFT:
+                $AnimatedSprite.play("walkleft")
+            if dir == Vector2.RIGHT:
+                $AnimatedSprite.play("walkright")
+            #update recent direction
+            last_dir = dir
 
 
 func move(_delta):
-	move_and_slide(dir * speed)
+    move_and_slide(dir * speed)
 
 
 func choose(array):
-	array.shuffle()
-	return array.front()
+    array.shuffle()
+    return array.front()
 
 
 func _on_Timer_timeout():
-	$Timer.wait_time = choose([wait_min, wait_max])
-	state = choose([Action.IDLE, Action.NEW_DIR, Action.MOVE])
+    $Timer.wait_time = choose([wait_min, wait_max])
+    state = choose([Action.IDLE, Action.NEW_DIR, Action.MOVE])
 
 
 func _on_tree_exited():
-	pass # Replace with function body.
+    pass # Replace with function body.
 
 
 func _on_dead():
-	var entity_name = self.name
-	emit_signal("dead", entity_name)
-	pass # Replace with function body.
+    var entity_name = self.name
+    emit_signal("dead", entity_name)
+    pass # Replace with function body.

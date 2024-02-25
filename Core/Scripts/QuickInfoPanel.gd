@@ -8,13 +8,13 @@ extends Position2D
 var pname setget set_text, get_text
 
 func _ready():
-	pass # Replace with function body.
+    pass # Replace with function body.
 
 func set_text(new_text):
-	$"HBoxContainer/Name Text".text = str(new_text)
-	
+    $"HBoxContainer/Name Text".text = str(new_text)
+    
 func get_text():
-	return $"HBoxContainer/Name Text".text
+    return $"HBoxContainer/Name Text".text
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

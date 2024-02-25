@@ -357,7 +357,6 @@ position = Vector2( 419, 101 )
 position = Vector2( 303, 117 )
 collision_layer = 2147483649
 collision_mask = 2147483649
-speed = 50
 
 [node name="Map Transition Boundaries" type="Node2D" parent="."]
 script = ExtResource( 9 )
